@@ -40,6 +40,7 @@ namespace Client
 				}
 			}
 
+			//new Thread(NewTopicAddedCallback).Start();
 			while (true)
 			{
 				var nl = Environment.NewLine;
@@ -69,9 +70,32 @@ namespace Client
 			}
 		}
 
-		
+        private static void NewTopicAddedCallback(object obj)
+        {
+			byte[] buffer;
+			int readBytes;
+			try
+			{
+				while (true)
+				{
+					buffer = new byte[_socket.Available];
+					readBytes = _socket.Receive(buffer, SocketFlags.None);
+					if (readBytes > 0)
+					{
+						var content = Encoding.ASCII.GetString(buffer);
+						Console.WriteLine($"{content}");
+					}
+				}
+			}
+			catch (SocketException)
+			{
+				Console.WriteLine("A server has disconnected.");
+				Console.ReadLine();
+				Environment.Exit(0);
+			}
+		}
 
-		static void GetClientId()
+        static void GetClientId()
 		{
 			byte[] buffer;
 			int readBytes;

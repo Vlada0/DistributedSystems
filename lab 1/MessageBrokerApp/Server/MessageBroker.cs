@@ -106,73 +106,97 @@ namespace Server
 			{
 				case ClientAction.Send:
 					messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out sentTopic);
-					if(_topics.Any(t => t.Name == sentTopic))
-					{
-						lock (locker)
-						{
-							foreach (var client in _subscribers)
-							{
-								client.HasCurrentMesageSent = false;
-							}
-						}
-					}
-					messageParts.SingleOrDefault(dict => dict.ContainsKey("payload")).TryGetValue(key: "payload", out var payload);
-					PublishMessage(sentTopic, payload);
+                    //if (_topics.Any(t => t.Name == sentTopic))
+                    //{
+                    //    lock (locker)
+                    //    {
+                    //        foreach (var client in _subscribers)
+                    //        {
+                    //            client.HasCurrentMesageSent = false;
+                    //        }
+                    //    }
+                    //}
+                    messageParts.SingleOrDefault(dict => dict.ContainsKey("payload")).TryGetValue(key: "payload", out var payload);
+					PublishMessage(clientGuid, sentTopic, payload);
+					SendMessageToSubscribers(sentTopic, payload);
 					break;
 				case ClientAction.Subscribe:
-					lock (locker)
-					{
-						foreach (var client in _subscribers)
-						{
-							client.HasCurrentMesageSent = true;
-						}
-					}
-					messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out var topics);
+                    //lock (locker)
+                    //{
+                    //    foreach (var client in _subscribers)
+                    //    {
+                    //        client.HasCurrentMesageSent = true;
+                    //    }
+                    //}
+                    messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out var topics);
 					Subscribe(clientGuid, topics.Contains(';') ? topics.Split(';') : new string[] { topics});
 					break;
 				case ClientAction.Unsubscribe:
 					messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out topics);
-					Unsubscribe(clientGuid, topics.Contains(';') ? topics.Split(';') : new string[] { topics }); 
+                    Unsubscribe(clientGuid, topics.Contains(';') ? topics.Split(';') : new string[] { topics });
 					break;
-				default:
+                default:
 					throw new ArgumentOutOfRangeException();
 			}
 
-			foreach (var subscriber in _subscribers)
-			{
-				if (subscriber.HasCurrentMesageSent) continue;
-				Console.WriteLine($"Send to {subscriber.ClientId}");
-
-				string[] dataToSend;
-				if(actionType == ClientAction.Send)
-				{
-					dataToSend = _topics
-					.Where(t => subscriber.TopicIds.Contains(t.TopicId) && t.Name == sentTopic)
-					.Select(t => $"{t.Name} : {t.Messages.LastOrDefault()}") 
-					.ToArray();
-				}
-				else
-				{
-					dataToSend = _topics
-					.Where(t => subscriber.TopicIds.Contains(t.TopicId))
+			if(actionType == ClientAction.Subscribe && _subscribers.Any(s => s.ClientId == clientGuid && s.ShoulGetTopicHistory))
+            {
+				var to = _subscribers.FirstOrDefault(s => s.ClientId == clientGuid);
+				var dataToSend = _topics
+					.Where(t => to.TopicIds.Contains(t.TopicId))
 					.Select(t => $"{t.Name} : {string.Join(';', t.Messages)}")
 					.ToArray();
-				}
-				
 				var bytes = Encoding.ASCII.GetBytes(string.Join(Environment.NewLine, dataToSend));
-				subscriber.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
-				subscriber.HasCurrentMesageSent = true;
+				to.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 			}
-			lock (locker)
+            //foreach (var subscriber in _subscribers)
+            //{
+            //    if (subscriber.HasCurrentMesageSent) continue;
+            //    Console.WriteLine($"Send to {subscriber.ClientId}");
+
+            //    string[] dataToSend;
+            //    if (actionType == ClientAction.Send)
+            //    {
+            //        dataToSend = _topics
+            //        .Where(t => subscriber.TopicIds.Contains(t.TopicId) && t.Name == sentTopic)
+            //        .Select(t => $"{t.Name} : {t.Messages.LastOrDefault()}")
+            //        .ToArray();
+            //    }
+            //    else
+            //    {
+            //        dataToSend = _topics
+            //        .Where(t => subscriber.TopicIds.Contains(t.TopicId))
+            //        .Select(t => $"{t.Name} : {string.Join(';', t.Messages)}")
+            //        .ToArray();
+            //    }
+
+            //    var bytes = Encoding.ASCII.GetBytes(string.Join(Environment.NewLine, dataToSend));
+            //    subscriber.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
+            //    subscriber.HasCurrentMesageSent = true;
+            //}
+            //lock (locker)
+            //{
+            //    foreach (var client in _subscribers)
+            //    {
+            //        client.HasCurrentMesageSent = true;
+            //    }
+            //}
+        }
+
+        private static void SendMessageToSubscribers(string sentTopic, string payload)
+        {
+			foreach (var subscriber in _subscribers)
 			{
-				foreach (var client in _subscribers)
-				{
-					client.HasCurrentMesageSent = true;
-				}
+				Console.WriteLine($"Send to {subscriber.ClientId}");
+
+				var message = $"{sentTopic}: {payload}";
+
+				var bytes = Encoding.ASCII.GetBytes(message);
+				subscriber.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 			}
 		}
 
-		private static void PublishMessage(string topic, string payload)
+        private static void PublishMessage(Guid publisherId, string topic, string payload)
 		{
 			Console.WriteLine($"Publishing a message...{topic} - {payload}");
 			if (_topics.Any())
@@ -187,6 +211,7 @@ namespace Server
 						Messages = new List<string> { payload }
 					};
 					_topics.Add(aTopic);
+					//OnTopicAdded(publisherId);
 				}
 				else
 				{
@@ -195,11 +220,24 @@ namespace Server
 			}
 			else
 			{
-				_topics = new List<Topic> { new Topic { TopicId = Guid.NewGuid(), Name = topic, Messages = new List<string> { payload } } };
+				var newTopic = new Topic { TopicId = Guid.NewGuid(), Name = topic, Messages = new List<string> { payload } };
+				_topics = new List<Topic> { newTopic };
+				//OnTopicAdded(publisherId);
 			}
 		}
 
-		private static void Unsubscribe(Guid clientGuid, IEnumerable<string> topics)
+        private static void OnTopicAdded(Guid publisherId)
+        {
+            foreach (var client in _clients.Where(c => c.ClientId != publisherId))
+            {
+				var topics = _topics.Select(t => t.Name).ToArray();
+				var message = $"Topic list has been updated. {string.Join(';', topics)}";
+				var bytes = Encoding.ASCII.GetBytes(message);
+				client.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
+            }
+        }
+
+        private static void Unsubscribe(Guid clientGuid, IEnumerable<string> topics)
 		{
 			Console.WriteLine("Unsubscribing from a topic...");
 			if(_subscribers.Any(s => s.ClientId == clientGuid))
@@ -237,18 +275,20 @@ namespace Server
 
 		private static void AddNewSubscriber(Guid clientGuid, IEnumerable<string> topics)
 		{
-			var topicGuids = _topics.Where(t => topics.Contains(t.Name.ToLower())).Select(t => t.TopicId);
+            var topicGuids = _topics.Where(t => topics.Contains(t.Name.ToLower())).Select(t => t.TopicId);
 			var subscriber = _clients.FirstOrDefault(cd => cd.ClientId == clientGuid);
 			foreach (var topicId in topicGuids)
 			{
 				if (!subscriber.TopicIds.Any(t => t == topicId))
 				{
 					subscriber.TopicIds.Add(topicId);
+					subscriber.ShoulGetTopicHistory = true;
 				}
 			}
 			subscriber.HasCurrentMesageSent = false;
 
 			_subscribers.Add(subscriber);
+
 		}
 
 		private static void AddNewSubscription(Guid clientGuid, IEnumerable<string> topics)
