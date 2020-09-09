@@ -40,29 +40,35 @@ namespace Client
 				}
 			}
 
-			//new Thread(NewTopicAddedCallback).Start();
 			while (true)
 			{
 				var nl = Environment.NewLine;
-				Console.WriteLine($"Select an action you would like to perform:{nl}1.Publish{nl}2.Subscribe{nl}3.Unsubscribe");
+				Console.WriteLine($"Operation:{nl}1.Publish{nl}2.Subscribe{nl}3.Unsubscribe{nl}4.Topic List");
 				int.TryParse(Console.ReadLine(), out var input);
+				var url = string.Empty;
 				switch (input)
 				{
 					case 1:
-						var requestUrl = Publish();
-						var bytesToSend = Encoding.Default.GetBytes(requestUrl);
+						url = Publish(1);
+						var bytesToSend = Encoding.Default.GetBytes(url);
 						_socket.Send(bytesToSend);
 						break;
 					case 2:
-						var url = Subscribe();
+						url = Subscribe(2);
 						var bytes = Encoding.ASCII.GetBytes(url);
 						_socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 						new Thread(ListenForMessages).Start();
 						break;
 					case 3:
-						var link = Unsubscribe();
-						var buffer = Encoding.ASCII.GetBytes(link);
+						url = Unsubscribe(3);
+						var buffer = Encoding.ASCII.GetBytes(url);
 						_socket.Send(buffer, 0, buffer.Length, SocketFlags.None);
+						break;
+					case 4:
+						url = GetTopicListUrl(4);
+						var bufferData = Encoding.ASCII.GetBytes(url);
+						_socket.Send(bufferData, 0, bufferData.Length, SocketFlags.None);
+						new Thread(ListenForMessages).Start();
 						break;
 					default:
 						break;
@@ -70,32 +76,7 @@ namespace Client
 			}
 		}
 
-        private static void NewTopicAddedCallback(object obj)
-        {
-			byte[] buffer;
-			int readBytes;
-			try
-			{
-				while (true)
-				{
-					buffer = new byte[_socket.Available];
-					readBytes = _socket.Receive(buffer, SocketFlags.None);
-					if (readBytes > 0)
-					{
-						var content = Encoding.ASCII.GetString(buffer);
-						Console.WriteLine($"{content}");
-					}
-				}
-			}
-			catch (SocketException)
-			{
-				Console.WriteLine("A server has disconnected.");
-				Console.ReadLine();
-				Environment.Exit(0);
-			}
-		}
-
-        static void GetClientId()
+		static void GetClientId()
 		{
 			byte[] buffer;
 			int readBytes;
@@ -129,6 +110,7 @@ namespace Client
 			int readBytes;
 			try
 			{
+				Console.WriteLine("Receive: ");
 				while (true)
 				{
 					buffer = new byte[_socket.Available];
@@ -136,7 +118,7 @@ namespace Client
 					if (readBytes > 0)
 					{
 						var content = Encoding.ASCII.GetString(buffer);
-						Console.WriteLine($"Receive: {content}");
+						Console.WriteLine(content);
 					}
 				}
 			}
@@ -148,14 +130,14 @@ namespace Client
 			}
 		}
 
-		private static string Subscribe()
+		private static string Subscribe(int action)
 		{
 			Console.WriteLine("Enter topic name(s) (multiple topics should be separated with a ';' symbol.): ");
 			var topicNames = Console.ReadLine().Trim();
-			return $"clientId={CLIENT_ID}?action=2?topic={topicNames}";
+			return $"clientId={CLIENT_ID}?action={action}?topic={topicNames}";
 		}
 
-		private static string Publish()
+		private static string Publish(int action)
 		{
 			Console.WriteLine("Enter topic name: ");
 			var topicName = Console.ReadLine().Trim();
@@ -163,14 +145,16 @@ namespace Client
 			Console.WriteLine("Enter a message: ");
 			var message = Console.ReadLine().Trim();
 
-			return $"clientId={CLIENT_ID}?action=1?topic={topicName}?payload={message}";
+			return $"clientId={CLIENT_ID}?action={action}?topic={topicName}?payload={message}";
 		}
 
-		private static string Unsubscribe()
+		private static string Unsubscribe(int action)
 		{
 			Console.WriteLine("Unsubscribe from topics (specify topics you want to unsubscribe from, separate them by a semicolon): ");
 			var topics = Console.ReadLine().Trim();
-			return $"clientId={CLIENT_ID}?action=3?topic={topics}";
+			return $"clientId={CLIENT_ID}?action={action}?topic={topics}";
 		}
+
+		private static string GetTopicListUrl(int action) => $"clientId={CLIENT_ID}?action={action}";
 	}
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Km/l+yTO9cPM6xdeEtl8ti/X0Le5wdixdW19UkczSSnViYQKCX5cxQc/wJoSqI5Oroht9sJDa+adez/504/f4A==",
+  "dgSpecHash": "nl2UMcyav+8ZUTxhlA9cElfsnSM0QFN6w4RiH1syHHU+PIHrwEfI5ZJxYUeCWRTFyE0kQ52lig+oXUu6ATcBQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\MessageBrokerApp\\Client\\Client.csproj",
+  "projectFilePath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\lab 1\\MessageBrokerApp\\Client\\Client.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
