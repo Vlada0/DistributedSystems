@@ -11,7 +11,7 @@ namespace Server
 		public Thread ClientThread { get; }
 		public Guid ClientId { get; set; }
 		public ICollection<Guid> TopicIds { get; set; } = new List<Guid>();
-		public bool HasCurrentMesageSent { get; set; } = false;
+		//public bool HasCurrentMesageSent { get; set; } = false;
 		public bool ShouldGetTopicHistory { get; set; } = false;
 
         public ClientData()

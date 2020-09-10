@@ -140,14 +140,8 @@ namespace Server
 			}
         }
 
-		
-
 		private static void SendMessageToSubscribers(string sentTopic, string payload)
         {
-			//if (isTopicNew)
-			//{
-			//	SendListOfTopicsToClients();
-			//}
 			var topicId = _topics.FirstOrDefault(t => t.Name == sentTopic).TopicId;
 			foreach (var subscriber in _subscribers)
 			{
@@ -162,18 +156,6 @@ namespace Server
 				}
 			}
 		}
-
-		//private static void SendListOfTopicsToClients()
-		//{ 
-		//	var nl = Environment.NewLine;
-		//	var topics = _topics.Select(t => t.Name).ToArray();
-		//	foreach (var client in _clients)
-		//	{
-		//		var message = $"All topics: {nl}{string.Join(nl, topics)}";
-		//		var bytes = Encoding.ASCII.GetBytes(message);
-		//		client.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
-		//	}
-		//}
 
 		private static void SendListOfTopicsToClients(Guid clientGuid)
 		{
@@ -200,7 +182,6 @@ namespace Server
 						Messages = new List<string> { payload }
 					};
 					_topics.Add(aTopic);
-					//OnTopicAdded(publisherId);
 				}
 				else
 				{
@@ -211,20 +192,8 @@ namespace Server
 			{
 				var newTopic = new Topic { TopicId = Guid.NewGuid(), Name = topic, Messages = new List<string> { payload } };
 				_topics = new List<Topic> { newTopic };
-				//OnTopicAdded(publisherId);
 			}
 		}
-
-        private static void OnTopicAdded(Guid publisherId)
-        {
-            foreach (var client in _clients.Where(c => c.ClientId != publisherId))
-            {
-				var topics = _topics.Select(t => t.Name).ToArray();
-				var message = $"Topic list has been updated. {string.Join(';', topics)}";
-				var bytes = Encoding.ASCII.GetBytes(message);
-				client.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
-            }
-        }
 
         private static void Unsubscribe(Guid clientGuid, IEnumerable<string> topics)
 		{
@@ -251,7 +220,6 @@ namespace Server
 
 		private static bool Subscribe(Guid clientGuid, IEnumerable<string> topics)
 		{
-			//Console.WriteLine($"Adding a subscriber {clientGuid}");
 			if (!_subscribers.Any(s => s.ClientId == clientGuid))
 			{
 				return AddNewSubscriber(clientGuid, topics);
@@ -275,7 +243,6 @@ namespace Server
 				}
 			}
 			_subscribers.Add(subscriber);
-			//subscriber.HasCurrentMesageSent = false;
 
 			return topicGuids.Any();
 		}
@@ -297,7 +264,6 @@ namespace Server
 			}
 
 			return anyTopicExists;
-			//subscriber.HasCurrentMesageSent = false;
 		}
 
 		static string GetIpAddress()
@@ -305,7 +271,7 @@ namespace Server
 			IPAddress[] ips = Dns.GetHostAddresses(Dns.GetHostName());
 			foreach (IPAddress iP in ips)
 			{
-				if (iP.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+				if (iP.AddressFamily == AddressFamily.InterNetwork)
 				{
 					return iP.ToString();
 				}
