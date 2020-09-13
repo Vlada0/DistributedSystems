@@ -37,3 +37,6 @@ D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Clie
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\obj\Debug\netcoreapp3.1\Client.dll
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\obj\Debug\netcoreapp3.1\Client.pdb
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\obj\Debug\netcoreapp3.1\Client.genruntimeconfig.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\bin\Debug\netcoreapp3.1\Data.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\bin\Debug\netcoreapp3.1\Data.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\obj\Debug\netcoreapp3.1\Client.csproj.CopyComplete

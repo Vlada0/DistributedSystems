@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,13 +67,19 @@ namespace Server
 					bytesRead = receiver.Receive(buffer, SocketFlags.None);
 					if(bytesRead > 0)
 					{
-						DistributeData(Encoding.ASCII.GetString(buffer));
+						DistributeData(Encoding.ASCII.GetString(buffer), buffer);
 					}
 				}
 			}
 			catch (SocketException)
 			{
 				Console.WriteLine($"A client has disconnected.");
+				receiver.Close();
+				var clientToRemove = _clients.FirstOrDefault(c => c.Socket.IsDead());
+				if(clientToRemove != null)
+				{
+					_clients.Remove(clientToRemove);
+				}
 			}
 		}
 
@@ -80,60 +87,66 @@ namespace Server
 		//clientId=clientId?action=Subscribe?topic=Topic1Id;Topic2Id;Topic3Id
 		//clientId=clientId?action=Unsubscribe?topic=Topic1Id;Topic2Id;Topic3Id
 		//clientId=clientId?action=TopicList
-		public static void DistributeData(string message)
+		public static void DistributeData(string message, byte[] bytesReceived)
 		{
-			var messageParts = message.Split('?').Select(item => 
-			{
-				var keyValue = item.Split('=');
-				return new ConcurrentDictionary<string, string>() { [keyValue[0]] = keyValue[1] };
-			});
+			var receivedPacket = new Packet(bytesReceived);
 
-			messageParts.SingleOrDefault(dict => dict.ContainsKey("clientId")).TryGetValue(key: "clientId", out var clientId);
-			var clientGuid = Guid.Parse(clientId);
+			//var messageParts = message.Split('?').Select(item => 
+			//{
+			//	var keyValue = item.Split('=');
+			//	return new ConcurrentDictionary<string, string>() { [keyValue[0]] = keyValue[1] };
+			//});
 
-			messageParts.SingleOrDefault(dict => dict.ContainsKey("action")).TryGetValue(key: "action", out var action);
-			Enum.TryParse(action, out ClientAction actionType);
+			//messageParts.SingleOrDefault(dict => dict.ContainsKey("clientId")).TryGetValue(key: "clientId", out var clientId);
+			//var clientGuid = Guid.Parse(clientId);
+
+			//messageParts.SingleOrDefault(dict => dict.ContainsKey("action")).TryGetValue(key: "action", out var action);
+			//Enum.TryParse(action, out ClientAction actionType);
 
 			var sentTopic = string.Empty;
 			var topicExists = false;
 
-			switch (actionType)
+			switch ((ClientAction)receivedPacket.Action)
 			{
 				case ClientAction.Send:
-					messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out sentTopic);
-                    messageParts.SingleOrDefault(dict => dict.ContainsKey("payload")).TryGetValue(key: "payload", out var payload);
-					PublishMessage(clientGuid, sentTopic, payload);
-					SendMessageToSubscribers(sentTopic, payload);
+					//messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out sentTopic);
+					//               messageParts.SingleOrDefault(dict => dict.ContainsKey("payload")).TryGetValue(key: "payload", out var payload);
+					//PublishMessage(clientGuid, sentTopic, payload);
+					//SendMessageToSubscribers(sentTopic, payload);
+					PublishMessage(receivedPacket.ClientId, receivedPacket.SensorTypes[0], receivedPacket.Data.ToString());
+					SendMessageToSubscribers(receivedPacket.SensorTypes[0], receivedPacket.Data.ToString());
 					break;
 				case ClientAction.Subscribe:
-                    messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out var topics);
-					topicExists = Subscribe(clientGuid, topics.Contains(';') ? topics.Split(';') : new string[] { topics});
+					//messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out var topics);
+					//topicExists = Subscribe(clientGuid, topics.Contains(';') ? topics.Split(';') : new string[] { topics});
+					topicExists = Subscribe(receivedPacket.ClientId, receivedPacket.SensorTypes);
 					break;
 				case ClientAction.Unsubscribe:
-					messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out topics);
-                    Unsubscribe(clientGuid, topics.Contains(';') ? topics.Split(';') : new string[] { topics });
+					//messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out topics);
+					//               Unsubscribe(clientGuid, topics.Contains(';') ? topics.Split(';') : new string[] { topics });
+					Unsubscribe(receivedPacket.ClientId, receivedPacket.SensorTypes);
 					break;
 				case ClientAction.TopicList:
-					SendListOfTopicsToClients(clientGuid);
+					SendListOfTopicsToClients(receivedPacket.ClientId);
 					break;
                 default:
 					throw new ArgumentOutOfRangeException();
 			}
 
-			if(actionType == ClientAction.Subscribe && _subscribers.Any(s => s.ClientId == clientGuid && s.ShouldGetTopicHistory))
-            {
-				var recv = _subscribers.FirstOrDefault(s => s.ClientId == clientGuid);
-				var dataToSend = _topics
-						.Where(t => recv.TopicIds.Contains(t.TopicId))
-						.Select(t => $"{t.Name} : {string.Join(';', t.Messages)}")
-						.ToArray();
-				var bytes = Encoding.ASCII.GetBytes(string.Join(Environment.NewLine, dataToSend));
-				recv.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
-			}
+			//if((ClientAction) receivedPacket.Action == ClientAction.Subscribe && _subscribers.Any(s => s.ClientId == receivedPacket.ClientId && s.ShouldGetTopicHistory))
+   //         {
+			//	var recv = _subscribers.FirstOrDefault(s => s.ClientId == receivedPacket.ClientId);
+			//	var dataToSend = _topics
+			//			.Where(t => recv.TopicIds.Contains(t.TopicId))
+			//			.Select(t => $"{t.Name} : {string.Join(';', t.Messages)}")
+			//			.ToArray();
+			//	var bytes = Encoding.ASCII.GetBytes(string.Join(Environment.NewLine, dataToSend));
+			//	recv.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
+			//}
 
-			if (!topicExists && actionType == ClientAction.Subscribe)
+			if (!topicExists && (ClientAction)receivedPacket.Action == ClientAction.Subscribe)
 			{
-				var recv = _subscribers.FirstOrDefault(s => s.ClientId == clientGuid);
+				var recv = _subscribers.FirstOrDefault(s => s.ClientId == receivedPacket.ClientId);
 				var errMsg = "ERROR: One or more specified topics not found.";
 				var bytes = Encoding.ASCII.GetBytes(errMsg);
 				recv.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);

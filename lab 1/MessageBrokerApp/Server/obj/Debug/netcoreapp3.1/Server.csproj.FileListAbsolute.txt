@@ -37,3 +37,6 @@ D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Serv
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Server\obj\Debug\netcoreapp3.1\Server.dll
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Server\obj\Debug\netcoreapp3.1\Server.pdb
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Server\obj\Debug\netcoreapp3.1\Server.genruntimeconfig.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Server\bin\Debug\netcoreapp3.1\Data.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Server\bin\Debug\netcoreapp3.1\Data.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Server\obj\Debug\netcoreapp3.1\Server.csproj.CopyComplete

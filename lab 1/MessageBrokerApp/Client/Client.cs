@@ -1,20 +1,38 @@
-﻿using System;
+﻿using Data;
+using System;
+using System.Collections.Generic;
 using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Client
 {
+	enum Executor
+	{
+		Valve = 1,
+		Pump,
+		Switch
+	}
+
 	class Client
 	{
+		static readonly string nl = Environment.NewLine;
 		public static Socket _socket;
 		const int port = 4242;
 		static Guid CLIENT_ID = Guid.Empty;
-		//private const int BUFFER_SIZE = 2048;
-		//private static readonly byte[] buffer = new byte[BUFFER_SIZE];
+		static Executor SensorType = default;
 
-		static void Main(string[] args)
+		static readonly Dictionary<Executor, string[]> Scenarios = new Dictionary<Executor, string[]>
+		{
+			[Executor.Valve] = new string[] { "Valve has opened.", "Valve has closed." },
+			[Executor.Pump] = new string[] {"Water went through a sprayer.", "Air has pumped in.", "Air has pumped out."},
+			[Executor.Switch] = new string[] {"Light has turned on.", "Light has turned off."}
+		};
+
+		static async Task Main(string[] args)
 		{
 			bool connected = false;
 			while (!connected)
@@ -40,40 +58,145 @@ namespace Client
 				}
 			}
 
-			while (true)
+			await Run();
+
+			//while (true)
+			//{
+			//	Console.WriteLine($"Operation:{nl}1.Publish{nl}2.Subscribe{nl}3.Unsubscribe{nl}4.Topic List");
+			//	int.TryParse(Console.ReadLine(), out var input);
+			//	var url = string.Empty;
+			//	switch (input)
+			//	{
+			//		case 1:
+			//			url = Publish(1);
+			//			var bytesToSend = Encoding.Default.GetBytes(url);
+			//			_socket.Send(bytesToSend);
+			//			break;
+			//		case 2:
+			//			url = Subscribe(2);
+			//			var bytes = Encoding.ASCII.GetBytes(url);
+			//			_socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
+			//			new Thread(ListenForMessages).Start();
+			//			break;
+			//		case 3:
+			//			url = Unsubscribe(3);
+			//			var buffer = Encoding.ASCII.GetBytes(url);
+			//			_socket.Send(buffer, 0, buffer.Length, SocketFlags.None);
+			//			break;
+			//		case 4:
+			//			url = GetTopicListUrl(4);
+			//			var bufferData = Encoding.ASCII.GetBytes(url);
+			//			_socket.Send(bufferData, 0, bufferData.Length, SocketFlags.None);
+			//			new Thread(ListenForMessages).Start();
+			//			break;
+			//		default:
+			//			break;
+			//	}
+			//}
+		}
+
+		static async Task Run()
+		{
+			Console.WriteLine($"1 - Sensor{nl}2 - Executor");
+			if(int.TryParse(Console.ReadLine(), out var input))
 			{
-				var nl = Environment.NewLine;
-				Console.WriteLine($"Operation:{nl}1.Publish{nl}2.Subscribe{nl}3.Unsubscribe{nl}4.Topic List");
-				int.TryParse(Console.ReadLine(), out var input);
-				var url = string.Empty;
 				switch (input)
 				{
 					case 1:
-						url = Publish(1);
-						var bytesToSend = Encoding.Default.GetBytes(url);
-						_socket.Send(bytesToSend);
+						await RunAsSensor();
 						break;
 					case 2:
-						url = Subscribe(2);
-						var bytes = Encoding.ASCII.GetBytes(url);
-						_socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
-						new Thread(ListenForMessages).Start();
-						break;
-					case 3:
-						url = Unsubscribe(3);
-						var buffer = Encoding.ASCII.GetBytes(url);
-						_socket.Send(buffer, 0, buffer.Length, SocketFlags.None);
-						break;
-					case 4:
-						url = GetTopicListUrl(4);
-						var bufferData = Encoding.ASCII.GetBytes(url);
-						_socket.Send(bufferData, 0, bufferData.Length, SocketFlags.None);
-						new Thread(ListenForMessages).Start();
+						RunAsSubscriber();
 						break;
 					default:
 						break;
 				}
 			}
+		}
+
+		static async Task RunAsSensor()
+		{
+			
+			Console.WriteLine("Sensor type: ");
+			var sensorType = Console.ReadLine().Trim();
+
+			const int low = 2048;
+			const int high = 4096;
+			const int barrier = high - low / 2;
+			var rnd = new Random();
+			while (true)
+			{
+				var data = rnd.Next(low, high + 1);
+				Console.WriteLine($"{sensorType} : {data}");
+				if(data > barrier)
+				{
+					var packet = new Packet(CLIENT_ID, 1, new string[] { sensorType }, data);
+					var bytesToSend = packet.ToBytes();
+					_socket.Send(bytesToSend);
+				}
+				await Task.Delay(data);
+			}
+		}
+
+		
+		static void RunAsSubscriber()
+		{
+			int input;
+			
+			GetSensorList();
+
+			Console.WriteLine("Type: 1 - Valve; 2 - Pump; 3 - Switch;");
+			while (!int.TryParse(Console.ReadLine(), out input))
+			{
+				Console.WriteLine("Type: 1 - Valve; 2 - Pump; 3 - Switch;");
+			}
+
+			SensorType = (Executor)input;
+
+			Console.WriteLine($"{(Executor)input} - Get data from sensor: ");
+			var sensorToSubscribe = Console.ReadLine().Trim();
+			var packet = new Packet(
+				CLIENT_ID, 2, 
+				sensorToSubscribe.Contains(';') ? 
+					sensorToSubscribe.Split(';') : 
+					new string[] { sensorToSubscribe }, null);
+
+			var bytes = packet.ToBytes();
+			_socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
+			new Thread(ListenForMessages).Start();
+		}
+
+		private static void GetSensorList()
+		{
+			var packet = new Packet(CLIENT_ID, 4, null, null);
+			var bytes = packet.ToBytes();
+			_socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
+			new Thread(() => 
+			{
+				try
+				{
+					byte[] buffer;
+					int readBytes;
+					var contentRead = false;
+					while (!contentRead)
+					{
+						buffer = new byte[_socket.Available];
+						readBytes = _socket.Receive(buffer, SocketFlags.None);
+						if (readBytes > 0)
+						{
+							var content = Encoding.ASCII.GetString(buffer);
+							Console.WriteLine(content);
+							contentRead = true;
+						}
+					}
+				}
+				catch (SocketException)
+				{
+					Console.WriteLine("A server has disconnected.");
+					Console.ReadLine();
+					Environment.Exit(0);
+				}
+			}).Start();
 		}
 
 		static void GetClientId()
@@ -118,7 +241,12 @@ namespace Client
 					if (readBytes > 0)
 					{
 						var content = Encoding.ASCII.GetString(buffer);
-						Console.WriteLine(content);
+						if(SensorType != default)
+						{
+							var rnd = new Random();
+							var index = rnd.Next(0, Scenarios[SensorType].Length);
+							Console.WriteLine($"{content} - {Scenarios[SensorType][index]}");
+						}
 					}
 				}
 			}
