@@ -10,7 +10,7 @@ namespace Server
 			BindingFlags bfIsDisposed = BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.GetProperty;
 			PropertyInfo field = s.GetType().GetProperty("CleanedUp", bfIsDisposed);
 
-			return (bool)field.GetValue(s, null);
+			return (bool) field.GetValue(s, null);
 		}
 	}
 }

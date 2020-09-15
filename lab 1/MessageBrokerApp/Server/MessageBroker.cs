@@ -39,18 +39,21 @@ namespace Server
 			var ipEndpoint = new IPEndPoint(IPAddress.Parse(ip), port);
 			_listenerSocket.Bind(ipEndpoint);
 
-			new Thread(() =>
+			new Thread(HandleClientConnection).Start();
+		}
+
+		private static void HandleClientConnection()
+		{
+			while (true)
 			{
-				while (true)
-				{
-					_listenerSocket.Listen(0);
-					var client = new ClientData(_listenerSocket.Accept());
-					_clients.Add(client);
-					byte[] buffer = Encoding.ASCII.GetBytes(client.ClientId.ToString());
-					Console.WriteLine($"{client.ClientId} has connected.");
-					client.Socket.Send(buffer, 0, buffer.Length, SocketFlags.None);
-				}
-			}).Start();
+				_listenerSocket.Listen(0);
+				var client = new ClientData(_listenerSocket.Accept());
+				_clients.Add(client);
+				var response = new Response(client.ClientId.ToString(), StatusCode.ClientAccepted);
+				byte[] buffer = /*Encoding.ASCII.GetBytes(client.ClientId.ToString())*/ response.ToBytes();
+				Console.WriteLine($"{client.ClientId} has connected.");
+				client.Socket.Send(buffer, 0, buffer.Length, SocketFlags.None);
+			}
 		}
 
 		public static void ClientDataIn(object socket)
@@ -80,6 +83,11 @@ namespace Server
 				{
 					_clients.Remove(clientToRemove);
 				}
+				var subscribersToRemove = _subscribers.Where(s => s.Socket.IsDead()).ToList();
+				if (subscribersToRemove.Any())
+				{
+					_subscribers.RemoveRange(subscribersToRemove);
+				}
 			}
 		}
 
@@ -91,6 +99,7 @@ namespace Server
 		{
 			var receivedPacket = new Packet(bytesReceived);
 
+			#region OLD_IMPLEMENTATION_URL_PARSING
 			//var messageParts = message.Split('?').Select(item => 
 			//{
 			//	var keyValue = item.Split('=');
@@ -102,6 +111,7 @@ namespace Server
 
 			//messageParts.SingleOrDefault(dict => dict.ContainsKey("action")).TryGetValue(key: "action", out var action);
 			//Enum.TryParse(action, out ClientAction actionType);
+			#endregion
 
 			var sentTopic = string.Empty;
 			var topicExists = false;
@@ -133,8 +143,9 @@ namespace Server
 					throw new ArgumentOutOfRangeException();
 			}
 
+			#region OLD_VERSION
 			//if((ClientAction) receivedPacket.Action == ClientAction.Subscribe && _subscribers.Any(s => s.ClientId == receivedPacket.ClientId && s.ShouldGetTopicHistory))
-   //         {
+			//         {
 			//	var recv = _subscribers.FirstOrDefault(s => s.ClientId == receivedPacket.ClientId);
 			//	var dataToSend = _topics
 			//			.Where(t => recv.TopicIds.Contains(t.TopicId))
@@ -143,12 +154,15 @@ namespace Server
 			//	var bytes = Encoding.ASCII.GetBytes(string.Join(Environment.NewLine, dataToSend));
 			//	recv.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 			//}
+			#endregion
 
 			if (!topicExists && (ClientAction)receivedPacket.Action == ClientAction.Subscribe)
 			{
 				var recv = _subscribers.FirstOrDefault(s => s.ClientId == receivedPacket.ClientId);
 				var errMsg = "ERROR: One or more specified topics not found.";
-				var bytes = Encoding.ASCII.GetBytes(errMsg);
+				var response = new Response(errMsg, StatusCode.Fail);
+				var bytes = response.ToBytes();
+					//Encoding.ASCII.GetBytes(errMsg);
 				recv.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 			}
         }
@@ -160,11 +174,14 @@ namespace Server
 			{
 				if (subscriber.TopicIds.Contains(topicId))
 				{
-					Console.WriteLine($"Send to {subscriber.ClientId}");
+					//Console.WriteLine($"Send to {subscriber.ClientId}");
 
 					var message = $"{sentTopic}: {payload}";
 
-					var bytes = Encoding.ASCII.GetBytes(message);
+					var response = new Response(message, StatusCode.Success);
+
+					var bytes = response.ToBytes();
+						//Encoding.ASCII.GetBytes(message);
 					subscriber.Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 				}
 			}
@@ -174,8 +191,9 @@ namespace Server
 		{
 			var nl = Environment.NewLine;
 			var topics = _topics.Select(t => t.Name).ToArray();
-			var message = topics.Length > 0 ? $"All topics: {nl}{string.Join(nl, topics)}" : "No topics.";
-			var bytes = Encoding.ASCII.GetBytes(message);
+			var message = topics.Length > 0 ? $"All topics: {(topics.Length > 1 ? string.Join(';', topics) : topics[0])}" : "No topics.";
+			var response = new Response(message, StatusCode.Success);
+			var bytes = /*Encoding.ASCII.GetBytes(message)*/ response.ToBytes();
 			_clients.FirstOrDefault(c => c.ClientId == clientGuid).Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 		}
 

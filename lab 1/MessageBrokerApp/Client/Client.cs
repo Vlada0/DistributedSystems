@@ -45,9 +45,9 @@ namespace Client
 
 				try
 				{
-					_socket.Connect(ipEndpoint);
+					await _socket.ConnectAsync(ipEndpoint);
 					connected = true;
-					var thread = new Thread(GetClientId);
+					var thread = new Thread(async () => await GetClientId());
 					thread.Start();
 				}
 				catch (Exception)
@@ -60,6 +60,7 @@ namespace Client
 
 			await Run();
 
+			#region OLD_VERSION
 			//while (true)
 			//{
 			//	Console.WriteLine($"Operation:{nl}1.Publish{nl}2.Subscribe{nl}3.Unsubscribe{nl}4.Topic List");
@@ -93,6 +94,7 @@ namespace Client
 			//			break;
 			//	}
 			//}
+			#endregion
 		}
 
 		static async Task Run()
@@ -132,7 +134,16 @@ namespace Client
 				{
 					var packet = new Packet(CLIENT_ID, 1, new string[] { sensorType }, data);
 					var bytesToSend = packet.ToBytes();
-					_socket.Send(bytesToSend);
+					try
+					{
+						_socket.Send(bytesToSend, 0, bytesToSend.Length, SocketFlags.None);
+					}
+					catch (Exception ex)
+					{
+						Console.WriteLine($"An error occured: {ex.Message}");
+						Thread.Sleep(2000);
+						Environment.Exit(0);
+					}
 				}
 				await Task.Delay(data);
 			}
@@ -171,7 +182,7 @@ namespace Client
 			var packet = new Packet(CLIENT_ID, 4, null, null);
 			var bytes = packet.ToBytes();
 			_socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
-			new Thread(() => 
+			new Thread(() =>
 			{
 				try
 				{
@@ -184,9 +195,18 @@ namespace Client
 						readBytes = _socket.Receive(buffer, SocketFlags.None);
 						if (readBytes > 0)
 						{
-							var content = Encoding.ASCII.GetString(buffer);
-							Console.WriteLine(content);
-							contentRead = true;
+							var response = new Response(buffer);
+							if(response.Code == StatusCode.Fail)
+							{
+								Console.WriteLine("An error occured.");
+							}
+							else
+							{
+								Console.WriteLine(response.Message);
+								//var content = Encoding.ASCII.GetString(buffer);
+								//Console.WriteLine(content);
+								contentRead = true;
+							}
 						}
 					}
 				}
@@ -199,7 +219,7 @@ namespace Client
 			}).Start();
 		}
 
-		static void GetClientId()
+		static async Task GetClientId()
 		{
 			byte[] buffer;
 			int readBytes;
@@ -209,13 +229,22 @@ namespace Client
 				while (!hasGot)
 				{
 					buffer = new byte[_socket.Available];
-					readBytes = _socket.Receive(buffer, SocketFlags.None);
+					readBytes = await _socket.ReceiveAsync(buffer, SocketFlags.None);
 					if (readBytes > 0)
 					{
-						var content = Encoding.ASCII.GetString(buffer);
-						Guid.TryParse(content, out CLIENT_ID);
-						Console.WriteLine(CLIENT_ID);
-						hasGot = true;
+						var response = new Response(buffer);
+						if(response.Code == StatusCode.ClientAccepted)
+						{
+							var content = response.Message;
+							//Encoding.ASCII.GetString(buffer);
+							Guid.TryParse(content, out CLIENT_ID);
+							Console.WriteLine(CLIENT_ID);
+							hasGot = true;
+						}
+						else if(response.Code == StatusCode.Fail)
+						{
+							Console.WriteLine("An error occured.");
+						}
 					}
 				}
 			}
@@ -240,12 +269,20 @@ namespace Client
 					readBytes = _socket.Receive(buffer, SocketFlags.None);
 					if (readBytes > 0)
 					{
-						var content = Encoding.ASCII.GetString(buffer);
-						if(SensorType != default)
+						var response = new Response(buffer);
+						//var content = /*Encoding.ASCII.GetString(buffer)*/ response;
+						if(response.Code == StatusCode.Fail)
 						{
-							var rnd = new Random();
-							var index = rnd.Next(0, Scenarios[SensorType].Length);
-							Console.WriteLine($"{content} - {Scenarios[SensorType][index]}");
+							Console.WriteLine("An error occured.");
+						}
+						else
+						{
+							if (SensorType != default)
+							{
+								var rnd = new Random();
+								var index = rnd.Next(0, Scenarios[SensorType].Length);
+								Console.WriteLine($"{response.Message} - {Scenarios[SensorType][index]}");
+							}
 						}
 					}
 				}
@@ -258,6 +295,7 @@ namespace Client
 			}
 		}
 
+		#region URLS
 		private static string Subscribe(int action)
 		{
 			Console.WriteLine("Enter topic name(s) (multiple topics should be separated with a ';' symbol.): ");
@@ -284,5 +322,6 @@ namespace Client
 		}
 
 		private static string GetTopicListUrl(int action) => $"clientId={CLIENT_ID}?action={action}";
+		#endregion
 	}
 }
