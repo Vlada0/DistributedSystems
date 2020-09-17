@@ -8,11 +8,11 @@ namespace Data
 	public class Packet
 	{
 		public Guid ClientId { get; private set; }
-		public int Action { get; private set; }
+		public ClientAction Action { get; private set; }
 		public string[] SensorTypes { get; private set; }
 		public int? Data { get;private set; }
 
-		public Packet(Guid clientId, int action, string[] sensors, int? data)
+		public Packet(Guid clientId, ClientAction action, string[] sensors, int? data)
 		{
 			ClientId = clientId;
 			Action = action;

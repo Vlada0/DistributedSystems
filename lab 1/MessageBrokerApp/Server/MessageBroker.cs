@@ -11,14 +11,6 @@ using System.Threading;
 namespace Server
 {
 
-	public enum ClientAction
-	{
-		Send = 1,
-		Subscribe,
-		Unsubscribe,
-		TopicList
-	}
-
 	class MessageBroker
 	{
 		static Socket _listenerSocket;
@@ -46,13 +38,23 @@ namespace Server
 		{
 			while (true)
 			{
-				_listenerSocket.Listen(0);
-				var client = new ClientData(_listenerSocket.Accept());
-				_clients.Add(client);
-				var response = new Response(client.ClientId.ToString(), StatusCode.ClientAccepted);
-				byte[] buffer = /*Encoding.ASCII.GetBytes(client.ClientId.ToString())*/ response.ToBytes();
-				Console.WriteLine($"{client.ClientId} has connected.");
-				client.Socket.Send(buffer, 0, buffer.Length, SocketFlags.None);
+				ClientData newClient = null;
+				try
+				{
+					_listenerSocket.Listen(0);
+					newClient = new ClientData(_listenerSocket.Accept());
+					_clients.Add(newClient);
+					var response = new Response(newClient.ClientId.ToString(), StatusCode.ClientAccepted);
+					byte[] buffer = /*Encoding.ASCII.GetBytes(client.ClientId.ToString())*/ response.ToBytes();
+					Console.WriteLine($"{newClient.ClientId} has connected.");
+					newClient.Socket.Send(buffer, 0, buffer.Length, SocketFlags.None);
+				}
+				catch (Exception e)
+				{
+					var response = new Response(e.Message, StatusCode.Fail);
+					byte[] buffer = response.ToBytes();
+					newClient.Socket.Send(buffer, 0, buffer.Length, SocketFlags.None);
+				}
 			}
 		}
 
@@ -116,7 +118,7 @@ namespace Server
 			var sentTopic = string.Empty;
 			var topicExists = false;
 
-			switch ((ClientAction)receivedPacket.Action)
+			switch (receivedPacket.Action)
 			{
 				case ClientAction.Send:
 					//messageParts.SingleOrDefault(dict => dict.ContainsKey("topic")).TryGetValue(key: "topic", out sentTopic);
@@ -159,7 +161,7 @@ namespace Server
 			if (!topicExists && (ClientAction)receivedPacket.Action == ClientAction.Subscribe)
 			{
 				var recv = _subscribers.FirstOrDefault(s => s.ClientId == receivedPacket.ClientId);
-				var errMsg = "ERROR: One or more specified topics not found.";
+				var errMsg = "ERROR: One or more specified sensors not found.";
 				var response = new Response(errMsg, StatusCode.Fail);
 				var bytes = response.ToBytes();
 					//Encoding.ASCII.GetBytes(errMsg);
@@ -191,8 +193,8 @@ namespace Server
 		{
 			var nl = Environment.NewLine;
 			var topics = _topics.Select(t => t.Name).ToArray();
-			var message = topics.Length > 0 ? $"All topics: {(topics.Length > 1 ? string.Join(';', topics) : topics[0])}" : "No topics.";
-			var response = new Response(message, StatusCode.Success);
+			var message = topics.Length > 0 ? $"All connected sensors: {(topics.Length > 1 ? string.Join(';', topics) : topics[0])}" : "No topics.";
+			var response = new Response(message, topics.Any() ? StatusCode.Success : StatusCode.Fail);
 			var bytes = /*Encoding.ASCII.GetBytes(message)*/ response.ToBytes();
 			_clients.FirstOrDefault(c => c.ClientId == clientGuid).Socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 		}

@@ -24,11 +24,12 @@ namespace Client
 		const int port = 4242;
 		static Guid CLIENT_ID = Guid.Empty;
 		static Executor SensorType = default;
+		static StatusCode ReceiviedCode = StatusCode.Fail;
 
 		static readonly Dictionary<Executor, string[]> Scenarios = new Dictionary<Executor, string[]>
 		{
 			[Executor.Valve] = new string[] { "Valve has opened.", "Valve has closed." },
-			[Executor.Pump] = new string[] {"Water went through a sprayer.", "Air has pumped in.", "Air has pumped out."},
+			[Executor.Pump] = new string[] {"Air has pumped in.", "Air has pumped out."},
 			[Executor.Switch] = new string[] {"Light has turned on.", "Light has turned off."}
 		};
 
@@ -108,7 +109,7 @@ namespace Client
 						await RunAsSensor();
 						break;
 					case 2:
-						RunAsSubscriber();
+						await RunAsExecutor();
 						break;
 					default:
 						break;
@@ -124,37 +125,44 @@ namespace Client
 
 			const int low = 2048;
 			const int high = 4096;
-			const int barrier = high - low / 2;
+			//const int barrier = high - low / 2;
 			var rnd = new Random();
 			while (true)
 			{
 				var data = rnd.Next(low, high + 1);
 				Console.WriteLine($"{sensorType} : {data}");
-				if(data > barrier)
+				var packet = new Packet(CLIENT_ID, ClientAction.Send, new string[] { sensorType }, data);
+				var bytesToSend = packet.ToBytes();
+				try
 				{
-					var packet = new Packet(CLIENT_ID, 1, new string[] { sensorType }, data);
-					var bytesToSend = packet.ToBytes();
-					try
-					{
-						_socket.Send(bytesToSend, 0, bytesToSend.Length, SocketFlags.None);
-					}
-					catch (Exception ex)
-					{
-						Console.WriteLine($"An error occured: {ex.Message}");
-						Thread.Sleep(2000);
-						Environment.Exit(0);
-					}
+					_socket.Send(bytesToSend, 0, bytesToSend.Length, SocketFlags.None);
 				}
+				catch (Exception ex)
+				{
+					Console.WriteLine($"An error occured: {ex.Message}");
+					Thread.Sleep(2000);
+					Environment.Exit(0);
+				}
+				//if (data > barrier)
+				//{
+					
+				//}
 				await Task.Delay(data);
 			}
 		}
 
 		
-		static void RunAsSubscriber()
+		static async Task RunAsExecutor()
 		{
 			int input;
-			
+
 			GetSensorList();
+			await Task.Delay(3000);
+
+			if (ReceiviedCode == StatusCode.Fail)
+			{
+				Environment.Exit(0);
+			}
 
 			Console.WriteLine("Type: 1 - Valve; 2 - Pump; 3 - Switch;");
 			while (!int.TryParse(Console.ReadLine(), out input))
@@ -167,7 +175,7 @@ namespace Client
 			Console.WriteLine($"{(Executor)input} - Get data from sensor: ");
 			var sensorToSubscribe = Console.ReadLine().Trim();
 			var packet = new Packet(
-				CLIENT_ID, 2, 
+				CLIENT_ID, ClientAction.Subscribe, 
 				sensorToSubscribe.Contains(';') ? 
 					sensorToSubscribe.Split(';') : 
 					new string[] { sensorToSubscribe }, null);
@@ -179,7 +187,7 @@ namespace Client
 
 		private static void GetSensorList()
 		{
-			var packet = new Packet(CLIENT_ID, 4, null, null);
+			var packet = new Packet(CLIENT_ID, ClientAction.TopicList, null, null);
 			var bytes = packet.ToBytes();
 			_socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
 			new Thread(() =>
@@ -207,6 +215,7 @@ namespace Client
 								//Console.WriteLine(content);
 								contentRead = true;
 							}
+							ReceiviedCode = response.Code;
 						}
 					}
 				}
@@ -243,7 +252,7 @@ namespace Client
 						}
 						else if(response.Code == StatusCode.Fail)
 						{
-							Console.WriteLine("An error occured.");
+							Console.WriteLine($"An error occured. {response.Message}");
 						}
 					}
 				}
