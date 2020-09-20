@@ -1,0 +1,20 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcAgent";
+
+package GrpcAgent;
+
+service Subscriber {
+	rpc Subscribe (SubscribeRequest) returns (SubscribeResponse);
+}
+
+message SubscribeRequest{
+	string sensor = 1;
+	string address = 2;
+	int32 executorType = 3;
+}
+
+message SubscribeResponse{
+	bool isSuccess = 1;
+	string sensors = 2;
+}

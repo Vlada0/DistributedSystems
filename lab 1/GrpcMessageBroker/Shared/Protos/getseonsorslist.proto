@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcAgent";
+
+package GrpcAgent;
+
+service SensorsListGetter {
+	rpc GetSensorsList (SensorsListRequest) returns (SensorsListReponse);
+}
+
+message SensorsListRequest {}
+
+message SensorsListReponse{
+	bool isEmpty = 1;
+	string sensors = 2;
+}

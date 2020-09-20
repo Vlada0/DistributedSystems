@@ -1,4 +1,5 @@
 ﻿using Data;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -157,7 +158,7 @@ namespace Client
 			int input;
 
 			GetSensorList();
-			await Task.Delay(3000);
+			await Task.Delay(1000);
 
 			if (ReceiviedCode == StatusCode.Fail)
 			{
@@ -174,11 +175,7 @@ namespace Client
 
 			Console.WriteLine($"{(Executor)input} - Get data from sensor: ");
 			var sensorToSubscribe = Console.ReadLine().Trim();
-			var packet = new Packet(
-				CLIENT_ID, ClientAction.Subscribe, 
-				sensorToSubscribe.Contains(';') ? 
-					sensorToSubscribe.Split(';') : 
-					new string[] { sensorToSubscribe }, null);
+			var packet = new Packet(CLIENT_ID, ClientAction.Subscribe, sensorToSubscribe.Contains(';') ? sensorToSubscribe.Split(';') : new string[] { sensorToSubscribe }, null);
 
 			var bytes = packet.ToBytes();
 			_socket.Send(bytes, 0, bytes.Length, SocketFlags.None);
@@ -288,9 +285,18 @@ namespace Client
 						{
 							if (SensorType != default)
 							{
-								var rnd = new Random();
-								var index = rnd.Next(0, Scenarios[SensorType].Length);
-								Console.WriteLine($"{response.Message} - {Scenarios[SensorType][index]}");
+								//message format: {sensor: "", data: ""}
+								dynamic responseData = JsonConvert.DeserializeObject<dynamic>(response.Message);
+								string sensor = responseData.sensor;
+								int data = Convert.ToInt32(responseData.data);
+								if(data > 3500)
+								{
+									Console.WriteLine($"sensor: {sensor} - {data} -> {Scenarios[SensorType][0]}");
+								}
+								else
+								{
+									Console.WriteLine($"sensor: {sensor} - {data} -> {Scenarios[SensorType][1]}");
+								}
 							}
 						}
 					}

@@ -1,6 +1,6 @@
 ﻿using Data;
+using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -78,9 +78,9 @@ namespace Server
 			}
 			catch (SocketException)
 			{
-				Console.WriteLine($"A client has disconnected.");
 				receiver.Close();
 				var clientToRemove = _clients.FirstOrDefault(c => c.Socket.IsDead());
+				Console.WriteLine($"A client {clientToRemove.ClientId} has disconnected.");
 				if(clientToRemove != null)
 				{
 					_clients.Remove(clientToRemove);
@@ -178,9 +178,10 @@ namespace Server
 				{
 					//Console.WriteLine($"Send to {subscriber.ClientId}");
 
-					var message = $"{sentTopic}: {payload}";
+					var message = new { sensor = sentTopic, data = payload };
+					var jsonMessage = JObject.FromObject(message);
 
-					var response = new Response(message, StatusCode.Success);
+					var response = new Response(jsonMessage.ToString(), StatusCode.Success);
 
 					var bytes = response.ToBytes();
 						//Encoding.ASCII.GetBytes(message);

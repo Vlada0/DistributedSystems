@@ -1,0 +1,2 @@
+obj\Debug\netcoreapp3.1\Protos/Getseonsorslist.cs \
+obj\Debug\netcoreapp3.1\Protos/GetseonsorslistGrpc.cs: Protos/getseonsorslist.proto

@@ -1,0 +1,19 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcAgent";
+
+package GrpcAgent;
+
+service Notifier {
+	rpc Notify (NotifyCommand) returns (NotifyResponse);
+}
+
+message NotifyCommand {
+	string sensor = 1;
+	int32 data = 2;
+	int32 executorType = 3;
+}
+
+message NotifyResponse {
+
+}

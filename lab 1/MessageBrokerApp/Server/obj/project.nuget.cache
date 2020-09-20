@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "I4Q+5QXZncyaDnFJE7kC7B6URARfqslO4kCoBWoFHWF9soy7WtyL4gyBynRvyZPwznepwpM2z0OskYUkXwr1rg==",
+  "dgSpecHash": "644lPA3P03HHHTzyk7RJ/QvHHRCMkNq9QWbDQiyhz0cMmajqcO6OQm07ry/nK4cK4XPDHIB1M/ZjkpnAPyOx0w==",
   "success": true,
   "projectFilePath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\lab 1\\MessageBrokerApp\\Server\\Server.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Azathoth\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
