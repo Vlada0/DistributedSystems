@@ -13,7 +13,7 @@
 ```
 
 > ClientId is send by the broker after a client has initiated connection
-##### ClientAction is an enum with the following values
+#### ClientAction is an enum with the following values
 
 - Send
 - Subscribe
