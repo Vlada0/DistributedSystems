@@ -41,3 +41,7 @@ D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Clie
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\obj\Debug\netcoreapp3.1\Client.csproj.CopyComplete
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Client\obj\Debug\netcoreapp3.1\Client.csproj.CoreCompileInputs.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Client\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Client\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Client\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Client\obj\Debug\netcoreapp3.1\Client.csproj.CopyComplete

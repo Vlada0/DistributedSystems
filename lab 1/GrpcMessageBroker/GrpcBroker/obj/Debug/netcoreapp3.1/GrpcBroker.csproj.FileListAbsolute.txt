@@ -28,3 +28,33 @@ D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\GrpcMessageBroker\Grp
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.genruntimeconfig.cache
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Shared.dll
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Shared.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.exe
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.deps.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.runtimeconfig.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.runtimeconfig.dev.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.Net.ClientFactory.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Shared.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Shared.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.csprojAssemblyReference.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.AssemblyInfoInputs.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.AssemblyInfo.cs
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.csproj.CoreCompileInputs.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.RazorTargetAssemblyInfo.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.csproj.CopyComplete
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\staticwebassets\GrpcBroker.StaticWebAssets.Manifest.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\staticwebassets\GrpcBroker.StaticWebAssets.xml
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.genruntimeconfig.cache

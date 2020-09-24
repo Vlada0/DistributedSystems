@@ -269,6 +269,8 @@ namespace Client
 			try
 			{
 				Console.WriteLine("Receive: ");
+				var min = int.MinValue;
+				var max = int.MaxValue;
 				while (true)
 				{
 					buffer = new byte[_socket.Available];
@@ -289,14 +291,17 @@ namespace Client
 								dynamic responseData = JsonConvert.DeserializeObject<dynamic>(response.Message);
 								string sensor = responseData.sensor;
 								int data = Convert.ToInt32(responseData.data);
-								if(data > 3500)
+								
+								if(data > 3500 && min <= 3500)
 								{
 									Console.WriteLine($"sensor: {sensor} - {data} -> {Scenarios[SensorType][0]}");
 								}
-								else
+								else if(data <= 3500 && max > 3500)
 								{
 									Console.WriteLine($"sensor: {sensor} - {data} -> {Scenarios[SensorType][1]}");
 								}
+								min = data;
+								max = data;
 							}
 						}
 					}

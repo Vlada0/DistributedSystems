@@ -9,21 +9,25 @@ namespace GrpcBroker.Services
 	public class PublisherService : Publisher.PublisherBase
 	{
 		private readonly IMessageStorageService _messageStorageService;
+		private readonly IMessageSenderHandlerService _messageSender;
 
-		public PublisherService(IMessageStorageService messageStorageService)
+		public PublisherService(IMessageStorageService messageStorageService, IMessageSenderHandlerService messageSender)
 		{
 			_messageStorageService = messageStorageService;
+			_messageSender = messageSender;
 		}
 
-		public override Task<PublishResponse> PublishMessage(PublishCommand command, ServerCallContext context)
+		public override async Task<PublishResponse> PublishMessage(PublishCommand command, ServerCallContext context)
 		{
 			var message = Message.From(command);
 			_messageStorageService.Add(message);
 
-			return Task.FromResult(new PublishResponse
+			await _messageSender.SendMessageAsync(message);
+
+			return new PublishResponse
 			{
 				IsSucceed = true
-			});
+			};
 		}
 	}
 }

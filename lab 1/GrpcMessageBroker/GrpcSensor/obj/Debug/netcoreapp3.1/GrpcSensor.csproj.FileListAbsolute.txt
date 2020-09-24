@@ -19,3 +19,24 @@ D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\GrpcMessageBroker\Grp
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.dll
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.pdb
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.genruntimeconfig.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.exe
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.deps.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.runtimeconfig.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.runtimeconfig.dev.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Shared.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Shared.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.csprojAssemblyReference.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.AssemblyInfoInputs.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.AssemblyInfo.cs
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.csproj.CoreCompileInputs.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.csproj.CopyComplete
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.genruntimeconfig.cache

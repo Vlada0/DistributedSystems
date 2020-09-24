@@ -7,3 +7,12 @@ D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Data
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.dll
 D:\Универ\4 курс\1 семестр\PAD\LABS\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\MessageBrokerApp\Data\obj\Debug\netcoreapp3.1\Data.pdb
