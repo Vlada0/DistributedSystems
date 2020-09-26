@@ -17,8 +17,7 @@ namespace GrpcBroker
 			services.AddGrpc();
 			services.AddSingleton<IMessageStorageService, MessageStorageService>();
 			services.AddSingleton<IConnectionManagementService, ConnectionManagementService>();
-			services.AddSingleton<IMessageSenderHandlerService, MessageSenderHandlerService>();
-			//services.AddHostedService<MessageSenderService>();
+			services.AddSingleton<IMessageSenderService, MessageSenderService>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

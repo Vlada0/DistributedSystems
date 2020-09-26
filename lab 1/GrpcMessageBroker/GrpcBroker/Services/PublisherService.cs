@@ -9,9 +9,9 @@ namespace GrpcBroker.Services
 	public class PublisherService : Publisher.PublisherBase
 	{
 		private readonly IMessageStorageService _messageStorageService;
-		private readonly IMessageSenderHandlerService _messageSender;
+		private readonly IMessageSenderService _messageSender;
 
-		public PublisherService(IMessageStorageService messageStorageService, IMessageSenderHandlerService messageSender)
+		public PublisherService(IMessageStorageService messageStorageService, IMessageSenderService messageSender)
 		{
 			_messageStorageService = messageStorageService;
 			_messageSender = messageSender;

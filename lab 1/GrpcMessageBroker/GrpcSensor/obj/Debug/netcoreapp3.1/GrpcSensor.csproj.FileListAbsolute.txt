@@ -40,3 +40,24 @@ C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\G
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.dll
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.pdb
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.genruntimeconfig.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.exe
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.deps.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.runtimeconfig.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.runtimeconfig.dev.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\GrpcSensor.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Shared.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\bin\Debug\netcoreapp3.1\Shared.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.csprojAssemblyReference.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.AssemblyInfoInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.AssemblyInfo.cs
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.csproj.CoreCompileInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.csproj.CopyComplete
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcSensor\obj\Debug\netcoreapp3.1\GrpcSensor.genruntimeconfig.cache

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace GrpcBroker.Services.Interfaces
 {
-    public interface IMessageSenderHandlerService
+    public interface IMessageSenderService
     {
         Task SendMessageAsync(Message message);
     }

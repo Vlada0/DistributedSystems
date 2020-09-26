@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj": {}
+    "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj": {
+    "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj",
+        "projectUniqueName": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj",
         "projectName": "GrpcSensor",
-        "projectPath": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj",
-        "packagesPath": "C:\\Users\\vitalie.glinca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\obj\\",
+        "projectPath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj",
+        "packagesPath": "C:\\Users\\Azathoth\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vitalie.glinca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Azathoth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj"
+              "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj": {
+                "projectPath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj"
               }
             }
           }
@@ -75,24 +72,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj": {
+    "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj",
+        "projectUniqueName": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\vitalie.glinca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\obj\\",
+        "projectPath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\Azathoth\\.nuget\\packages\\",
+        "outputPath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\Shared\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vitalie.glinca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Azathoth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

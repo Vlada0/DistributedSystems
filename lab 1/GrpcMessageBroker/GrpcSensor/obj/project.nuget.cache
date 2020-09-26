@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "a8xjeE95ltSEG/mWvVutqvW3pt7zZmiZXUVd/NpeyqHkk/vFPGQKTxavf+6bd/pC106VUgL/mjWCBV/6JTtrQA==",
+  "dgSpecHash": "NCwOsgq81zPsA+dxTHgPtknbX91Flvf2WByGDjnvZPsUt/avziAEoH8tmt0eBet97lSkFBmD2SrAXCJGxqg5Qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj",
+  "projectFilePath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\GrpcMessageBroker\\GrpcSensor\\GrpcSensor.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\google.protobuf\\3.13.0\\google.protobuf.3.13.0.nupkg.sha512",
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\grpc.core.api\\2.31.0\\grpc.core.api.2.31.0.nupkg.sha512",
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\grpc.net.client\\2.31.0\\grpc.net.client.2.31.0.nupkg.sha512",
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\grpc.net.common\\2.31.0\\grpc.net.common.2.31.0.nupkg.sha512",
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\grpc.tools\\2.32.0\\grpc.tools.2.32.0.nupkg.sha512",
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    "C:\\Users\\Azathoth\\.nuget\\packages\\google.protobuf\\3.13.0\\google.protobuf.3.13.0.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\grpc.core.api\\2.31.0\\grpc.core.api.2.31.0.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\grpc.net.client\\2.31.0\\grpc.net.client.2.31.0.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\grpc.net.common\\2.31.0\\grpc.net.common.2.31.0.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\grpc.tools\\2.32.0\\grpc.tools.2.32.0.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
   ],
   "logs": []
 }

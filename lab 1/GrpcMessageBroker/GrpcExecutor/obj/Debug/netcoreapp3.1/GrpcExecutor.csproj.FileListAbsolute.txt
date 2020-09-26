@@ -58,3 +58,33 @@ C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\G
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.dll
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.pdb
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.genruntimeconfig.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\GrpcExecutor.exe
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\GrpcExecutor.deps.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\GrpcExecutor.runtimeconfig.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\GrpcExecutor.runtimeconfig.dev.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\GrpcExecutor.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\GrpcExecutor.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Grpc.Net.ClientFactory.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Shared.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\bin\Debug\netcoreapp3.1\Shared.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.csprojAssemblyReference.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.AssemblyInfoInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.AssemblyInfo.cs
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.csproj.CoreCompileInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.MvcApplicationPartsAssemblyInfo.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.RazorTargetAssemblyInfo.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.csproj.CopyComplete
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\staticwebassets\GrpcExecutor.StaticWebAssets.Manifest.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\staticwebassets\GrpcExecutor.StaticWebAssets.xml
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcExecutor\obj\Debug\netcoreapp3.1\GrpcExecutor.genruntimeconfig.cache

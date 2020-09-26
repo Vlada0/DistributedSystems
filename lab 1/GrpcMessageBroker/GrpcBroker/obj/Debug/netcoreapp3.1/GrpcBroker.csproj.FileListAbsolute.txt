@@ -58,3 +58,33 @@ C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\G
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.dll
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.pdb
 C:\Users\vitalie.glinca\dev\PAD_lab\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.genruntimeconfig.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.exe
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.deps.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.runtimeconfig.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.runtimeconfig.dev.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\GrpcBroker.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.Net.ClientFactory.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Shared.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\bin\Debug\netcoreapp3.1\Shared.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.csprojAssemblyReference.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.AssemblyInfoInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.AssemblyInfo.cs
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.csproj.CoreCompileInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.MvcApplicationPartsAssemblyInfo.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.RazorTargetAssemblyInfo.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.csproj.CopyComplete
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\staticwebassets\GrpcBroker.StaticWebAssets.Manifest.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\staticwebassets\GrpcBroker.StaticWebAssets.xml
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab 1\GrpcMessageBroker\GrpcBroker\obj\Debug\netcoreapp3.1\GrpcBroker.genruntimeconfig.cache
