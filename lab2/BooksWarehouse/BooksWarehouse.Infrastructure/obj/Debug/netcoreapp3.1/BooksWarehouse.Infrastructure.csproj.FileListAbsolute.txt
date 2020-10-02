@@ -1,0 +1,14 @@
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\bin\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.deps.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\bin\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\bin\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\bin\Debug\netcoreapp3.1\BooksWarehouse.Core.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\bin\Debug\netcoreapp3.1\BooksWarehouse.Domain.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\bin\Debug\netcoreapp3.1\BooksWarehouse.Core.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\bin\Debug\netcoreapp3.1\BooksWarehouse.Domain.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\obj\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.csprojAssemblyReference.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\obj\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.AssemblyInfoInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\obj\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.AssemblyInfo.cs
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\obj\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\obj\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.csproj.CopyComplete
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\obj\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Infrastructure\obj\Debug\netcoreapp3.1\BooksWarehouse.Infrastructure.pdb

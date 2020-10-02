@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pGE+6Iw4vXLf/Seege7QwQi73ehg+VSbbe7UqcEghw3nlAFCHRhMnX71zZKd4RhivVQga05wzDqA0LTB7whwZA==",
+  "dgSpecHash": "bl7gtCm8KGJ+ta0KERjUmnm4G48rS9oCCc73tuhQWS1FDZlQh/ZdwsoDlXuKJg2rdIs043FXxy7uFNbuE0Ch/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vitalie.glinca\\dev\\PAD_lab\\DistributedSystems\\lab 1\\MessageBrokerApp\\Client\\Client.csproj",
+  "projectFilePath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab 1\\MessageBrokerApp\\Client\\Client.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vitalie.glinca\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\Azathoth\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

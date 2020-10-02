@@ -1,0 +1,9 @@
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\bin\Debug\netcoreapp3.1\BooksWarehouse.Domain.deps.json
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\bin\Debug\netcoreapp3.1\BooksWarehouse.Domain.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\bin\Debug\netcoreapp3.1\BooksWarehouse.Domain.pdb
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\obj\Debug\netcoreapp3.1\BooksWarehouse.Domain.csprojAssemblyReference.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\obj\Debug\netcoreapp3.1\BooksWarehouse.Domain.AssemblyInfoInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\obj\Debug\netcoreapp3.1\BooksWarehouse.Domain.AssemblyInfo.cs
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\obj\Debug\netcoreapp3.1\BooksWarehouse.Domain.csproj.CoreCompileInputs.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\obj\Debug\netcoreapp3.1\BooksWarehouse.Domain.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\BooksWarehouse\BooksWarehouse.Domain\obj\Debug\netcoreapp3.1\BooksWarehouse.Domain.pdb
