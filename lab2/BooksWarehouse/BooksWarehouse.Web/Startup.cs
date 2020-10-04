@@ -19,10 +19,10 @@ namespace BooksWarehouse.Web
 	{
 		public Startup(IConfiguration configuration)
 		{
-			Configuration = configuration;
+			_configuration = configuration;
 		}
 
-		public IConfiguration Configuration { get; }
+		private readonly IConfiguration _configuration;
 
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
@@ -30,7 +30,10 @@ namespace BooksWarehouse.Web
 			services.ConfigureControllers();
 
 			services
-				.Configure<MongoDbConnectionSettings>(Configuration.GetSection(nameof(MongoDbConnectionSettings)))
+				.Configure<MongoDbConnectionSettings>(_configuration.GetSection(nameof(MongoDbConnectionSettings)))
+				.Configure<ReseedExampleDataConfig>(_configuration.GetSection("ReseedExampleData"))
+				.AddSingleton<IReseedExampleDataConfig>(sp => 
+					sp.GetRequiredService<IOptions<ReseedExampleDataConfig>>().Value)
 				.AddSingleton<IMongoDbConnectionSettings>(sp =>
 					sp.GetRequiredService<IOptions<MongoDbConnectionSettings>>().Value)
 				.AddSingleton<IMediator, Mediator>()
@@ -38,6 +41,7 @@ namespace BooksWarehouse.Web
 				.AddCommandQueryHandlers(typeof(IQueryHandler<,>))
 				.AddCommandQueryHandlers(typeof(ICommandHandler<>))
 				.AddAutoMapper(typeof(AutomapperConfig).Assembly);
+			
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

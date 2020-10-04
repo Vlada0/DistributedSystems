@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using BooksWarehouse.Domain.Entities;
 using BooksWarehouse.Infrastructure.Commands.Authors;
+using BooksWarehouse.Infrastructure.Commands.Genres;
 using BooksWarehouse.Infrastructure.Models.Authors;
-using BooksWarehouse.Infrastructure.Models.Countries;
+using BooksWarehouse.Infrastructure.Models.Genres;
 
 namespace BooksWarehouse.Infrastructure.Models
 {
@@ -10,12 +11,17 @@ namespace BooksWarehouse.Infrastructure.Models
     {
         public AutomapperConfig()
         {
+            CreateMap<Author, AuthorModel>();
             CreateMap<AuthorCreateCommand, Author>()
                 .ForMember(a => a.Id, opt => opt.Ignore());
-
             CreateMap<AuthorUpdateCommand, Author>();
 
-            CreateMap<Country, CountryModel>();
+            CreateMap<Genre, GenreModel>()
+                .ForMember(g => g.GenreId, opt => 
+                    opt.MapFrom(src => src.Id));
+            CreateMap<GenreCreateCommand, Genre>()
+                .ForMember(g => g.Id, opt => opt.Ignore());
+            CreateMap<GenreUpdateCommand, Genre>();
         }
     }
 }

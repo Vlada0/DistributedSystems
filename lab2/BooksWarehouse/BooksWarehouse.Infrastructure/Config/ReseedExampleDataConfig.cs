@@ -1,6 +1,10 @@
 ﻿namespace BooksWarehouse.Infrastructure.Config
 {
-    public class ReseedExampleDataConfig
+    public interface IReseedExampleDataConfig
+    {
+        public bool ReseedExampleData { get; set; }
+    }
+    public class ReseedExampleDataConfig : IReseedExampleDataConfig
     {
         public bool ReseedExampleData { get; set; }
     }

@@ -18,18 +18,15 @@ namespace BooksWarehouse.Infrastructure.Queries.Authors
         internal sealed class GetAuthorByIdQueryHandler : IQueryHandler<GetAuthorByIdQuery, AuthorModel>
         {
             private readonly IMongoDbRepository<Author> _authors;
-            private readonly IMongoDbRepository<Country> _countries;
 
-            public GetAuthorByIdQueryHandler(IMongoDbRepository<Author> authors, IMongoDbRepository<Country> countries)
+            public GetAuthorByIdQueryHandler(IMongoDbRepository<Author> authors)
             {
                 _authors = authors;
-                _countries = countries;
             }
 
             public async Task<AuthorModel> ExecuteAsync(GetAuthorByIdQuery query)
             {
                 var author = await _authors.FindByIdAsync(query._id);
-                var country = await _countries.FindOneAsync(c => c.Id == author.CountryId);
 
                 var authorModel = new AuthorModel
                 {
@@ -38,8 +35,7 @@ namespace BooksWarehouse.Infrastructure.Queries.Authors
                     LastName = author.LastName,
                     BirthDate = author.BirthDate,
                     DateOfDeath = author.DateOfDeath,
-                    Country = country.Name,
-                    CountryCode = country.Code
+                    Country = author.Country
                 };
 
                 return authorModel;

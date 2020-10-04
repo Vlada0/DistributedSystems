@@ -26,7 +26,6 @@
           <e p="Author.cs" t="Include" />
           <e p="BaseEntity.cs" t="Include" />
           <e p="Book.cs" t="Include" />
-          <e p="Country.cs" t="Include" />
           <e p="Genre.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -43,7 +42,14 @@
         <e p="Commands" t="Include">
           <e p="Authors" t="Include">
             <e p="AuthorCreateCommand.cs" t="Include" />
+            <e p="AuthorDeleteByIdCommand.cs" t="Include" />
             <e p="AuthorUpdateCommand.cs" t="Include" />
+          </e>
+          <e p="Genres" t="Include">
+            <e p="GenreCreateCommand.cs" t="Include" />
+            <e p="GenreDeleteByIdCommand.cs" t="Include" />
+            <e p="GenreDeleteByNameCommand.cs" t="Include" />
+            <e p="GenreUpdateCommand.cs" t="Include" />
           </e>
         </e>
         <e p="Config" t="Include">
@@ -65,8 +71,8 @@
           </e>
           <e p="AutomapperConfig.cs" t="Include" />
           <e p="Books" t="Include" />
-          <e p="Countries" t="Include">
-            <e p="CountryModel.cs" t="Include" />
+          <e p="Genres" t="Include">
+            <e p="GenreModel.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -81,15 +87,20 @@
             <e p="GetAuthorByIdQuery.cs" t="Include" />
             <e p="GetAuthorsQuery.cs" t="Include" />
           </e>
-          <e p="Countries" t="Include">
-            <e p="GetCountriesQuery.cs" t="Include" />
-            <e p="GetCountryByCodeQuery.cs" t="Include" />
+          <e p="Genres" t="Include">
+            <e p="GetGenreByIdQuery.cs" t="Include" />
+            <e p="GetGenresQuery.cs" t="Include" />
           </e>
         </e>
         <e p="Validators" t="Include">
           <e p="Authors" t="Include">
             <e p="AuthorCreateCommandValidator.cs" t="Include" />
             <e p="AuthorUpdateCommandValidator.cs" t="Include" />
+          </e>
+          <e p="Genres" t="Include">
+            <e p="GenreCreateCommandValidator.cs" t="Include" />
+            <e p="GenreDeleteByNameCommandValidator.cs" t="Include" />
+            <e p="GenreUpdateCommandValidator.cs" t="Include" />
           </e>
         </e>
       </e>
@@ -102,7 +113,7 @@
         <e p="Controllers" t="Include">
           <e p="AuthorsController.cs" t="Include" />
           <e p="BaseController.cs" t="Include" />
-          <e p="CountriesController.cs" t="Include" />
+          <e p="GenresController.cs" t="Include" />
         </e>
         <e p="Extensions" t="Include">
           <e p="ApplicationBuilderExtensions.cs" t="Include" />

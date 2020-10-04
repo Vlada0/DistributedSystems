@@ -13,9 +13,7 @@ namespace BooksWarehouse.Web.Controllers
     [Route("api/[controller]")]
     public class AuthorsController : BaseController
     {
-        public AuthorsController(IMediator mediator) : base(mediator)
-        {
-        }
+        public AuthorsController(IMediator mediator) : base(mediator) { }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Author>>> AuthorsGet()
@@ -46,6 +44,14 @@ namespace BooksWarehouse.Web.Controllers
         {
             command.Id = authorId;
             await _mediator.DispatchAsync(command);
+
+            return NoContent();
+        }
+
+        [HttpDelete("{authorId}")]
+        public async Task<IActionResult> AuthorDeleteById([FromRoute] Guid authorId)
+        {
+            await _mediator.DispatchAsync(new AuthorDeleteByIdCommand(authorId));
 
             return NoContent();
         }

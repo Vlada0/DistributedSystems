@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BooksWarehouse.Domain.Entities;
+using BooksWarehouse.Infrastructure.Config;
 using BooksWarehouse.Infrastructure.Data;
 using BooksWarehouse.Web.Seed;
 using Microsoft.AspNetCore.Hosting;
@@ -21,10 +22,13 @@ namespace BooksWarehouse.Web
 			using var scope = host.Services.CreateScope();
 			try
 			{
-				var countryRepository = scope.ServiceProvider.GetService<IMongoDbRepository<Country>>();
 				var authorsRepository = scope.ServiceProvider.GetService<IMongoDbRepository<Author>>();
-				//await DataSeeder.SeedCountries(countryRepository);
-				//await DataSeeder.SeedAuthors(authorsRepository, countryRepository);
+				var reseedExampleData = scope.ServiceProvider.GetService<IReseedExampleDataConfig>();
+				//await DataSeeder.SeedAuthors(authorsRepository);
+				/*if (reseedExampleData.ReseedExampleData)
+				{
+					await DataSeeder.SeedAuthors(authorsRepository);
+				}*/
 			}
 			catch (Exception e)
 			{

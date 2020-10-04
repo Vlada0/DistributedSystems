@@ -13,7 +13,7 @@ namespace BooksWarehouse.Infrastructure.Commands.Authors
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public DateTime? DateOfDeath { get; set; }
-        public Guid CountryId { get; set; }
+        public string Country { get; set; }
 
         internal sealed class UpdateAuthorCommandHandler : ICommandHandler<AuthorUpdateCommand>
         {
