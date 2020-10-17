@@ -1,0 +1,509 @@
+﻿[
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Ukraine",
+    "CityTo": "Kiev",
+    "TakeOffDay": "2020-11-23",
+    "TakeOffDate": "2020-11-23T18:30:00.511Z",
+    "ArriveOn": "2020-11-23T19:45:00.511Z",
+    "Company": "Pegasus Airlines",
+    "TransitPlaces": [],
+    "Price": 70
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Russia",
+    "CityTo": "Moscow",
+    "TakeOffDay": "2020-12-23",
+    "TakeOffDate": "2020-12-23T18:30:00.511Z",
+    "ArriveOn": "2020-12-23T23:45:00.511Z",
+    "Company": "Pegasus Airlines",
+    "TransitPlaces": [],
+    "Price": 100
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Russia",
+    "CityTo": "Saint-Petersburg",
+    "TakeOffDay": "2020-12-23",
+    "TakeOffDate": "2020-12-23T17:30:00.511Z",
+    "ArriveOn": "2020-12-23T23:30:00.511Z",
+    "Company": "Pegasus Airlines",
+    "TransitPlaces": [],
+    "Price": 110
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Czech Republic",
+    "CityTo": "Prague",
+    "TakeOffDay": "2020-11-23",
+    "TakeOffDate": "2020-11-23T17:30:00.511Z",
+    "ArriveOn": "2020-11-23T23:30:00.511Z",
+    "Company": "Pegasus Airlines",
+    "TransitPlaces": [],
+    "Price": 130
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Canada",
+    "CityTo": "Toronto",
+    "TakeOffDay": "2020-10-31",
+    "TakeOffDate": "2020-10-31T16:25:00.511Z",
+    "ArriveOn": "2020-11-01T02:45:00.511Z",
+    "Company": "Pegasus Airlines",
+    "TransitPlaces": [
+      {
+        "Country": "France",
+        "City": "Paris",
+        "Airport": "Charles de Gaulle",
+        "ArriveDate": "2020-10-31T19:35:00.511Z",
+        "TakeOff": "2020-11-01T03:35:00.511Z"
+      }
+    ],
+    "Price": 1200
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "United Kingdom",
+    "CityTo": "Exeter",
+    "TakeOffDay": "2020-10-31",
+    "TakeOffDate": "2020-10-31T06:50:00.511Z",
+    "ArriveOn": "2020-11-02T12:20:00.511Z",
+    "Company": "Wizz Air",
+    "TransitPlaces": [
+      {
+        "Country": "Italy",
+        "City": "Rome",
+        "Airport": "Champino",
+        "ArriveDate": "2020-10-31T09:15:00.511Z",
+        "TakeOff": "2020-10-31T13:50:00.511Z"
+      },
+      {
+        "Country": "United Kingdom",
+        "City": "Manchester",
+        "Airport": "Manchester",
+        "ArriveDate": "2020-10-31T16:45:00.511Z",
+        "TakeOff": "2020-11-01T13:45:00.511Z"
+      },
+      {
+        "Country": "United Kingdom",
+        "City": "Belfast",
+        "Airport": "Belfast",
+        "ArriveDate": "2020-11-01T14:45:00.511Z",
+        "TakeOff": "2020-11-02T12:45:00.511Z"
+      }
+    ],
+    "Price": 650
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "United Kingdom",
+    "CityTo": "London",
+    "TakeOffDay": "2020-10-31",
+    "TakeOffDate": "2020-10-31T06:10:00.511Z",
+    "ArriveOn": "2020-10-31T07:40:00.511Z",
+    "TransitPlaces": [],
+    "Company": "Wizz Air",
+    "Price": 120
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Finland",
+    "CityTo": "Helsinki",
+    "TakeOffDay": "2021-01-31",
+    "TakeOffDate": "2021-01-31T06:10:00.511Z",
+    "ArriveOn": "2021-01-31T11:40:00.511Z",
+    "TransitPlaces": [],
+    "Company": "Wizz Air",
+    "Price": 350
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Finland",
+    "CityTo": "Helsinki",
+    "TakeOffDay": "2020-12-24",
+    "TakeOffDate": "2020-12-24T20:10:00.511Z",
+    "ArriveOn": "2020-12-25T01:40:00.511Z",
+    "TransitPlaces": [],
+    "Company": "Wizz Air",
+    "Price": 370
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Turkey",
+    "CityTo": "Istanbul",
+    "TakeOffDay": "2020-11-12",
+    "TakeOffDate": "2020-11-12T13:05:00.511Z",
+    "ArriveOn": "2020-11-13T18:55:00.511Z",
+    "Company": "Pegasus Airlines",
+    "TransitPlaces": [
+      {
+        "Country": "Germany",
+        "City": "Berlin",
+        "Airport": "Branderbourg",
+        "ArriveDate": "2020-11-12T14:20:00.511Z",
+        "TakeOff": "2020-12-02T20:05:00.511Z"
+      }
+    ],
+    "Price": 90
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Turkey",
+    "CityTo": "Istanbul",
+    "TakeOffDay": "2020-11-12",
+    "TakeOffDate": "2020-11-12T13:05:00.511Z",
+    "ArriveOn": "2020-11-13T18:50:00.511Z",
+    "Company": "Turkish Airlines",
+    "TransitPlaces": [
+      {
+        "Country": "Germany",
+        "City": "Berlin",
+        "Airport": "Branderbourg",
+        "ArriveDate": "2020-11-12T14:20:00.511Z",
+        "TakeOff": "2020-12-02T20:00:00.511Z"
+      }
+    ],
+    "Price": 85
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Turkey",
+    "CityTo": "Istanbul",
+    "TakeOffDay": "2020-11-12",
+    "TakeOffDate": "2020-11-12T13:05:00.511Z",
+    "ArriveOn": "2020-11-14T16:00:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Germany",
+        "City": "Berlin",
+        "Airport": "Branderbourg",
+        "ArriveDate": "2020-11-12T15:20:00.511Z",
+        "TakeOff": "2020-11-13T12:30:00.511Z"
+      },
+      {
+        "Country": "Greece",
+        "City": "Athens",
+        "Airport": "Eleftherios Wincelos",
+        "ArriveDate": "2020-11-12T15:20:00.511Z",
+        "TakeOff": "2020-11-14T13:20:00.511Z"
+      }
+    ],
+    "Company": "RyanAir",
+    "Price": 200
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Australia",
+    "CityTo": "Sydney",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T21:40:00.511Z",
+    "ArriveOn": "2020-12-19T20:30:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Turkey",
+        "City": "Istanbul",
+        "Airport": "Istanbul New Airport",
+        "ArriveDate": "2020-12-17T16:50:00.511Z",
+        "TakeOff": "2020-12-17T18:15:00.511Z"
+      },
+      {
+        "Country": "Malaysia",
+        "City": "Kuala-Lumpur",
+        "Airport": "Kuala-Lumpur",
+        "ArriveDate": "2020-12-17T22:30:00.511Z",
+        "TakeOff": "2020-12-18T14:25:00.511Z"
+      }
+    ],
+    "Company": "Turkish Airlines, Malaysia Airlines",
+    "Price": 900
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Australia",
+    "CityTo": "Sydney",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T14:30:00.511Z",
+    "ArriveOn": "2020-12-19T07:10:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Italy",
+        "City": "Venice",
+        "Airport": "Marco Polo",
+        "ArriveDate": "2020-12-17T15:50:00.511Z",
+        "TakeOff": "2020-12-17T18:50:00.511Z"
+      },
+      {
+        "Country": "Turkey",
+        "City": "Istanbul",
+        "Airport": "Istanbul New Airport",
+        "ArriveDate": "2020-12-17T21:20:00.511Z",
+        "TakeOff": "2020-12-17T23:50:00.511Z"
+      },
+      {
+        "Country": "Thailand",
+        "City": "Bangkok",
+        "Airport": "Suvarnabhumi",
+        "ArriveDate": "2020-12-18T15:55:00.511Z",
+        "TakeOff": "2020-12-18T18:50:00.511Z"
+      }
+    ],
+    "Company": "Turkish Airlines, Wizz Air, Thai Airways",
+    "Price": 1000
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Turkey",
+    "CityTo": "Istanbul",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T21:40:00.511Z",
+    "ArriveOn": "2020-12-17T16:50:00.511Z",
+    "Company": "Turkish Airlines",
+    "TransitPlaces": [],
+    "Price": 70
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Malaysia",
+    "CityTo": "Kuala-Lumpur",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T21:40:00.511Z",
+    "ArriveOn": "2020-12-17T22:30:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Turkey",
+        "City": "Istanbul",
+        "Airport": "Istanbul New Airport",
+        "ArriveDate": "2020-12-17T16:50:00.511Z",
+        "TakeOff": "2020-12-17T18:15:00.511Z"
+      }
+    ],
+    "Company": "Turkish Airlines",
+    "Price": 675
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Thailand",
+    "CityTo": "Bangkok",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T14:30:00.511Z",
+    "ArriveOn": "2020-12-18T15:55:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Italy",
+        "City": "Venice",
+        "Airport": "Marco Polo",
+        "ArriveDate": "2020-12-17T15:50:00.511Z",
+        "TakeOff": "2020-12-17T18:50:00.511Z"
+      },
+      {
+        "Country": "Turkey",
+        "City": "Istanbul",
+        "Airport": "Istanbul New Airport",
+        "ArriveDate": "2020-12-17T21:20:00.511Z",
+        "TakeOff": "2020-12-17T23:50:00.511Z"
+      }
+    ],
+    "Company": "Turkish Airlines, Thai Airways",
+    "Price": 770
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Turkey",
+    "CityTo": "Istanbul",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T14:30:00.511Z",
+    "ArriveOn": "2020-12-17T21:20:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Italy",
+        "City": "Venice",
+        "Airport": "Marco Polo",
+        "ArriveDate": "2020-12-17T15:50:00.511Z",
+        "TakeOff": "2020-12-17T18:50:00.511Z"
+      }
+    ],
+    "Company": "Turkish Airlines",
+    "Price": 170
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Italy",
+    "CityTo": "Venice",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T14:30:00.511Z",
+    "ArriveOn": "2020-12-17T15:50:00.511Z",
+    "TransitPlaces": [],
+    "Company": "Turkish Airlines",
+    "Price": 80
+  },
+  {
+    "CountryFrom": "Italy",
+    "CityFrom": "Venice",
+    "CountryTo": "Turkey",
+    "CityTo": "Istanbul",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T18:50:00.511Z",
+    "ArriveOn": "2020-12-17T21:20:00.511Z",
+    "TransitPlaces": [],
+    "Company": "Turkish Airlines",
+    "Price": 90
+  },
+  {
+    "CountryFrom": "Italy",
+    "CityFrom": "Venice",
+    "CountryTo": "Thailand",
+    "CityTo": "Bangkok",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T18:50:00.511Z",
+    "ArriveOn": "2020-12-18T15:55:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Turkey",
+        "City": "Istanbul",
+        "Airport": "Istanbul New Airport",
+        "ArriveDate": "2020-12-17T21:20:00.511Z",
+        "TakeOff": "2020-12-17T23:50:00.511Z"
+      }
+    ],
+    "Company": "Turkish Airlines, Wizz Air, Thai Airways",
+    "Price": 460
+  },
+  {
+    "CountryFrom": "Turkey",
+    "CityFrom": "Istanbul",
+    "CountryTo": "Australia",
+    "CityTo": "Sydney",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T23:50:00.511Z",
+    "ArriveOn": "2020-12-19T07:10:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Turkey",
+        "City": "Istanbul",
+        "Airport": "Istanbul New Airport",
+        "ArriveDate": "2020-12-17T21:20:00.511Z",
+        "TakeOff": "2020-12-17T23:50:00.511Z"
+      },
+      {
+        "Country": "Thailand",
+        "City": "Bangkok",
+        "Airport": "Suvarnabhumi",
+        "ArriveDate": "2020-12-18T15:55:00.511Z",
+        "TakeOff": "2020-12-18T18:50:00.511Z"
+      }
+    ],
+    "Company": "Turkish Airlines, Wizz Air, Thai Airways",
+    "Price": 600
+  },
+  {
+    "CountryFrom": "Turkey",
+    "CityFrom": "Istanbul",
+    "CountryTo": "Thailand",
+    "CityTo": "Bangkok",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-17T23:50:00.511Z",
+    "ArriveOn": "2020-12-18T15:55:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "Turkey",
+        "City": "Istanbul",
+        "Airport": "Istanbul New Airport",
+        "ArriveDate": "2020-12-17T21:20:00.511Z",
+        "TakeOff": "2020-12-17T23:50:00.511Z"
+      }
+    ],
+    "Company": "Wizz Air, Thai Airways",
+    "Price": 460
+  },
+  {
+    "CountryFrom": "Thailand",
+    "CityFrom": "Bangkok",
+    "CountryTo": "Australia",
+    "CityTo": "Sydney",
+    "TakeOffDay": "2020-12-17",
+    "TakeOffDate": "2020-12-18T18:50:00.511Z",
+    "ArriveOn": "2020-12-19T07:10:00.511Z",
+    "TransitPlaces": [],
+    "Company": "Thai Airways",
+    "Price": 330
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "Argentina",
+    "CityTo": "Buenos-Aires",
+    "TakeOffDay": "2020-12-22",
+    "TakeOffDate": "2020-12-22T06:10:00.511Z",
+    "ArriveOn": "2020-12-23T08:50:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "United Kingdom",
+        "City": "London",
+        "Airport": "Hitraw",
+        "ArriveDate": "2020-12-22T07:40:00.511Z",
+        "TakeOff": "2020-12-22T13:05:00.511Z"
+      },
+      {
+        "Country": "USA",
+        "City": "Dallas",
+        "Airport": "Fort-Worth",
+        "ArriveDate": "2020-12-23T17:35:00.511Z",
+        "TakeOff": "2020-12-23T19:20:00.511Z"
+      }
+    ],
+    "Company": "Wizz Air, American Airlines",
+    "Price": 420
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "United Kingdom",
+    "CityTo": "London",
+    "TakeOffDay": "2020-12-22",
+    "TakeOffDate": "2020-12-22T06:10:00.511Z",
+    "ArriveOn": "2020-12-22T07:40:00.511Z",
+    "TransitPlaces": [],
+    "Company": "Wizz Air",
+    "Price": 120
+  },
+  {
+    "CountryFrom": "Moldova",
+    "CityFrom": "Chisinau",
+    "CountryTo": "USA",
+    "CityTo": "Dallas",
+    "TakeOffDay": "2020-12-22",
+    "TakeOffDate": "2020-12-22T06:10:00.511Z",
+    "ArriveOn": "2020-12-23T17:35:00.511Z",
+    "TransitPlaces": [
+      {
+        "Country": "United Kingdom",
+        "City": "London",
+        "Airport": "Hitraw",
+        "ArriveDate": "2020-12-22T07:40:00.511Z",
+        "TakeOff": "2020-12-22T13:05:00.511Z"
+      }
+    ],
+    "Company": "Wizz Air, American Airlines",
+    "Price": 320
+  }
+]

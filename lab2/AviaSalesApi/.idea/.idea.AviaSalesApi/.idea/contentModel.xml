@@ -9,9 +9,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="AviaSalesApi.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Config" t="Include">
-          <e p="CassandraDbConfig.cs" t="Include" />
-        </e>
+        <e p="Consts.cs" t="Include" />
         <e p="Controllers" t="Include" />
         <e p="Data" t="Include">
           <e p="DbMapping" t="Include">
@@ -32,13 +30,22 @@
               <e p="ICassandraRepository.cs" t="Include" />
             </e>
           </e>
+          <e p="Seed.cs" t="Include" />
         </e>
         <e p="db_scripts.txt" t="Include" />
         <e p="Extensions" t="Include">
           <e p="ApplicationBuilderExtensions.cs" t="Include" />
           <e p="ServicesExtensions.cs" t="Include" />
         </e>
+        <e p="Helpers" t="Include">
+          <e p="IJsonFileProcessor.cs" t="Include" />
+          <e p="JsonFileProcessor.cs" t="Include" />
+          <e p="TicketParsedFromJson.cs" t="Include" />
+        </e>
         <e p="Infrastructure" t="Include">
+          <e p="Config" t="Include">
+            <e p="CassandraDbConfig.cs" t="Include" />
+          </e>
           <e p="Exceptions" t="Include">
             <e p="EntityNotFoundException.cs" t="Include" />
           </e>
@@ -57,6 +64,11 @@
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="seed.json" t="Include" />
+        <e p="Services" t="Include">
+          <e p="Impl" t="Include" />
+          <e p="Interfaces" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
       </e>

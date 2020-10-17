@@ -56,6 +56,35 @@
           "lib/netstandard2.0/FluentValidation.dll": {}
         }
       },
+      "FluentValidation.AspNetCore/9.3.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "9.3.0-preview2",
+          "FluentValidation.DependencyInjectionExtensions": "9.3.0-preview2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "FluentValidation.DependencyInjectionExtensions/9.3.0-preview2": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "9.3.0-preview2",
+          "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll": {}
+        }
+      },
       "K4os.Compression.LZ4/1.1.11": {
         "type": "package",
         "dependencies": {
@@ -776,6 +805,38 @@
         "lib/net461/FluentValidation.xml",
         "lib/netstandard2.0/FluentValidation.dll",
         "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
+    "FluentValidation.AspNetCore/9.3.0-preview2": {
+      "sha512": "0G4yiJzzqSotBnywzmdB+MFTSZ4kQPKSYyegt7q9L5GJ9PmuVBiPsJiC4Cn0tz2Uz5Fvkc9MDf3aZGRUfCdfPg==",
+      "type": "package",
+      "path": "fluentvalidation.aspnetcore/9.3.0-preview2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.aspnetcore.9.3.0-preview2.nupkg.sha512",
+        "fluentvalidation.aspnetcore.nuspec",
+        "lib/net5.0/FluentValidation.AspNetCore.dll",
+        "lib/net5.0/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp2.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp2.1/FluentValidation.AspNetCore.xml",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll",
+        "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
+      ]
+    },
+    "FluentValidation.DependencyInjectionExtensions/9.3.0-preview2": {
+      "sha512": "2V0mfO0ZktNpsdT8PM2b1WJgeJJ4aIGXz++Th8gfsLdraBF3SSeJCW3XG6ddoq0EdUc3cDSejPqCX9vdk1lZ1w==",
+      "type": "package",
+      "path": "fluentvalidation.dependencyinjectionextensions/9.3.0-preview2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluent-validation-icon.png",
+        "fluentvalidation.dependencyinjectionextensions.9.3.0-preview2.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.nuspec",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
+        "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml"
       ]
     },
     "K4os.Compression.LZ4/1.1.11": {
@@ -3008,6 +3069,7 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.0",
       "CassandraCSharpDriver >= 3.16.0",
       "FluentValidation >= 9.3.0-preview2",
+      "FluentValidation.AspNetCore >= 9.3.0-preview2",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.9"
     ]
   },
@@ -3057,6 +3119,10 @@
             "version": "[3.16.0, )"
           },
           "FluentValidation": {
+            "target": "Package",
+            "version": "[9.3.0-preview2, )"
+          },
+          "FluentValidation.AspNetCore": {
             "target": "Package",
             "version": "[9.3.0-preview2, )"
           },

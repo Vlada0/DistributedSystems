@@ -8,13 +8,14 @@ namespace AviaSalesApi.Data.DbMapping
         public CassandraMapping()
         {
             For<Ticket>()
-                .TableName("ticketbyplacefromplacetotakeoffarrivedate")
+                .TableName("ticket_by_place_from_place_to_takeoff_day")
                 .Column(t => t.CountryFrom, c => c.WithName("country_from"))
                 .Column(t => t.CityFrom, c => c.WithName("city_from"))
                 .Column(t => t.CountryTo, c => c.WithName("country_to"))
                 .Column(t => t.CityTo, c => c.WithName("city_to"))
+                .Column(t => t.TakeOffDay, c => c.WithName("takeoff_day"))
                 .Column(t => t.TakeOffDate, c => c.WithName("takeoff_date"))
-                .Column(t => t.ArriveOn, c => c.WithName("arrive_on"))
+                .Column(t => t.ArriveOn, c => c.WithName("arrive_date"))
                 .Column(t => t.TransitPlaces, c => c.WithName("transit_places"));
             
             For<TicketById>()
@@ -23,8 +24,9 @@ namespace AviaSalesApi.Data.DbMapping
                 .Column(t => t.CityFrom, c => c.WithName("city_from"))
                 .Column(t => t.CountryTo, c => c.WithName("country_to"))
                 .Column(t => t.CityTo, c => c.WithName("city_to"))
+                .Column(t => t.TakeOffDay, c => c.WithName("takeoff_day"))
                 .Column(t => t.TakeOffDate, c => c.WithName("takeoff_date"))
-                .Column(t => t.ArriveOn, c => c.WithName("arrive_on"))
+                .Column(t => t.ArriveOn, c => c.WithName("arrive_date"))
                 .Column(t => t.TransitPlaces, c => c.WithName("transit_places"));
 
             For<WarrantByPassengerIdno>()

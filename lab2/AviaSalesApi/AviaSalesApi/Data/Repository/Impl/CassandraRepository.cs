@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using AviaSalesApi.Config;
 using AviaSalesApi.Data.Entities;
 using AviaSalesApi.Data.Repository.Interfaces;
+using AviaSalesApi.Infrastructure.Config;
 using AviaSalesApi.Infrastructure.Exceptions;
 using Cassandra;
 using Cassandra.Mapping;

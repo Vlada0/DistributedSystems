@@ -1,14 +1,16 @@
-﻿CREATE TABLE ticketbyplacefromplacetotakeoffarrivedate (
+﻿CREATE TABLE ticket_by_place_from_place_to_takeoff_day (
     id uuid, 
     country_from text, 
     city_from text, 
     country_to text, 
     city_to text, 
-    take_off_date timestamp, 
+    takeoff_day timestamp,
+    takeoff_date timestamp, 
     arrive_date timestamp, 
+    company text,
     transit_places text, 
     price int, 
-    PRIMARY KEY((country_from, city_from, country_to, city_to, take_off_date, arrive_date), id));
+    PRIMARY KEY((country_from, city_from, country_to, city_to, takeoff_day), id));
     
 CREATE TABLE ticket_by_id (
         id uuid, 
@@ -16,9 +18,11 @@ CREATE TABLE ticket_by_id (
         city_from text, 
         country_to text, 
         city_to text, 
-        take_off_date timestamp, 
+        takeoff_day timestamp,
+        takeoff_date timestamp, 
         arrive_date timestamp, 
         transit_places text, 
+        company text,
         price int, 
         PRIMARY KEY (id));
         

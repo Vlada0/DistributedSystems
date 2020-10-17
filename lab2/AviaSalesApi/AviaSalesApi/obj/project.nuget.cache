@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "R36f0Fqno8zmuPTqDVfXeEUACRegaTTZF4Dzr15XpOPO7N9mgPXWIdtJPeSLW4b4dw0j9wGisnomECP7HsFZCw==",
+  "dgSpecHash": "ROZGfejG4VBVME1XAPQfZAQiBzXC6o20yx6R07GM7d44sOPrAiweK0cc5o6vexbGkgKipDXq7qoXaZGUVRTW1A==",
   "success": true,
   "projectFilePath": "D:\\Универ\\4 курс\\1 семестр\\PAD\\LABS\\DistributedSystems\\lab2\\AviaSalesApi\\AviaSalesApi\\AviaSalesApi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\Azathoth\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Azathoth\\.nuget\\packages\\cassandracsharpdriver\\3.16.0\\cassandracsharpdriver.3.16.0.nupkg.sha512",
     "C:\\Users\\Azathoth\\.nuget\\packages\\fluentvalidation\\9.3.0-preview2\\fluentvalidation.9.3.0-preview2.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.3.0-preview2\\fluentvalidation.aspnetcore.9.3.0-preview2.nupkg.sha512",
+    "C:\\Users\\Azathoth\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\9.3.0-preview2\\fluentvalidation.dependencyinjectionextensions.9.3.0-preview2.nupkg.sha512",
     "C:\\Users\\Azathoth\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\Azathoth\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.9\\microsoft.aspnetcore.jsonpatch.3.1.9.nupkg.sha512",
     "C:\\Users\\Azathoth\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.9\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.9.nupkg.sha512",

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using FluentValidation.AspNetCore;
 
 namespace AviaSalesApi.Extensions
 {
@@ -11,6 +12,11 @@ namespace AviaSalesApi.Extensions
         public static IServiceCollection ConfigureControllers(this IServiceCollection services)
         {
             services.AddControllers()
+                .AddFluentValidation(opt =>
+                {
+                    opt.RegisterValidatorsFromAssemblyContaining<Startup>();
+                    opt.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
+                })
                 .AddNewtonsoftJson(options =>
                 {
                     options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
@@ -33,7 +39,7 @@ namespace AviaSalesApi.Extensions
 
                         return new UnprocessableEntityObjectResult(problemDetails)
                         {
-                            ContentTypes = {"application/problem+json"}
+                            ContentTypes = {Consts.AppProblemPlusJsonContentType}
                         };
                     };
                 });

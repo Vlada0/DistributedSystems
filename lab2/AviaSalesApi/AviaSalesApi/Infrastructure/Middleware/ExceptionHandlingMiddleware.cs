@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Net;
 using System.Threading.Tasks;
 using AviaSalesApi.Infrastructure.Exceptions;
@@ -7,6 +8,7 @@ using Newtonsoft.Json;
 
 namespace AviaSalesApi.Infrastructure.Middleware
 {
+    [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
     public class ExceptionHandlingMiddleware
     {
         private readonly RequestDelegate _nxt;
@@ -32,10 +34,10 @@ namespace AviaSalesApi.Infrastructure.Middleware
             }
         }
 
-        private async Task HandleExceptionAsync(HttpContext ctx, Exception ex, HttpStatusCode statusCode)
+        private static async Task HandleExceptionAsync(HttpContext ctx, Exception ex, HttpStatusCode statusCode)
         {
             var response = ctx.Response;
-            response.ContentType = "application/problem+json";
+            response.ContentType = Consts.AppProblemPlusJsonContentType;
             response.StatusCode = (int) statusCode;
             await response.WriteAsync(JsonConvert.SerializeObject(new
             {

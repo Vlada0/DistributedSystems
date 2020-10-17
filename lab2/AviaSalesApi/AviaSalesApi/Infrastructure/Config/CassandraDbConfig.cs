@@ -1,4 +1,4 @@
-﻿namespace AviaSalesApi.Config
+﻿namespace AviaSalesApi.Infrastructure.Config
 {
     public interface ICassandraDbConfig
     {

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using AviaSalesApi.Config;
 using AviaSalesApi.Data.Repository.Impl;
 using AviaSalesApi.Data.Repository.Interfaces;
 using AviaSalesApi.Extensions;
+using AviaSalesApi.Helpers;
+using AviaSalesApi.Infrastructure.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,6 +37,7 @@ namespace AviaSalesApi
                 .Configure<CassandraDbConfig>(_configuration.GetSection(nameof(CassandraDbConfig)))
                 .AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies())
                 .AddSingleton<ICassandraDbConfig>(sp => sp.GetRequiredService<IOptions<CassandraDbConfig>>().Value)
+                .AddSingleton<IJsonFileProcessor, JsonFileProcessor>()
                 .AddScoped(typeof(ICassandraRepository<>), typeof(CassandraRepository<>));
         }
 
