@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Azathoth\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Azathoth\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_AviaSalesApi.-2142252017.00" t="ExcludeRecursive" />
+    <e p="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi" t="IncludeFlat">
+      <e p="AviaSalesApi" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="AviaSalesApi.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Config" t="Include">
+          <e p="CassandraDbConfig.cs" t="Include" />
+        </e>
+        <e p="Controllers" t="Include" />
+        <e p="Data" t="Include">
+          <e p="DbMapping" t="Include">
+            <e p="CassandraMapping.cs" t="Include" />
+          </e>
+          <e p="Entities" t="Include">
+            <e p="BaseEntity.cs" t="Include" />
+            <e p="Ticket.cs" t="Include" />
+            <e p="TicketById.cs" t="Include" />
+            <e p="WarrantByPassengerIdno.cs" t="Include" />
+            <e p="WarrantByPassengerIdnoAndTicketId.cs" t="Include" />
+          </e>
+          <e p="Repository" t="Include">
+            <e p="Impl" t="Include">
+              <e p="CassandraRepository.cs" t="Include" />
+            </e>
+            <e p="Interfaces" t="Include">
+              <e p="ICassandraRepository.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="db_scripts.txt" t="Include" />
+        <e p="Extensions" t="Include">
+          <e p="ApplicationBuilderExtensions.cs" t="Include" />
+          <e p="ServicesExtensions.cs" t="Include" />
+        </e>
+        <e p="Infrastructure" t="Include">
+          <e p="Exceptions" t="Include">
+            <e p="EntityNotFoundException.cs" t="Include" />
+          </e>
+          <e p="Middleware" t="Include">
+            <e p="ExceptionHandlingMiddleware.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="AviaSalesApi.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="AviaSalesApi.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

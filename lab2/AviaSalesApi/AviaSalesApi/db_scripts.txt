@@ -1,0 +1,44 @@
+﻿CREATE TABLE ticketbyplacefromplacetotakeoffarrivedate (
+    id uuid, 
+    country_from text, 
+    city_from text, 
+    country_to text, 
+    city_to text, 
+    take_off_date timestamp, 
+    arrive_date timestamp, 
+    transit_places text, 
+    price int, 
+    PRIMARY KEY((country_from, city_from, country_to, city_to, take_off_date, arrive_date), id));
+    
+CREATE TABLE ticket_by_id (
+        id uuid, 
+        country_from text, 
+        city_from text, 
+        country_to text, 
+        city_to text, 
+        take_off_date timestamp, 
+        arrive_date timestamp, 
+        transit_places text, 
+        price int, 
+        PRIMARY KEY (id));
+        
+CREATE TABLE warrants_by_passenger_idno(
+    id uuid,
+    passenger_idno text,
+    passenger_passport_id text,
+    ticket_id uuid,
+    ticket_back_id uuid,
+    is_paid boolean,
+    PRIMARY KEY ((passenger_idno), id)
+);
+
+CREATE TABLE warrant_by_passenger_idno_and_ticket_id(
+    id uuid,
+    passenger_idno text,
+    passenger_passport_id text,
+    ticket_id uuid,
+    ticket_back_id uuid,
+    is_paid boolean,
+    PRIMARY KEY ((passenger_idno, ticket_id), id)
+);
+
