@@ -7,6 +7,7 @@ using AviaSalesApi.Data.DbMapping;
 using AviaSalesApi.Data.Entities;
 using AviaSalesApi.Data.Repository.Interfaces;
 using AviaSalesApi.Helpers;
+using AviaSalesApi.Infrastructure.Config;
 using Cassandra.Mapping;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -27,14 +28,14 @@ namespace AviaSalesApi
             {
                 MappingConfiguration.Global.Define<CassandraMapping>();
 
-                #region seed
-                
-                var processor = scope.ServiceProvider.GetService<IJsonFileProcessor>();
-                var ticketByLocationAndDateRepository = scope.ServiceProvider.GetService<ICassandraRepository<Ticket>>();
-                var ticketByIdRepository = scope.ServiceProvider.GetService<ICassandraRepository<TicketById>>();
-                //await Seed.SeedDataAsync(ticketByLocationAndDateRepository, ticketByIdRepository, processor);
-                
-                #endregion
+                var seedDataCfg = scope.ServiceProvider.GetService<SeedDataConfig>();
+                if (seedDataCfg.ReseedExampleData)
+                {
+                    var processor = scope.ServiceProvider.GetService<IJsonFileProcessor>();
+                    var ticketByLocationAndDateRepository = scope.ServiceProvider.GetService<ICassandraRepository<Ticket>>();
+                    var ticketByIdRepository = scope.ServiceProvider.GetService<ICassandraRepository<TicketById>>();
+                    await Seed.SeedDataAsync(ticketByLocationAndDateRepository, ticketByIdRepository, processor);
+                }
             }
             catch (Exception e)
             {

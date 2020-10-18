@@ -8,6 +8,9 @@ using AviaSalesApi.Data.Repository.Interfaces;
 using AviaSalesApi.Extensions;
 using AviaSalesApi.Helpers;
 using AviaSalesApi.Infrastructure.Config;
+using AviaSalesApi.Services.Impl;
+using AviaSalesApi.Services.Interfaces;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,9 +39,11 @@ namespace AviaSalesApi
                 .ConfigureControllers()
                 .Configure<CassandraDbConfig>(_configuration.GetSection(nameof(CassandraDbConfig)))
                 .AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies())
+                .AddSingleton(_configuration.GetSection(nameof(SeedDataConfig)).Get<SeedDataConfig>())
                 .AddSingleton<ICassandraDbConfig>(sp => sp.GetRequiredService<IOptions<CassandraDbConfig>>().Value)
                 .AddSingleton<IJsonFileProcessor, JsonFileProcessor>()
-                .AddScoped(typeof(ICassandraRepository<>), typeof(CassandraRepository<>));
+                .AddScoped(typeof(ICassandraRepository<>), typeof(CassandraRepository<>))
+                .AddTransient<ITicketService, TicketService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

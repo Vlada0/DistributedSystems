@@ -10,7 +10,9 @@ namespace AviaSalesApi.Data.Entities
         public string CityFrom { get; set; }
         public string CountryTo { get; set; }
         public string CityTo { get; set; }
-        public DateTime TakeOffDay { get; set; }
+        public int TakeOffYear { get; set; }
+        public int TakeOffMonth { get; set; }
+        public int TakeOffDay { get; set; }
         public DateTime TakeOffDate { get; set; }
         public DateTime ArriveOn { get; set; }
         public string TransitPlaces { get; set; }
@@ -24,6 +26,8 @@ namespace AviaSalesApi.Data.Entities
             CityFrom = src.CityFrom,
             CountryTo = src.CountryTo,
             CityTo = src.CityTo,
+            TakeOffYear = src.TakeOffYear,
+            TakeOffMonth = src.TakeOffMonth,
             TakeOffDay = src.TakeOffDay,
             TakeOffDate = src.TakeOffDate,
             ArriveOn = src.ArriveOn,

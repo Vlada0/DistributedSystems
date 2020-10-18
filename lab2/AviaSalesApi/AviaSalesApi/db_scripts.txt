@@ -4,13 +4,15 @@
     city_from text, 
     country_to text, 
     city_to text, 
-    takeoff_day timestamp,
+    takeoff_year int,
+    takeoff_month int,
+    takeoff_day int,
     takeoff_date timestamp, 
     arrive_date timestamp, 
     company text,
     transit_places text, 
     price int, 
-    PRIMARY KEY((country_from, city_from, country_to, city_to, takeoff_day), id));
+    PRIMARY KEY((country_from, city_from, country_to, city_to, takeoff_year, takeoff_month, takeoff_day), id));
     
 CREATE TABLE ticket_by_id (
         id uuid, 
@@ -18,7 +20,9 @@ CREATE TABLE ticket_by_id (
         city_from text, 
         country_to text, 
         city_to text, 
-        takeoff_day timestamp,
+        takeoff_year int,
+        takeoff_month int,
+        takeoff_day int,
         takeoff_date timestamp, 
         arrive_date timestamp, 
         transit_places text, 

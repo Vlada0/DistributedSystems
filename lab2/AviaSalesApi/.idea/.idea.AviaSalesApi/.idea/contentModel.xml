@@ -10,7 +10,9 @@
         <e p="AviaSalesApi.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Consts.cs" t="Include" />
-        <e p="Controllers" t="Include" />
+        <e p="Controllers" t="Include">
+          <e p="TicketsController.cs" t="Include" />
+        </e>
         <e p="Data" t="Include">
           <e p="DbMapping" t="Include">
             <e p="CassandraMapping.cs" t="Include" />
@@ -45,6 +47,7 @@
         <e p="Infrastructure" t="Include">
           <e p="Config" t="Include">
             <e p="CassandraDbConfig.cs" t="Include" />
+            <e p="SeedDataConfig.cs" t="Include" />
           </e>
           <e p="Exceptions" t="Include">
             <e p="EntityNotFoundException.cs" t="Include" />
@@ -52,8 +55,17 @@
           <e p="Middleware" t="Include">
             <e p="ExceptionHandlingMiddleware.cs" t="Include" />
           </e>
+          <e p="TicketQueryParameters.cs" t="Include" />
         </e>
-        <e p="Models" t="Include" />
+        <e p="Models" t="Include">
+          <e p="AutomapperConfig.cs" t="Include" />
+          <e p="Tickets" t="Include">
+            <e p="TicketCreateModel.cs" t="Include" />
+            <e p="TicketCreateModelValidator.cs" t="Include" />
+            <e p="TicketModel.cs" t="Include" />
+            <e p="TransitPlace.cs" t="Include" />
+          </e>
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -67,8 +79,12 @@
         </e>
         <e p="seed.json" t="Include" />
         <e p="Services" t="Include">
-          <e p="Impl" t="Include" />
-          <e p="Interfaces" t="Include" />
+          <e p="Impl" t="Include">
+            <e p="TicketService.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="ITicketService.cs" t="Include" />
+          </e>
         </e>
         <e p="Startup.cs" t="Include" />
       </e>

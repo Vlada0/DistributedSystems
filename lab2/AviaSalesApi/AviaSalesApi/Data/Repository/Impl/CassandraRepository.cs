@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using AviaSalesApi.Data.Entities;
 using AviaSalesApi.Data.Repository.Interfaces;
@@ -20,9 +21,10 @@ namespace AviaSalesApi.Data.Repository.Impl
             _mapper = new Mapper(session);
         }
 
-        public async Task<IEnumerable<TEntity>> ReadCollectionAsync(string query)
+        public async Task<IEnumerable<TEntity>> ReadCollectionAsync(string query, params object[] args)
         {
-            var entities = await _mapper.FetchAsync<TEntity>(query);
+            string md = args[0] as string;
+            var entities = await _mapper.FetchAsync<TEntity>("FROM ticket_by_place_from_place_to_takeoff_day WHERE country_from = ? AND city_from = ? AND country_to = ? AND city_to = ? AND takeoff_day = ?", md, "Chisinau", "Australia", "Sydney", new DateTime(2020, 12, 17));
 
             return entities;
         }
