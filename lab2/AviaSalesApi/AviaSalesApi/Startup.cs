@@ -37,6 +37,7 @@ namespace AviaSalesApi
         {
             services
                 .ConfigureControllers()
+                .ConfigureSwagger()
                 .Configure<CassandraDbConfig>(_configuration.GetSection(nameof(CassandraDbConfig)))
                 .AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies())
                 .AddSingleton(_configuration.GetSection(nameof(SeedDataConfig)).Get<SeedDataConfig>())
@@ -53,9 +54,19 @@ namespace AviaSalesApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseClientExceptionPage();
+            }
+
+            app.UseSwagger();
+            
+            app.UseSwaggerUiMiddleware();
             
             app.UseExceptionHandlingMiddleware();
+            
             app.UseRouting();
+            
             app.UseEndpoints(endpoints => endpoints.MapControllers());
         }
     }

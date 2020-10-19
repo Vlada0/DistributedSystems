@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using AviaSalesApi.Infrastructure;
 using AviaSalesApi.Models.Tickets;
 using AviaSalesApi.Services.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AviaSalesApi.Controllers
@@ -27,21 +26,28 @@ namespace AviaSalesApi.Controllers
         }
 
         [HttpGet("{ticketId}")]
-        public async Task<ActionResult<TicketModel>> TicketGetById(Guid ticketId)
+        public async Task<ActionResult<TicketModel>> TicketGetById([FromRoute] Guid ticketId)
         {
-            var ticket = await _ticketService.GetTicketById(ticketId);
-            return Ok(ticket);
+            return Ok(await _ticketService.GetTicketById(ticketId));
         }
 
         [HttpPost]
-        public async Task<ActionResult<Guid>> TicketCreate([FromBody] TicketCreateModel model)
+        public async Task<ActionResult<TicketModel>> TicketCreate([FromBody] TicketCreateUpdateModel updateModel)
         {
-            var id = await _ticketService.AddTicketAsync(model);
-            return CreatedAtAction(nameof(TicketGetById), new {ticketId = id});
+            var ticket = await _ticketService.AddTicketAsync(updateModel);
+            return CreatedAtAction(nameof(TicketGetById), new {ticketId = ticket.Id}, ticket);
+        }
+
+        [HttpPut("{ticketId}")]
+        public async Task<IActionResult> TicketUpdate([FromRoute] Guid ticketId,
+            [FromBody] TicketCreateUpdateModel model)
+        {
+            await _ticketService.UpdateTicketAsync(ticketId, model);
+            return NoContent();
         }
 
         [HttpDelete("{ticketId}")]
-        public async Task<IActionResult> TicketDelete(Guid ticketId)
+        public async Task<IActionResult> TicketDelete([FromRoute] Guid ticketId)
         {
             await _ticketService.DeleteTicketAsync(ticketId);
             return NoContent();

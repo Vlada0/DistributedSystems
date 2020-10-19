@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using FluentValidation.AspNetCore;
+using Microsoft.OpenApi.Models;
 
 namespace AviaSalesApi.Extensions
 {
@@ -43,6 +44,20 @@ namespace AviaSalesApi.Extensions
                         };
                     };
                 });
+            
+            return services;
+        }
+
+        public static IServiceCollection ConfigureSwagger(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(s =>
+            {
+                s.SwaggerDoc("AviaSalesApiSpecs", new OpenApiInfo
+                {
+                    Title = "AviaSalesApi",
+                    Version = "1"
+                });
+            });
             
             return services;
         }

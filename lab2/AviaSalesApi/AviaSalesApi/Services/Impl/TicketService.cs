@@ -50,15 +50,38 @@ namespace AviaSalesApi.Services.Impl
             return TicketModel.From(ticket);
         }
 
-        public async Task<Guid> AddTicketAsync(TicketCreateModel model)
+        public async Task<TicketModel> AddTicketAsync(TicketCreateUpdateModel updateModel)
         {
-            var ticket = Ticket.From(model);
+            var ticket = Ticket.From(updateModel);
             ticket.Id = Guid.NewGuid();
 
             await _dbMapper.InsertAsync(ticket);
             await _dbMapper.InsertAsync(TicketById.From(ticket));
 
-            return ticket.Id;
+            return TicketModel.From(ticket);
+        }
+
+        public async Task UpdateTicketAsync(Guid ticketId, TicketCreateUpdateModel model)
+        {
+            var ticketById = await _dbMapper.SingleOrDefaultAsync<TicketById>("WHERE id = ?", ticketId);
+            if (ticketById == null)
+            {
+                throw EntityNotFoundException.OfType<TicketById>();
+            }
+            
+            await _dbMapper.UpdateAsync(ticketById);
+            
+            var cqlQuery =
+                $"DELETE FROM ticket_by_place_from_place_to_takeoff_day " +
+                $"WHERE country_from = '{ticketById.CountryFrom}' AND city_from = '{ticketById.CityFrom}' " +
+                $"AND country_to = '{ticketById.CountryTo}' AND city_to = '{ticketById.CityTo}' " +
+                $"AND takeoff_year = {ticketById.TakeOffYear} AND takeoff_month = {ticketById.TakeOffMonth} " +
+                $"AND takeoff_day = {ticketById.TakeOffDay} AND id = {ticketById.Id}";
+            cqlQuery = cqlQuery.Replace('\"', '\'');
+
+            await _dbMapper.ExecuteAsync(cqlQuery);
+            var newTicket = Ticket.From(ticketById);
+            await _dbMapper.InsertAsync(newTicket);
         }
 
         public async Task DeleteTicketAsync(Guid ticketId)
@@ -73,11 +96,11 @@ namespace AviaSalesApi.Services.Impl
             await _dbMapper.DeleteAsync(ticketById);
 
             var cqlQuery =
-                $"DELETE FROM ticket_by_place_from_place_to_takeoff_day" +
-                $"WHERE country_from = {ticket.CountryFrom} AND city_from = {ticket.CityFrom}" +
-                $"AND country_to = {ticket.CountryTo} AND city_to = {ticket.CityTo}" +
-                $"AND takeoff_year = {ticket.TakeOffYear} AND takeoff_month = {ticket.TakeOffMonth} " +
-                $"AND takeoff_day = {ticket.TakeOffDay} AND id = {ticket.Id}";
+                $"DELETE FROM ticket_by_place_from_place_to_takeoff_day " +
+                $"WHERE country_from = '{ticketById.CountryFrom}' AND city_from = '{ticketById.CityFrom}' " +
+                $"AND country_to = '{ticketById.CountryTo}' AND city_to = '{ticketById.CityTo}' " +
+                $"AND takeoff_year = {ticketById.TakeOffYear} AND takeoff_month = {ticketById.TakeOffMonth} " +
+                $"AND takeoff_day = {ticketById.TakeOffDay} AND id = {ticketById.Id}";
             cqlQuery = cqlQuery.Replace('\"', '\'');
 
             await _dbMapper.ExecuteAsync(cqlQuery);

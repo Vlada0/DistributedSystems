@@ -10,7 +10,8 @@ namespace AviaSalesApi.Services.Interfaces
     {
         Task<IEnumerable<TicketModel>> GetFilteredTicketsAsync(TicketQueryParameters query);
         Task<TicketModel> GetTicketById(Guid id);
-        Task<Guid> AddTicketAsync(TicketCreateModel model);
+        Task<TicketModel> AddTicketAsync(TicketCreateUpdateModel updateModel);
+        Task UpdateTicketAsync(Guid ticketId, TicketCreateUpdateModel model);
         Task DeleteTicketAsync(Guid ticketId);
     }
 }

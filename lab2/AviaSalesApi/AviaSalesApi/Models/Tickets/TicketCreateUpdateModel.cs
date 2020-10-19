@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AviaSalesApi.Models.Tickets
 {
-    public class TicketCreateModel
+    public class TicketCreateUpdateModel
     {
         public string CountryFrom { get; set; }
         public string CityFrom { get; set; }

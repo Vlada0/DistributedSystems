@@ -19,7 +19,7 @@ namespace AviaSalesApi.Data.Entities
         public string Company { get; set; }
         public int Price { get; set; }
 
-        public static Ticket From(TicketCreateModel src) => new Ticket
+        public static Ticket From(TicketCreateUpdateModel src) => new Ticket
         {
             CountryFrom = src.CountryFrom,
             CityFrom = src.CityFrom,

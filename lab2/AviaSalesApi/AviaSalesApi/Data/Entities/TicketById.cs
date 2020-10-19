@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
+using AviaSalesApi.Models.Tickets;
+using Newtonsoft.Json;
 
 namespace AviaSalesApi.Data.Entities
 {
@@ -34,6 +36,22 @@ namespace AviaSalesApi.Data.Entities
             TransitPlaces = src.TransitPlaces,
             Company = src.Company,
             Price = src.Price
+        };
+        
+        public static TicketById From(TicketCreateUpdateModel src) => new TicketById
+        {
+            CountryFrom = src.CountryFrom,
+            CityFrom = src.CityFrom,
+            CountryTo = src.CountryTo,
+            CityTo = src.CityTo,
+            TakeOffDay = src.TakeOffDay.Day,
+            TakeOffYear = src.TakeOffDay.Year,
+            TakeOffMonth = src.TakeOffDay.Month,
+            TakeOffDate = src.TakeOffDate,
+            ArriveOn = src.ArriveOn,
+            Company = src.Company,
+            Price = src.Price,
+            TransitPlaces = JsonConvert.SerializeObject(src.TransitPlaces)
         };
     }
 }
