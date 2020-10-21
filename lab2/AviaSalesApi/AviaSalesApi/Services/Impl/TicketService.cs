@@ -54,7 +54,7 @@ namespace AviaSalesApi.Services.Impl
         {
             var ticket = Ticket.From(updateModel);
             ticket.Id = Guid.NewGuid();
-
+            
             await _dbMapper.InsertAsync(ticket);
             await _dbMapper.InsertAsync(TicketById.From(ticket));
 

@@ -14,6 +14,8 @@ namespace AviaSalesApi.Models.Tickets
                 .WithMessage($"{nameof(TicketCreateUpdateModel.CountryTo)} must be specified.");
             RuleFor(t => t.CityTo).NotEmpty()
                 .WithMessage($"{nameof(TicketCreateUpdateModel.CityTo)} must be specified.");
+            RuleFor(t => t.Price).GreaterThanOrEqualTo(0)
+                .WithMessage($"{nameof(TicketCreateUpdateModel.Price)} can't be a negative value.");
         }
     }
 }

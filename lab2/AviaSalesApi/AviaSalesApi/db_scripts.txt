@@ -30,23 +30,23 @@ CREATE TABLE ticket_by_id (
         price int, 
         PRIMARY KEY (id));
         
-CREATE TABLE warrants_by_passenger_idno(
+CREATE TABLE warrants_by_passenger_iban(
     id uuid,
-    passenger_idno text,
+    passenger_iban text,
     passenger_passport_id text,
     ticket_id uuid,
     ticket_back_id uuid,
     is_paid boolean,
-    PRIMARY KEY ((passenger_idno), id)
+    PRIMARY KEY ((passenger_iban), id)
 );
 
-CREATE TABLE warrant_by_passenger_idno_and_ticket_id(
+CREATE TABLE warrant_by_passenger_iban_and_ticket_id(
     id uuid,
-    passenger_idno text,
+    passenger_iban text,
     passenger_passport_id text,
     ticket_id uuid,
     ticket_back_id uuid,
     is_paid boolean,
-    PRIMARY KEY ((passenger_idno, ticket_id), id)
+    PRIMARY KEY ((passenger_iban, ticket_id), id)
 );
 

@@ -38,13 +38,14 @@ namespace AviaSalesApi
             services
                 .ConfigureControllers()
                 .ConfigureSwagger()
-                .Configure<CassandraDbConfig>(_configuration.GetSection(nameof(CassandraDbConfig)))
                 .AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies())
                 .AddSingleton(_configuration.GetSection(nameof(SeedDataConfig)).Get<SeedDataConfig>())
+                .Configure<CassandraDbConfig>(_configuration.GetSection(nameof(CassandraDbConfig)))
                 .AddSingleton<ICassandraDbConfig>(sp => sp.GetRequiredService<IOptions<CassandraDbConfig>>().Value)
                 .AddSingleton<IJsonFileProcessor, JsonFileProcessor>()
                 .AddScoped(typeof(ICassandraRepository<>), typeof(CassandraRepository<>))
-                .AddTransient<ITicketService, TicketService>();
+                .AddTransient<ITicketService, TicketService>()
+                .AddTransient<IWarrantsService, WarrantsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,7 +61,7 @@ namespace AviaSalesApi
             }
 
             app.UseSwagger();
-            
+
             app.UseSwaggerUiMiddleware();
             
             app.UseExceptionHandlingMiddleware();

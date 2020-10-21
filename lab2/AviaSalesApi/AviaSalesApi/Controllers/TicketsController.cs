@@ -20,12 +20,12 @@ namespace AviaSalesApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TicketModel>>> TicketsGet([FromQuery] TicketQueryParameters query)
+        public async Task<ActionResult<IEnumerable<TicketModel>>> TicketsGet([FromQuery] TicketQueryParameters query) 
         {
             return Ok(await _ticketService.GetFilteredTicketsAsync(query));
         }
 
-        [HttpGet("{ticketId}")]
+        [HttpGet("{ticketId}")] 
         public async Task<ActionResult<TicketModel>> TicketGetById([FromRoute] Guid ticketId)
         {
             return Ok(await _ticketService.GetTicketById(ticketId));

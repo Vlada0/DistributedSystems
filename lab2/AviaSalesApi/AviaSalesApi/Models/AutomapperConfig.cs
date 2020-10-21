@@ -2,6 +2,7 @@
 using AutoMapper;
 using AviaSalesApi.Data.Entities;
 using AviaSalesApi.Models.Tickets;
+using AviaSalesApi.Models.Warrants;
 using Newtonsoft.Json;
 
 namespace AviaSalesApi.Models
@@ -22,6 +23,11 @@ namespace AviaSalesApi.Models
                         src => JsonConvert.DeserializeObject<TransitPlace[]>(src.TransitPlaces)))
                 .ForMember(dest => dest.TakeOffDay, opt => opt.MapFrom(
                     src => new DateTime(src.TakeOffYear, src.TakeOffMonth, src.TakeOffDay)));
+
+            CreateMap<WarrantByPassengerIban, WarrantModel>();
+            CreateMap<WarrantByPassengerIbanAndTicketId, WarrantModel>();
+            CreateMap<WarrantCreateUpdateModel, WarrantByPassengerIban>();
+            CreateMap<WarrantCreateUpdateModel, WarrantByPassengerIbanAndTicketId>();
         }
     }
 }
