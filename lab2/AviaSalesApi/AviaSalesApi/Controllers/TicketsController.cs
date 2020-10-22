@@ -14,24 +14,17 @@ namespace AviaSalesApi.Controllers
     {
         private readonly ITicketService _ticketService;
 
-        public TicketsController(ITicketService ticketService)
-        {
-            _ticketService = ticketService;
-        }
+        public TicketsController(ITicketService ticketService) => _ticketService = ticketService;
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TicketModel>>> TicketsGet([FromQuery] TicketQueryParameters query) 
-        {
-            return Ok(await _ticketService.GetFilteredTicketsAsync(query));
-        }
+        public async Task<ActionResult<IEnumerable<TicketModel>>> TicketsGet([FromQuery] TicketQueryParameters query) =>
+            Ok(await _ticketService.GetFilteredTicketsAsync(query));
 
         [HttpGet("{ticketId}")] 
-        public async Task<ActionResult<TicketModel>> TicketGetById([FromRoute] Guid ticketId)
-        {
-            return Ok(await _ticketService.GetTicketById(ticketId));
-        }
+        public async Task<ActionResult<TicketModel>> TicketGetById([FromRoute] Guid ticketId) => 
+            Ok(await _ticketService.GetTicketById(ticketId));
 
-        [HttpPost]
+            [HttpPost]
         public async Task<ActionResult<TicketModel>> TicketCreate([FromBody] TicketCreateUpdateModel updateModel)
         {
             var ticket = await _ticketService.AddTicketAsync(updateModel);

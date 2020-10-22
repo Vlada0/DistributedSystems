@@ -25,7 +25,7 @@ namespace AviaSalesApi.Services.Impl
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<WarrantModel>> GetWarrantsByIban(string iban)
+        public async Task<IEnumerable<WarrantModel>> GetWarrantsByIbanAsync(string iban)
         {
             var cqlQuery = $"FROM warrants_by_passenger_iban WHERE passenger_iban = {iban};";
             cqlQuery = cqlQuery.Replace('\"', '\'');
@@ -36,9 +36,9 @@ namespace AviaSalesApi.Services.Impl
             return models;
         }
 
-        public async Task<WarrantModel> GetWarrantByIbanAndId(string iban, Guid id)
+        public async Task<WarrantModel> GetWarrantByIbanAndIdAsync(string iban, Guid id)
         {
-            var cqlQuery = $"FROM warrants_by_passenger_iban WHERE passenger_iban = {iban} AND id = {id};";
+            var cqlQuery = $"FROM warrants_by_passenger_iban WHERE passenger_iban = \"{iban}\" AND id = {id};";
             cqlQuery = cqlQuery.Replace('\"', '\'');
 
             var warrant = await _dbMapper.SingleOrDefaultAsync<WarrantByPassengerIbanAndTicketId>(cqlQuery);
@@ -51,7 +51,7 @@ namespace AviaSalesApi.Services.Impl
             return model;
         }
 
-        public async Task<WarrantModel> CreateWarrant(WarrantCreateUpdateModel model)
+        public async Task<WarrantModel> CreateWarrantAsync(WarrantCreateUpdateModel model)
         {
             var warrantByIban = _mapper.Map<WarrantByPassengerIban>(model);
             warrantByIban.Id = Guid.NewGuid();
@@ -62,6 +62,33 @@ namespace AviaSalesApi.Services.Impl
             await _dbMapper.InsertAsync(warrantById);
 
             return _mapper.Map<WarrantModel>(warrantByIban);
+        }
+
+        public async Task UpdateWarrantAsync(string iban, Guid warrantId, WarrantCreateUpdateModel model)
+        {
+            var warrantById = _mapper.Map<WarrantByPassengerIban>(model);
+            warrantById.Id = warrantId;
+            await _dbMapper.UpdateAsync<WarrantByPassengerIban>(warrantById);
+
+            var warrantByTicketIdAndIban = _mapper.Map<WarrantByPassengerIbanAndTicketId>(model);
+            warrantByTicketIdAndIban.Id = warrantId;
+            await _dbMapper.UpdateAsync<WarrantByPassengerIbanAndTicketId>(warrantByTicketIdAndIban);
+        }
+
+        public async Task DeleteWarrantAsync(string iban, Guid warrantId)
+        {
+            var cqlQuery = $"FROM warrants_by_passenger_iban WHERE passenger_iban = \"{iban}\" AND id = {warrantId};";
+            cqlQuery = cqlQuery.Replace('\"', '\'');
+            var warrant = await _dbMapper.SingleOrDefaultAsync<WarrantByPassengerIbanAndTicketId>(cqlQuery);
+            
+            cqlQuery = $"DELETE FROM warrants_by_passenger_iban WHERE passenger_iban = \"{iban}\" AND id = {warrantId};";
+            cqlQuery = cqlQuery.Replace('\"', '\'');
+            await _dbMapper.ExecuteAsync(cqlQuery);
+
+            cqlQuery =
+                $"DELETE FROM warrant_by_passenger_iban_and_ticket_id WHERE passenger_iban = \"{iban}\" AND ticket_id = {warrant.TicketId} AND id = {warrantId};";
+            cqlQuery = cqlQuery.Replace('\"', '\'');
+            await _dbMapper.ExecuteAsync(cqlQuery);
         }
     }
 }
