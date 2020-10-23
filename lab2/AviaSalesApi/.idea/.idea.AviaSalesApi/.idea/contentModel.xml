@@ -21,16 +21,20 @@
           <e p="Entities" t="Include">
             <e p="BaseEntity.cs" t="Include" />
             <e p="Ticket.cs" t="Include" />
+            <e p="Ticket1.cs" t="Include" />
             <e p="TicketById.cs" t="Include" />
+            <e p="Warrant.cs" t="Include" />
             <e p="WarrantByPassengerIban.cs" t="Include" />
             <e p="WarrantByPassengerIbanAndTicketId.cs" t="Include" />
           </e>
           <e p="Repository" t="Include">
             <e p="Impl" t="Include">
               <e p="CassandraRepository.cs" t="Include" />
+              <e p="MongoRepository.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
               <e p="ICassandraRepository.cs" t="Include" />
+              <e p="IMongoRepository.cs" t="Include" />
             </e>
           </e>
           <e p="Seed.cs" t="Include" />
@@ -48,14 +52,17 @@
         <e p="Infrastructure" t="Include">
           <e p="Config" t="Include">
             <e p="CassandraDbConfig.cs" t="Include" />
+            <e p="IMongoDbConnectionSettings.cs" t="Include" />
             <e p="SeedDataConfig.cs" t="Include" />
           </e>
           <e p="Exceptions" t="Include">
+            <e p="BadRequestException.cs" t="Include" />
             <e p="EntityNotFoundException.cs" t="Include" />
           </e>
           <e p="Middleware" t="Include">
             <e p="ExceptionHandlingMiddleware.cs" t="Include" />
           </e>
+          <e p="MongoCollectionAttribute.cs" t="Include" />
           <e p="TicketQueryParameters.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -86,8 +93,9 @@
         <e p="seed.json" t="Include" />
         <e p="Services" t="Include">
           <e p="Impl" t="Include">
+            <e p="Ticket1Service.cs" t="Include" />
             <e p="TicketService.cs" t="Include" />
-            <e p="WarrantsService.cs" t="Include" />
+            <e p="Warrants1Service.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="ITicketService.cs" t="Include" />

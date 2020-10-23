@@ -42,10 +42,13 @@ namespace AviaSalesApi
                 .AddSingleton(_configuration.GetSection(nameof(SeedDataConfig)).Get<SeedDataConfig>())
                 .Configure<CassandraDbConfig>(_configuration.GetSection(nameof(CassandraDbConfig)))
                 .AddSingleton<ICassandraDbConfig>(sp => sp.GetRequiredService<IOptions<CassandraDbConfig>>().Value)
+                .Configure<MongoDbConnectionSettings>(_configuration.GetSection(nameof(MongoDbConnectionSettings)))
+                .AddSingleton<IMongoDbConnectionSettings>(sp => sp.GetRequiredService<IOptions<MongoDbConnectionSettings>>().Value)
+                .AddSingleton(typeof(IMongoRepository<>), typeof(MongoRepository<>))
                 .AddSingleton<IJsonFileProcessor, JsonFileProcessor>()
                 .AddScoped(typeof(ICassandraRepository<>), typeof(CassandraRepository<>))
                 .AddTransient<ITicketService, TicketService>()
-                .AddTransient<IWarrantsService, WarrantsService>();
+                .AddTransient<IWarrantsService, Warrants1Service>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -12,12 +12,12 @@ using IMapper = AutoMapper.IMapper;
 
 namespace AviaSalesApi.Services.Impl
 {
-    public class WarrantsService : IWarrantsService
+    public class Warrants1Service : IWarrantsService
     {
         private readonly IMapper _mapper;
         private readonly Cassandra.Mapping.IMapper _dbMapper;
 
-        public WarrantsService(IMapper mapper, ICassandraDbConfig cfg)
+        public Warrants1Service(IMapper mapper, ICassandraDbConfig cfg)
         {
             var cluster = Cluster.Builder().AddContactPoint(cfg.Host).Build();
             var session = cluster.Connect(cfg.KeySpace);

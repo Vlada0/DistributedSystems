@@ -18,8 +18,23 @@ namespace AviaSalesApi.Models.Tickets
         public IEnumerable<TransitPlace> TransitPlaces { get; set; }
         public string Company { get; set; }
         public int Price { get; set; }
-
+        
         public static TicketModel From(Ticket src) => new TicketModel
+        {
+            Id = src.Id,
+            CountryFrom = src.CountryFrom,
+            CityFrom = src.CityFrom,
+            CountryTo = src.CountryTo,
+            CityTo = src.CityTo,
+            TakeOffDay = src.TakeOffDay,
+            TakeOffDate = src.TakeOffDate,
+            ArriveOn = src.ArriveOn,
+            TransitPlaces = JsonConvert.DeserializeObject<IEnumerable<TransitPlace>>(src.TransitPlaces),
+            Company = src.Company,
+            Price = src.Price
+        };
+
+        public static TicketModel From(Ticket1 src) => new TicketModel
         {
             Id = src.Id,
             CountryFrom = src.CountryFrom,

@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using AviaSalesApi.Models.Tickets;
 using Newtonsoft.Json;
 
 namespace AviaSalesApi.Data.Entities
 {
-    [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-    public class TicketById : BaseEntity
+    public class Ticket1 : BaseEntity
     {
         public string CountryFrom { get; set; }
         public string CityFrom { get; set; }
@@ -21,24 +19,7 @@ namespace AviaSalesApi.Data.Entities
         public string Company { get; set; }
         public int Price { get; set; }
 
-        public static TicketById From(Ticket1 src) => new TicketById
-        {
-            Id = src.Id,
-            CountryFrom = src.CountryFrom,
-            CityFrom = src.CityFrom,
-            CountryTo = src.CountryTo,
-            CityTo = src.CityTo,
-            TakeOffYear = src.TakeOffYear,
-            TakeOffMonth = src.TakeOffMonth,
-            TakeOffDay = src.TakeOffDay,
-            TakeOffDate = src.TakeOffDate,
-            ArriveOn = src.ArriveOn,
-            TransitPlaces = src.TransitPlaces,
-            Company = src.Company,
-            Price = src.Price
-        };
-        
-        public static TicketById From(TicketCreateUpdateModel src) => new TicketById
+        public static Ticket1 From(TicketCreateUpdateModel src) => new Ticket1
         {
             CountryFrom = src.CountryFrom,
             CityFrom = src.CityFrom,
@@ -52,6 +33,23 @@ namespace AviaSalesApi.Data.Entities
             Company = src.Company,
             Price = src.Price,
             TransitPlaces = JsonConvert.SerializeObject(src.TransitPlaces)
+        };
+        
+        public static Ticket1 From(TicketById src) => new Ticket1
+        {
+            Id = src.Id,
+            CountryFrom = src.CountryFrom,
+            CityFrom = src.CityFrom,
+            CountryTo = src.CountryTo,
+            CityTo = src.CityTo,
+            TakeOffDay = src.TakeOffDay,
+            TakeOffYear = src.TakeOffYear,
+            TakeOffMonth = src.TakeOffMonth,
+            TakeOffDate = src.TakeOffDate,
+            ArriveOn = src.ArriveOn,
+            Company = src.Company,
+            Price = src.Price,
+            TransitPlaces = src.TransitPlaces
         };
     }
 }

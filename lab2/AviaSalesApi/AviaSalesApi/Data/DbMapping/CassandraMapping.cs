@@ -7,7 +7,7 @@ namespace AviaSalesApi.Data.DbMapping
     {
         public CassandraMapping()
         {
-            For<Ticket>()
+            For<Ticket1>()
                 .TableName("ticket_by_place_from_place_to_takeoff_day")
                 .Column(t => t.CountryFrom, c => c.WithName("country_from"))
                 .Column(t => t.CityFrom, c => c.WithName("city_from"))

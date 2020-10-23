@@ -32,9 +32,11 @@ namespace AviaSalesApi
                 if (seedDataCfg.ReseedExampleData)
                 {
                     var processor = scope.ServiceProvider.GetService<IJsonFileProcessor>();
-                    var ticketByLocationAndDateRepository = scope.ServiceProvider.GetService<ICassandraRepository<Ticket>>();
-                    var ticketByIdRepository = scope.ServiceProvider.GetService<ICassandraRepository<TicketById>>();
-                    await Seed.SeedDataAsync(ticketByLocationAndDateRepository, ticketByIdRepository, processor);
+                    //var ticketByLocationAndDateRepository = scope.ServiceProvider.GetService<ICassandraRepository<Ticket1>>();
+                   // var ticketByIdRepository = scope.ServiceProvider.GetService<ICassandraRepository<TicketById>>();
+                    //await Seed.SeedDataAsync(ticketByLocationAndDateRepository, ticketByIdRepository, processor);
+                    var ticketsRepository = scope.ServiceProvider.GetService<IMongoRepository<Ticket>>();
+                    await Seed.SeedToMongoAsync(ticketsRepository, processor);
                 }
             }
             catch (Exception e)

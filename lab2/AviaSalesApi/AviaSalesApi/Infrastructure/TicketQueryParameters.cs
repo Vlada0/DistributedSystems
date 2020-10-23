@@ -8,6 +8,6 @@ namespace AviaSalesApi.Infrastructure
         public string CityFrom { get; set; }
         public string CountryTo { get; set; }
         public string CityTo { get; set; }
-        public DateTime TakeOffDay { get; set; }
+        public DateTime? TakeOffDay { get; set; }
     }
 }

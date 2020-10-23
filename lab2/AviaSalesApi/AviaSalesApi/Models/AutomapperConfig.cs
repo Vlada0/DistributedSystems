@@ -11,7 +11,7 @@ namespace AviaSalesApi.Models
     {
         public AutomapperConfig()
         {
-            CreateMap<Ticket, TicketModel>()
+            CreateMap<Ticket1, TicketModel>()
                 .ForMember(dest => dest.TransitPlaces,
                     opt => opt.Ignore())
                 .ForMember(dest => dest.TakeOffDay, opt => opt.MapFrom(
