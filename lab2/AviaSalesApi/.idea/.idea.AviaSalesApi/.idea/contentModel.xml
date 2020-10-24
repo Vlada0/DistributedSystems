@@ -11,29 +11,21 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Consts.cs" t="Include" />
         <e p="Controllers" t="Include">
+          <e p="BaseController.cs" t="Include" />
           <e p="TicketsController.cs" t="Include" />
           <e p="WarrantsController.cs" t="Include" />
         </e>
         <e p="Data" t="Include">
-          <e p="DbMapping" t="Include">
-            <e p="CassandraMapping.cs" t="Include" />
-          </e>
           <e p="Entities" t="Include">
             <e p="BaseEntity.cs" t="Include" />
             <e p="Ticket.cs" t="Include" />
-            <e p="Ticket1.cs" t="Include" />
-            <e p="TicketById.cs" t="Include" />
             <e p="Warrant.cs" t="Include" />
-            <e p="WarrantByPassengerIban.cs" t="Include" />
-            <e p="WarrantByPassengerIbanAndTicketId.cs" t="Include" />
           </e>
           <e p="Repository" t="Include">
             <e p="Impl" t="Include">
-              <e p="CassandraRepository.cs" t="Include" />
               <e p="MongoRepository.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
-              <e p="ICassandraRepository.cs" t="Include" />
               <e p="IMongoRepository.cs" t="Include" />
             </e>
           </e>
@@ -93,9 +85,8 @@
         <e p="seed.json" t="Include" />
         <e p="Services" t="Include">
           <e p="Impl" t="Include">
-            <e p="Ticket1Service.cs" t="Include" />
             <e p="TicketService.cs" t="Include" />
-            <e p="Warrants1Service.cs" t="Include" />
+            <e p="WarrantService.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="ITicketService.cs" t="Include" />

@@ -8,10 +8,10 @@ namespace AviaSalesApi.Services.Interfaces
     public interface IWarrantsService
     {
         Task<IEnumerable<WarrantModel>> GetWarrantsByIbanAsync(string iban);
-        Task<WarrantModel> GetWarrantByIbanAndIdAsync(string iban, Guid id);
+        Task<WarrantModel> GetWarrantByIdAsync(Guid id);
 
         Task<WarrantModel> CreateWarrantAsync(WarrantCreateUpdateModel model);
-        Task UpdateWarrantAsync(string iban, Guid warrantId, WarrantCreateUpdateModel model);
-        Task DeleteWarrantAsync(string iban, Guid warrantId);
+        Task UpdateWarrantAsync(Guid warrantId, WarrantCreateUpdateModel model);
+        Task DeleteWarrantAsync(Guid warrantId);
     }
 }

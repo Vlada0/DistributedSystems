@@ -33,35 +33,5 @@ namespace AviaSalesApi.Models.Tickets
             Company = src.Company,
             Price = src.Price
         };
-
-        public static TicketModel From(Ticket1 src) => new TicketModel
-        {
-            Id = src.Id,
-            CountryFrom = src.CountryFrom,
-            CityFrom = src.CityFrom,
-            CountryTo = src.CountryTo,
-            CityTo = src.CityTo,
-            TakeOffDay = new DateTime(src.TakeOffYear, src.TakeOffMonth, src.TakeOffDay),
-            TakeOffDate = src.TakeOffDate,
-            ArriveOn = src.ArriveOn,
-            TransitPlaces = JsonConvert.DeserializeObject<IEnumerable<TransitPlace>>(src.TransitPlaces),
-            Company = src.Company,
-            Price = src.Price
-        };
-        
-        public static TicketModel From(TicketById src) => new TicketModel
-        {
-            Id = src.Id,
-            CountryFrom = src.CountryFrom,
-            CityFrom = src.CityFrom,
-            CountryTo = src.CountryTo,
-            CityTo = src.CityTo,
-            TakeOffDay = new DateTime(src.TakeOffYear, src.TakeOffMonth, src.TakeOffDay),
-            TakeOffDate = src.TakeOffDate,
-            ArriveOn = src.ArriveOn,
-            TransitPlaces = JsonConvert.DeserializeObject<IEnumerable<TransitPlace>>(src.TransitPlaces),
-            Company = src.Company,
-            Price = src.Price
-        };
     }
 }

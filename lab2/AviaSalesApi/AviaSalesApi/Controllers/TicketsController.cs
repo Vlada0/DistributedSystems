@@ -8,9 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AviaSalesApi.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
-    public class TicketsController : ControllerBase
+    public class TicketsController : BaseController
     {
         private readonly ITicketService _ticketService;
 
@@ -34,6 +33,7 @@ namespace AviaSalesApi.Controllers
         public async Task<ActionResult<TicketModel>> TicketCreate([FromBody] TicketCreateUpdateModel updateModel)
         {
             var ticket = await _ticketService.AddTicketAsync(updateModel);
+            
             return CreatedAtAction(nameof(TicketGetById), new {ticketId = ticket.Id}, ticket);
         }
 

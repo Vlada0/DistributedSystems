@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AviaSalesApi.Data;
-using AviaSalesApi.Data.DbMapping;
 using AviaSalesApi.Data.Entities;
 using AviaSalesApi.Data.Repository.Interfaces;
 using AviaSalesApi.Helpers;
@@ -26,15 +25,10 @@ namespace AviaSalesApi
             using var scope = host.Services.CreateScope();
             try
             {
-                MappingConfiguration.Global.Define<CassandraMapping>();
-
                 var seedDataCfg = scope.ServiceProvider.GetService<SeedDataConfig>();
                 if (seedDataCfg.ReseedExampleData)
                 {
                     var processor = scope.ServiceProvider.GetService<IJsonFileProcessor>();
-                    //var ticketByLocationAndDateRepository = scope.ServiceProvider.GetService<ICassandraRepository<Ticket1>>();
-                   // var ticketByIdRepository = scope.ServiceProvider.GetService<ICassandraRepository<TicketById>>();
-                    //await Seed.SeedDataAsync(ticketByLocationAndDateRepository, ticketByIdRepository, processor);
                     var ticketsRepository = scope.ServiceProvider.GetService<IMongoRepository<Ticket>>();
                     await Seed.SeedToMongoAsync(ticketsRepository, processor);
                 }

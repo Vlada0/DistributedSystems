@@ -36,7 +36,7 @@ namespace AviaSalesApi.Services.Impl
                         Expression.AndAlso(current, body));
 
             var expression = Expression.Lambda<Func<Ticket, bool>>(expressionBody, pe);
-
+            
             var tickets = await _mongoRepository.FilterByAsync(expression);
             var models = tickets.Select(TicketModel.From);
 

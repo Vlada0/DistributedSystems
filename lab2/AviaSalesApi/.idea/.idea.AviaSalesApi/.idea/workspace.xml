@@ -23,72 +23,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d04b34-8351-4376-a8bb-9a776200bdad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/Ticket1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/Warrant.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/MongoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Interfaces/IMongoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Config/IMongoDbConnectionSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Exceptions/BadRequestException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Infrastructure/MongoCollectionAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Services/Impl/Ticket1Service.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/DnsClient.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/MongoDB.Bson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/MongoDB.Driver.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/MongoDB.Driver.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/MongoDB.Libmongocrypt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/SharpCompress.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/runtimes/win/native/libzstd.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy32.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy64.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Controllers/BaseController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AviaSalesApi/Services/Impl/WarrantService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/AviaSalesApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/AviaSalesApi.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/DbMapping/CassandraMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Data/DbMapping/CassandraMapping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/Ticket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/Ticket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/TicketById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/TicketById.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Seed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Data/Seed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Helpers/TicketParsedFromJson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Helpers/TicketParsedFromJson.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/DbMapping/CassandraMapping.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/Ticket1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/TicketById.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/WarrantByPassengerIban.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Entities/WarrantByPassengerIbanAndTicketId.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/CassandraRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Interfaces/ICassandraRepository.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/Models/AutomapperConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Models/AutomapperConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/Models/Tickets/TicketModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Models/Tickets/TicketModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Models/Warrants/WarrantCreateUpdateModelValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Models/Warrants/WarrantCreateUpdateModelValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Services/Impl/Ticket1Service.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/Services/Impl/TicketService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Services/Impl/TicketService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Services/Impl/WarrantsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Services/Interfaces/IWarrantsService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Services/Interfaces/IWarrantsService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/seed.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/seed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/AviaSalesApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/AviaSalesApi.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/seed.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/seed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/.vs/BooksWarehouse/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/.vs/BooksWarehouse/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Core/obj/Debug/netcoreapp3.1/BooksWarehouse.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Core/obj/Debug/netcoreapp3.1/BooksWarehouse.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/bin/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/bin/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/bin/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/bin/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/obj/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/obj/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/obj/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/obj/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/obj/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Infrastructure/obj/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/bin/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/bin/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/bin/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/bin/Debug/netcoreapp3.1/BooksWarehouse.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/bin/Debug/netcoreapp3.1/BooksWarehouse.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/bin/Debug/netcoreapp3.1/BooksWarehouse.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/bin/Debug/netcoreapp3.1/BooksWarehouse.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/bin/Debug/netcoreapp3.1/BooksWarehouse.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/obj/Debug/netcoreapp3.1/BooksWarehouse.Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/obj/Debug/netcoreapp3.1/BooksWarehouse.Web.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/obj/Debug/netcoreapp3.1/BooksWarehouse.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/obj/Debug/netcoreapp3.1/BooksWarehouse.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/obj/Debug/netcoreapp3.1/BooksWarehouse.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../BooksWarehouse/BooksWarehouse.Web/obj/Debug/netcoreapp3.1/BooksWarehouse.Web.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,8 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AviaSalesApi/Consts.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Config/CassandraDbConfig.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Config/SeedDataConfig.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Interfaces/ICassandraRepository.cs" />
@@ -122,15 +83,11 @@
         <option value="$PROJECT_DIR$/AviaSalesApi/db_scripts.txt" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Entities/WarrantByPassengerIban.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Entities/WarrantByPassengerIbanAndTicketId.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Models/Warrants/WarrantModel.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/DbMapping/CassandraMapping.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Models/Warrants/WarrantCreateUpdateModel.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Models/Warrants/WarrantCreateUpdateModelValidator.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Models/AutomapperConfig.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Models/Tickets/TicketCreateUpdateModelValidator.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Extensions/ServicesExtensions.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/CassandraRepository.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Services/Impl/WarrantsService.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Entities/Ticket1.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Config/IMongoDbConnectionSettings.cs" />
@@ -141,24 +98,30 @@
         <option value="$PROJECT_DIR$/AviaSalesApi/Services/Interfaces/ITicket1Service.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Services/Interfaces/IWarrants1Service.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Services/Interfaces/ITicketService.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Services/Interfaces/IWarrantsService.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Services/Impl/Ticket1Service.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Startup.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/MongoCollectionAttribute.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Entities/Warrant.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Program.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/appsettings.json" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Interfaces/IMongoRepository.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/MongoRepository.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Data/Entities/Ticket.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Helpers/TicketParsedFromJson.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Models/Tickets/TicketModel.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/seed.json" />
         <option value="$PROJECT_DIR$/AviaSalesApi/appsettings.Development.json" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/TicketQueryParameters.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Services/Impl/Ticket1Service.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Services/Interfaces/IWarrantsService.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Services/Impl/TicketService.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Models/Warrants/WarrantModel.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Services/Impl/WarrantService.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Models/Tickets/TicketModel.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Models/AutomapperConfig.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Program.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Models/Warrants/WarrantCreateUpdateModelValidator.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Controllers/BaseController.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs" />
       </list>
     </option>
   </component>
@@ -231,7 +194,9 @@
       <workItem from="1603297199621" duration="11276000" />
       <workItem from="1603385936163" duration="5785000" />
       <workItem from="1603461776557" duration="1334000" />
-      <workItem from="1603471322551" duration="10613000" />
+      <workItem from="1603471322551" duration="10942000" />
+      <workItem from="1603569220144" duration="494000" />
+      <workItem from="1603569760894" duration="2582000" />
     </task>
     <servers />
   </component>
@@ -265,90 +230,90 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="426" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1603132006813" />
-    <state width="1493" height="154" key="GridCell.Tab.0.bottom" timestamp="1603481828757">
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom" timestamp="1603571774898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603481828757" />
-    <state width="1493" height="154" key="GridCell.Tab.0.center" timestamp="1603481828757">
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603571774898" />
+    <state width="1493" height="262" key="GridCell.Tab.0.center" timestamp="1603571774898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603481828757" />
-    <state width="1493" height="154" key="GridCell.Tab.0.left" timestamp="1603481828757">
+    <state width="1493" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603571774898" />
+    <state width="1493" height="262" key="GridCell.Tab.0.left" timestamp="1603571774898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603481828757" />
-    <state width="1493" height="154" key="GridCell.Tab.0.right" timestamp="1603481828757">
+    <state width="1493" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603571774898" />
+    <state width="1493" height="262" key="GridCell.Tab.0.right" timestamp="1603571774898">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603481828757" />
-    <state width="1493" height="154" key="GridCell.Tab.1.bottom" timestamp="1603481837981">
+    <state width="1493" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603571774898" />
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1603571785273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603481837981" />
-    <state width="1493" height="154" key="GridCell.Tab.1.center" timestamp="1603481837981">
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603571785273" />
+    <state width="1493" height="262" key="GridCell.Tab.1.center" timestamp="1603571785273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603481837981" />
-    <state width="1493" height="154" key="GridCell.Tab.1.left" timestamp="1603481837981">
+    <state width="1493" height="262" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603571785273" />
+    <state width="1493" height="262" key="GridCell.Tab.1.left" timestamp="1603571785272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603481837981" />
-    <state width="1493" height="154" key="GridCell.Tab.1.right" timestamp="1603481837981">
+    <state width="1493" height="262" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603571785272" />
+    <state width="1493" height="262" key="GridCell.Tab.1.right" timestamp="1603571785273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603481837981" />
-    <state width="1493" height="154" key="GridCell.Tab.2.bottom" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603571785273" />
+    <state width="1493" height="262" key="GridCell.Tab.2.bottom" timestamp="1603571774697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.2.center" timestamp="1603481828580">
+    <state width="1493" height="262" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603571774697" />
+    <state width="1493" height="262" key="GridCell.Tab.2.center" timestamp="1603571774697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603481828580" />
-    <state width="1493" height="154" key="GridCell.Tab.2.left" timestamp="1603481828580">
+    <state width="1493" height="262" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603571774697" />
+    <state width="1493" height="262" key="GridCell.Tab.2.left" timestamp="1603571774697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603481828580" />
-    <state width="1493" height="154" key="GridCell.Tab.2.right" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603571774697" />
+    <state width="1493" height="262" key="GridCell.Tab.2.right" timestamp="1603571774697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.3.bottom" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603571774697" />
+    <state width="1493" height="262" key="GridCell.Tab.3.bottom" timestamp="1603571774698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.3.center" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603571774698" />
+    <state width="1493" height="262" key="GridCell.Tab.3.center" timestamp="1603571774697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.3.left" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603571774697" />
+    <state width="1493" height="262" key="GridCell.Tab.3.left" timestamp="1603571774697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.3.right" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603571774697" />
+    <state width="1493" height="262" key="GridCell.Tab.3.right" timestamp="1603571774698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.4.bottom" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603571774698" />
+    <state width="1493" height="262" key="GridCell.Tab.4.bottom" timestamp="1603571774698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.4.center" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603571774698" />
+    <state width="1493" height="262" key="GridCell.Tab.4.center" timestamp="1603571774698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.4.left" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603571774698" />
+    <state width="1493" height="262" key="GridCell.Tab.4.left" timestamp="1603571774698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state width="1493" height="154" key="GridCell.Tab.4.right" timestamp="1603481828581">
+    <state width="1493" height="262" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603571774698" />
+    <state width="1493" height="262" key="GridCell.Tab.4.right" timestamp="1603571774698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="154" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603481828581" />
-    <state x="587" y="102" key="RiderGenerateDialog" timestamp="1603473021698">
+    <state width="1493" height="262" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603571774698" />
+    <state x="587" y="102" key="RiderGenerateDialog" timestamp="1603570032224">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="587" y="102" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1603473021698" />
+    <state x="587" y="102" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1603570032224" />
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1603392524039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -363,13 +328,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Program.cs</url>
-          <line>42</line>
+          <line>36</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Program.cs" initialLine="39">
             <startOffsets>
-              <option value="1766" />
+              <option value="1294" />
             </startOffsets>
             <endOffsets>
-              <option value="1767" />
+              <option value="1295" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
@@ -401,238 +366,95 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/CassandraRepository.cs</url>
-          <line>26</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Data\Repository\Impl\CassandraRepository.cs" initialLine="25">
-            <startOffsets>
-              <option value="926" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1188" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Ticket1Service.cs</url>
-          <line>43</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\TicketService.cs" initialLine="42">
-            <startOffsets>
-              <option value="1649" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1731" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Ticket1Service.cs</url>
-          <line>54</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\TicketService.cs" initialLine="48">
-            <startOffsets>
-              <option value="2042" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2081" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Ticket1Service.cs</url>
-          <line>88</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\TicketService.cs" initialLine="60">
-            <startOffsets>
-              <option value="3539" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3631" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs</url>
           <line>50</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\TicketsController.cs" initialLine="45">
             <startOffsets>
-              <option value="1792" />
+              <option value="1785" />
             </startOffsets>
             <endOffsets>
-              <option value="1841" />
+              <option value="1834" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs</url>
-          <line>49</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\TicketsController.cs" initialLine="44">
-            <startOffsets>
-              <option value="1778" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1779" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs</url>
           <line>43</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\TicketsController.cs" initialLine="45">
             <startOffsets>
-              <option value="1554" />
+              <option value="1547" />
             </startOffsets>
             <endOffsets>
-              <option value="1610" />
+              <option value="1603" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Ticket1Service.cs</url>
-          <line>65</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\TicketService.cs" initialLine="65">
-            <startOffsets>
-              <option value="2419" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2511" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs</url>
-          <line>20</line>
+          <line>19</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\WarrantsController.cs" initialLine="20">
             <startOffsets>
-              <option value="654" />
+              <option value="634" />
             </startOffsets>
             <endOffsets>
-              <option value="721" />
+              <option value="701" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs</url>
-          <line>28</line>
+          <line>26</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\WarrantsController.cs" initialLine="28">
             <startOffsets>
-              <option value="962" />
+              <option value="898" />
             </startOffsets>
             <endOffsets>
-              <option value="1043" />
+              <option value="966" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs</url>
-          <line>35</line>
+          <line>33</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\WarrantsController.cs" initialLine="35">
             <startOffsets>
-              <option value="1239" />
+              <option value="1162" />
             </startOffsets>
             <endOffsets>
-              <option value="1302" />
+              <option value="1225" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs</url>
-          <line>43</line>
+          <line>42</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\WarrantsController.cs" initialLine="44">
             <startOffsets>
-              <option value="1572" />
+              <option value="1543" />
             </startOffsets>
             <endOffsets>
-              <option value="1638" />
+              <option value="1603" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/WarrantsController.cs</url>
-          <line>50</line>
+          <line>49</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\WarrantsController.cs" initialLine="51">
             <startOffsets>
-              <option value="1855" />
+              <option value="1788" />
             </startOffsets>
             <endOffsets>
-              <option value="1914" />
+              <option value="1841" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs</url>
-          <line>28</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\WarrantsService.cs" initialLine="28">
-            <startOffsets>
-              <option value="977" />
-            </startOffsets>
-            <endOffsets>
-              <option value="978" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs</url>
-          <line>39</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\WarrantsService.cs" initialLine="39">
-            <startOffsets>
-              <option value="1439" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1440" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs</url>
-          <line>54</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\WarrantsService.cs" initialLine="54">
-            <startOffsets>
-              <option value="2065" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2066" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs</url>
-          <line>67</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\WarrantsService.cs" initialLine="67">
-            <startOffsets>
-              <option value="2620" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2621" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/Warrants1Service.cs</url>
-          <line>78</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\WarrantsService.cs" initialLine="78">
-            <startOffsets>
-              <option value="3161" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3162" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Data/Seed.cs</url>
@@ -688,13 +510,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs</url>
-          <line>28</line>
+          <line>27</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\TicketsController.cs" initialLine="25">
             <startOffsets>
-              <option value="940" />
+              <option value="920" />
             </startOffsets>
             <endOffsets>
-              <option value="998" />
+              <option value="978" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="57" />
@@ -716,13 +538,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs</url>
-          <line>21</line>
+          <line>20</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\TicketsController.cs" initialLine="21">
             <startOffsets>
-              <option value="682" />
+              <option value="662" />
             </startOffsets>
             <endOffsets>
-              <option value="748" />
+              <option value="728" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="62" />
@@ -739,6 +561,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AviaSalesApi/Controllers/TicketsController.cs</url>
+          <line>34</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Controllers\TicketsController.cs" initialLine="35">
+            <startOffsets>
+              <option value="1176" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1238" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/TicketService.cs</url>
+          <line>53</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\TicketService.cs" initialLine="53">
+            <startOffsets>
+              <option value="2040" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2078" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AviaSalesApi/Services/Impl/WarrantService.cs</url>
+          <line>45</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Services\Impl\WarrantService.cs" initialLine="45">
+            <startOffsets>
+              <option value="1497" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1539" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

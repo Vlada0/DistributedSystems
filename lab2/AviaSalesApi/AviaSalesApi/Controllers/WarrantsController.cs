@@ -7,9 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AviaSalesApi.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
-    public class WarrantsController : ControllerBase
+    public class WarrantsController : BaseController
     {
         private readonly IWarrantsService _warrantsService;
 
@@ -22,11 +21,10 @@ namespace AviaSalesApi.Controllers
             return Ok(warrants);
         }
 
-        [HttpGet("{iban}/{warrantId}")]
-        public async Task<ActionResult<WarrantModel>> WarrantGetById([FromRoute] string iban,
-            [FromRoute] Guid warrantId)
+        [HttpGet("{warrantId}")]
+        public async Task<ActionResult<WarrantModel>> WarrantGetById([FromRoute] Guid warrantId)
         {
-            var warrant = await _warrantsService.GetWarrantByIbanAndIdAsync(iban, warrantId);
+            var warrant = await _warrantsService.GetWarrantByIdAsync(warrantId);
             return Ok(warrant);
         }
 
@@ -34,21 +32,22 @@ namespace AviaSalesApi.Controllers
         public async Task<ActionResult<WarrantModel>> WarrantCreate([FromBody] WarrantCreateUpdateModel model)
         {
             var warrant = await _warrantsService.CreateWarrantAsync(model);
-            return Ok(warrant);
+            
+            return CreatedAtAction(nameof(WarrantGetById), new {warrantId = warrant.Id}, warrant);
         }
 
-        [HttpPut("{iban}/{warrantId}")]
-        public async Task<IActionResult> WarrantUpdate([FromRoute] string iban, [FromRoute] Guid warrantId, 
+        [HttpPut("{warrantId}")]
+        public async Task<IActionResult> WarrantUpdate([FromRoute] Guid warrantId, 
             [FromBody] WarrantCreateUpdateModel model)
         {
-            await _warrantsService.UpdateWarrantAsync(iban, warrantId, model);
+            await _warrantsService.UpdateWarrantAsync(warrantId, model);
             return NoContent();
         }
 
-        [HttpDelete("{iban}/{warrantId}")]
-        public async Task<IActionResult> WarrantDelete([FromRoute] string iban, [FromRoute] Guid warrantId)
+        [HttpDelete("{warrantId}")]
+        public async Task<IActionResult> WarrantDelete([FromRoute] Guid warrantId)
         {
-            await _warrantsService.DeleteWarrantAsync(iban, warrantId);
+            await _warrantsService.DeleteWarrantAsync(warrantId);
             return NoContent();
         }
     }

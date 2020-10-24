@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using AutoMapper;
 using AviaSalesApi.Data.Entities;
 using AviaSalesApi.Models.Tickets;
@@ -11,23 +12,8 @@ namespace AviaSalesApi.Models
     {
         public AutomapperConfig()
         {
-            CreateMap<Ticket1, TicketModel>()
-                .ForMember(dest => dest.TransitPlaces,
-                    opt => opt.Ignore())
-                .ForMember(dest => dest.TakeOffDay, opt => opt.MapFrom(
-                    src => new DateTime(src.TakeOffYear, src.TakeOffMonth, src.TakeOffDay)));
-            
-            CreateMap<TicketById, TicketModel>()
-                .ForMember(dest => dest.TransitPlaces,
-                    opt => opt.MapFrom(
-                        src => JsonConvert.DeserializeObject<TransitPlace[]>(src.TransitPlaces)))
-                .ForMember(dest => dest.TakeOffDay, opt => opt.MapFrom(
-                    src => new DateTime(src.TakeOffYear, src.TakeOffMonth, src.TakeOffDay)));
-
-            CreateMap<WarrantByPassengerIban, WarrantModel>();
-            CreateMap<WarrantByPassengerIbanAndTicketId, WarrantModel>();
-            CreateMap<WarrantCreateUpdateModel, WarrantByPassengerIban>();
-            CreateMap<WarrantCreateUpdateModel, WarrantByPassengerIbanAndTicketId>();
+            CreateMap<Warrant, WarrantModel>();
+            CreateMap<WarrantCreateUpdateModel, Warrant>();
         }
     }
 }
