@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AviaSalesApi", "AviaSalesApi\AviaSalesApi.csproj", "{26930FDD-160B-42EC-95A7-14438C20D017}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxy", "ReverseProxy\ReverseProxy.csproj", "{ED51BF44-4C32-413E-88E8-8285AEE4A19D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AviaSalesApiCpy1", "AviaSalesApiCpy1\AviaSalesApiCpy1.csproj", "{693E68EE-7311-4974-8986-B85E401C78EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{26930FDD-160B-42EC-95A7-14438C20D017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26930FDD-160B-42EC-95A7-14438C20D017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26930FDD-160B-42EC-95A7-14438C20D017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED51BF44-4C32-413E-88E8-8285AEE4A19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED51BF44-4C32-413E-88E8-8285AEE4A19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED51BF44-4C32-413E-88E8-8285AEE4A19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED51BF44-4C32-413E-88E8-8285AEE4A19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{693E68EE-7311-4974-8986-B85E401C78EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{693E68EE-7311-4974-8986-B85E401C78EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{693E68EE-7311-4974-8986-B85E401C78EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{693E68EE-7311-4974-8986-B85E401C78EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

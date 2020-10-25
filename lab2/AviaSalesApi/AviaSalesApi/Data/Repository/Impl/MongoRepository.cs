@@ -8,7 +8,10 @@ using AviaSalesApi.Data.Repository.Interfaces;
 using AviaSalesApi.Infrastructure;
 using AviaSalesApi.Infrastructure.Config;
 using AviaSalesApi.Infrastructure.Exceptions;
+using Microsoft.AspNetCore.JsonPatch.Helpers;
+using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Core.Connections;
 using MongoDB.Driver.Linq;
 
 namespace AviaSalesApi.Data.Repository.Impl
@@ -19,8 +22,25 @@ namespace AviaSalesApi.Data.Repository.Impl
 
         public MongoRepository(IMongoDbConnectionSettings settings)
         {
-            var db = new MongoClient(settings.ConnectionString).GetDatabase(settings.Database);
+            /*var mongoSettings = new MongoClientSettings
+            {
+                Servers = new[]
+                {
+                    new MongoServerAddress("localhost", 27027),
+                    new MongoServerAddress("localhost", 27028),
+                    new MongoServerAddress("localhost", 27029)
+                },
+                ConnectionMode = ConnectionMode.Automatic,
+                ReplicaSetName = "rs3",
+                WriteConcern = new WriteConcern(WriteConcern.WValue.Parse("3"),wTimeout:TimeSpan.Parse("10"))
+            };*/
+            var db = new MongoClient(settings.ReadonlyConnectionString).GetDatabase(settings.Database);
+            
+            /*var command = new BsonDocumentCommand<BsonDocument>(new BsonDocument() {{"replSetGetStatus", 1}});
+            var res = db.RunCommand<BsonDocument>(command);
+            var cl = new MongoClient(settings.ReadonlyConnectionString);*/
             _collection = db.GetCollection<T>(GetCollectionName(typeof(T)));
+            
         }
 
         public IQueryable<T> AsQueryable() => _collection.AsQueryable();
