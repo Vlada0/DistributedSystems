@@ -1,0 +1,21 @@
+﻿using FluentValidation;
+
+namespace AviaSalesApiCopyOne.Models.Tickets
+{
+    public class TicketCreateUpdateModelValidator : AbstractValidator<TicketCreateUpdateModel>
+    {
+        public TicketCreateUpdateModelValidator()
+        {
+            RuleFor(t => t.CountryFrom).NotEmpty()
+                .WithMessage($"{nameof(TicketCreateUpdateModel.CountryFrom)} must be specified.");
+            RuleFor(t => t.CityFrom).NotEmpty()
+                .WithMessage($"{nameof(TicketCreateUpdateModel.CityFrom)} must be specified.");
+            RuleFor(t => t.CountryTo).NotEmpty()
+                .WithMessage($"{nameof(TicketCreateUpdateModel.CountryTo)} must be specified.");
+            RuleFor(t => t.CityTo).NotEmpty()
+                .WithMessage($"{nameof(TicketCreateUpdateModel.CityTo)} must be specified.");
+            RuleFor(t => t.Price).GreaterThanOrEqualTo(0)
+                .WithMessage($"{nameof(TicketCreateUpdateModel.Price)} can't be a negative value.");
+        }
+    }
+}

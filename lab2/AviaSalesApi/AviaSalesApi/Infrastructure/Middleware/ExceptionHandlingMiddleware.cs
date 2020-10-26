@@ -12,6 +12,7 @@ namespace AviaSalesApi.Infrastructure.Middleware
     public class ExceptionHandlingMiddleware
     {
         private readonly RequestDelegate _nxt;
+        private const int ProxyPort = 4444;
 
         public ExceptionHandlingMiddleware(RequestDelegate nxt)
         {
@@ -20,6 +21,27 @@ namespace AviaSalesApi.Infrastructure.Middleware
         
         public async Task Invoke(HttpContext ctx)
         {
+            string origin = ctx.Request.Headers["Origin"];
+            int? port = null;
+            if (! string.IsNullOrWhiteSpace(origin))
+            {
+                var uri = new Uri(origin);
+                port = uri.Port;
+            }
+
+            if (port == null || port != ProxyPort)
+            {
+                var response = ctx.Response;
+                response.ContentType = "application/json";
+                response.StatusCode = StatusCodes.Status403Forbidden;
+                
+                await ctx.Response.WriteAsync(JsonConvert.SerializeObject(new
+                {
+                    Error = "Host is not allowed."
+                }));
+                return;
+            }
+            
             try
             {
                 await _nxt.Invoke(ctx);
