@@ -27,216 +27,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d04b34-8351-4376-a8bb-9a776200bdad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/AviaSalesApiCopyOne.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Controllers/BaseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Controllers/TicketsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Controllers/WarrantsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Data/Entities/BaseEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Data/Entities/Ticket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Data/Entities/Warrant.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Data/Repository/Impl/MongoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Data/Repository/Interfaces/IMongoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Extensions/ApplicationBuilderExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Extensions/ServicesExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Infrastructure/Config/IMongoDbConnectionSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Infrastructure/Config/SeedDataConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Infrastructure/Exceptions/BadRequestException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Infrastructure/Exceptions/EntityNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Infrastructure/MongoCollectionAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Infrastructure/TicketQueryParameters.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/AutomapperConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Tickets/TicketCreateUpdateModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Tickets/TicketCreateUpdateModelValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Tickets/TicketModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Tickets/TransitPlace.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Warrants/WarrantCreateUpdateModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Warrants/WarrantCreateUpdateModelValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Warrants/WarrantModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Services/Impl/TicketService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Services/Impl/WarrantService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Services/Interfaces/ITicketService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Services/Interfaces/IWarrantsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AutoMapper.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/DnsClient.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/FluentValidation.AspNetCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/FluentValidation.DependencyInjectionExtensions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/FluentValidation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/MongoDB.Bson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/MongoDB.Driver.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/MongoDB.Driver.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/MongoDB.Libmongocrypt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/SharpCompress.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/runtimes/win/native/libzstd.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy32.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy64.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/AviaSalesApiCopyOne.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.RazorTargetAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/staticwebassets/AviaSalesApiCopyOne.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/staticwebassets/AviaSalesApiCopyOne.StaticWebAssets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/AviaSalesApiCopyTwo.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Controllers/BaseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Controllers/TicketsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Controllers/WarrantsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Entities/BaseEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Entities/Ticket.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Entities/Warrant.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Repository/Impl/MongoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Repository/Interfaces/IMongoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Extensions/ApplicationBuilderExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Extensions/ServicesExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Config/IMongoDbConnectionSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Config/SeedDataConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Exceptions/BadRequestException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Exceptions/EntityNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/MongoCollectionAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/TicketQueryParameters.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Models/AutomapperConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Models/Tickets/TicketCreateUpdateModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Models/Tickets/TicketCreateUpdateModelValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Models/Tickets/TicketModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Models/Tickets/TransitPlace.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Models/Warrants/WarrantCreateUpdateModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Models/Warrants/WarrantCreateUpdateModelValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Models/Warrants/WarrantModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Services/Impl/TicketService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Services/Impl/WarrantService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Services/Interfaces/ITicketService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Services/Interfaces/IWarrantsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AutoMapper.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/DnsClient.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/FluentValidation.AspNetCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/FluentValidation.DependencyInjectionExtensions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/FluentValidation.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/MongoDB.Bson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/MongoDB.Driver.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/MongoDB.Driver.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/MongoDB.Libmongocrypt.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/SharpCompress.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/runtimes/win/native/libzstd.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy32.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/runtimes/win/native/snappy64.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/AviaSalesApiCopyTwo.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/AviaSalesApiCopyTwo.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/AviaSalesApiCopyTwo.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.RazorTargetAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/staticwebassets/AviaSalesApiCopyTwo.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/staticwebassets/AviaSalesApiCopyTwo.StaticWebAssets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/ApiUrls.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/Controllers/ValueController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/ReverseProxy.csproj.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.RazorTargetAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/staticwebassets/ReverseProxy.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/staticwebassets/ReverseProxy.StaticWebAssets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCacheSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/Extensions/ServiceExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/Services/Impl/ResponseCacheService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/Services/Interfaces/IResponseCacheService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.StackExchangeRedis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/StackExchange.Redis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/System.Diagnostics.PerformanceCounter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CopyComplete" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/AviaSalesApi/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/AviaSalesApi/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/AviaSalesApi/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/AviaSalesApi/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/ReverseProxy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/ReverseProxy.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -255,21 +91,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AD61CA47-F8B7-4CC6-93A0-BA44CC73B5C7/25F/AsyncMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/346AC160-1803-412E-B0A1-21046C4AC027/F/CallSiteVisitor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/346AC160-1803-412E-B0A1-21046C4AC027/D/CallSiteRuntimeResolver.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Tickets/TicketCreateUpdateModel.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Models/Tickets/TicketCreateUpdateModelValidator.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Data/Entities/Ticket.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Extensions/ApplicationBuilderExtensions.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Extensions/ServicesExtensions.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Services/Interfaces/IWarrantsService.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Services/Interfaces/ITicketService.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Services/Impl/TicketService.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Services/Impl/WarrantService.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Startup.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Controllers/TicketsController.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Controllers/WarrantsController.cs" />
@@ -310,8 +138,17 @@
         <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/ApiUrls.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Caching/IReponseCacheService.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Caching/ReponseCacheService.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Caching/ResponseCacheService.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Caching/IResponseCacheService.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Caching/RedisCacheSettings.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Extensions/ServiceExtensions.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" />
         <option value="$PROJECT_DIR$/ReverseProxy/Startup.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Services/Interfaces/IResponseCacheService.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Services/Impl/ResponseCacheService.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" />
       </list>
     </option>
   </component>
@@ -473,9 +310,9 @@
       <item itemvalue=".NET Launch Settings Profile.ReverseProxy: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.AviaSalesApiCopyOne: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.AviaSalesApiCopyOne" />
-      <item itemvalue="Compound.MultipleApis" />
       <item itemvalue=".NET Launch Settings Profile.AviaSalesApiCopyTwo: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.AviaSalesApiCopyTwo" />
+      <item itemvalue="Compound.MultipleApis" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -504,7 +341,8 @@
       <workItem from="1603654860276" duration="49000" />
       <workItem from="1603655037034" duration="3574000" />
       <workItem from="1603718961400" duration="4007000" />
-      <workItem from="1603730302822" duration="11865000" />
+      <workItem from="1603730302822" duration="12866000" />
+      <workItem from="1603818339175" duration="10197000" />
     </task>
     <servers />
   </component>
@@ -534,98 +372,98 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="38" width="1089" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603731943080" />
-    <state width="431" height="464" key="DebuggerActiveHint" timestamp="1603653741759">
+    <state width="431" height="464" key="DebuggerActiveHint" timestamp="1603743085528">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="431" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1603653741759" />
-    <state width="1493" height="181" key="GridCell.Tab.0.bottom" timestamp="1603742808880">
+    <state width="431" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1603743085528" />
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1603830826414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603742808880" />
-    <state width="1493" height="181" key="GridCell.Tab.0.center" timestamp="1603742808880">
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830826414" />
+    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1603830826414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603742808880" />
-    <state width="1493" height="181" key="GridCell.Tab.0.left" timestamp="1603742808880">
+    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603830826414" />
+    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1603830826414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603742808880" />
-    <state width="1493" height="181" key="GridCell.Tab.0.right" timestamp="1603742808880">
+    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603830826414" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1603830826414">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603742808880" />
-    <state width="1493" height="181" key="GridCell.Tab.1.bottom" timestamp="1603742812292">
+    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603830826414" />
+    <state width="1493" height="178" key="GridCell.Tab.1.bottom" timestamp="1603830836696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603742812292" />
-    <state width="1493" height="181" key="GridCell.Tab.1.center" timestamp="1603742812292">
+    <state width="1493" height="178" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830836696" />
+    <state width="1493" height="178" key="GridCell.Tab.1.center" timestamp="1603830836696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603742812292" />
-    <state width="1493" height="181" key="GridCell.Tab.1.left" timestamp="1603742812292">
+    <state width="1493" height="178" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603830836696" />
+    <state width="1493" height="178" key="GridCell.Tab.1.left" timestamp="1603830836696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603742812292" />
-    <state width="1493" height="181" key="GridCell.Tab.1.right" timestamp="1603742812292">
+    <state width="1493" height="178" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603830836696" />
+    <state width="1493" height="178" key="GridCell.Tab.1.right" timestamp="1603830836696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603742812292" />
-    <state width="1493" height="181" key="GridCell.Tab.2.bottom" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603830836696" />
+    <state width="1493" height="178" key="GridCell.Tab.2.bottom" timestamp="1603830826194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.2.center" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
+    <state width="1493" height="178" key="GridCell.Tab.2.center" timestamp="1603830826194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.2.left" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
+    <state width="1493" height="178" key="GridCell.Tab.2.left" timestamp="1603830826194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.2.right" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
+    <state width="1493" height="178" key="GridCell.Tab.2.right" timestamp="1603830826194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.3.bottom" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
+    <state width="1493" height="178" key="GridCell.Tab.3.bottom" timestamp="1603830826195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.3.center" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
+    <state width="1493" height="178" key="GridCell.Tab.3.center" timestamp="1603830826195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.3.left" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
+    <state width="1493" height="178" key="GridCell.Tab.3.left" timestamp="1603830826194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.3.right" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
+    <state width="1493" height="178" key="GridCell.Tab.3.right" timestamp="1603830826195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.4.bottom" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
+    <state width="1493" height="178" key="GridCell.Tab.4.bottom" timestamp="1603830826195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.4.center" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
+    <state width="1493" height="178" key="GridCell.Tab.4.center" timestamp="1603830826195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.4.left" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
+    <state width="1493" height="178" key="GridCell.Tab.4.left" timestamp="1603830826195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
-    <state width="1493" height="181" key="GridCell.Tab.4.right" timestamp="1603742808656">
+    <state width="1493" height="178" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
+    <state width="1493" height="178" key="GridCell.Tab.4.right" timestamp="1603830826195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="181" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603742808656" />
+    <state width="1493" height="178" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1603732140122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1603732140122" />
-    <state x="587" y="102" key="RiderGenerateDialog" timestamp="1603570032224">
+    <state x="587" y="102" key="RiderGenerateDialog" timestamp="1603821194453">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="587" y="102" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1603570032224" />
+    <state x="587" y="102" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1603821194453" />
     <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1603392524039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -944,108 +782,82 @@
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
+          <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
           <line>25</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="23">
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="24">
             <startOffsets>
-              <option value="699" />
+              <option value="632" />
             </startOffsets>
             <endOffsets>
-              <option value="775" />
+              <option value="675" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="77" />
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
-          <line>36</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="34">
+          <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
+          <line>53</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="51">
             <startOffsets>
-              <option value="1182" />
+              <option value="1662" />
             </startOffsets>
             <endOffsets>
-              <option value="1183" />
+              <option value="1699" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="78" />
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
-          <line>42</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="42">
+          <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
+          <line>80</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="76">
             <startOffsets>
-              <option value="1389" />
+              <option value="2608" />
             </startOffsets>
             <endOffsets>
-              <option value="1390" />
+              <option value="2609" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="79" />
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
-          <line>67</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="67">
+          <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
+          <line>63</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="61">
             <startOffsets>
-              <option value="2320" />
+              <option value="1926" />
             </startOffsets>
             <endOffsets>
-              <option value="2408" />
+              <option value="1949" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="80" />
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
-          <line>73</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="73">
-            <startOffsets>
-              <option value="2569" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2601" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
-          <line>82</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="84">
-            <startOffsets>
-              <option value="2988" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2989" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
-          <line>45</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="45">
-            <startOffsets>
-              <option value="1553" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1605" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
+          <url>file://$PROJECT_DIR$/ReverseProxy/Services/Impl/ResponseCacheService.cs</url>
           <line>18</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="18">
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Services\Impl\ResponseCacheService.cs" initialLine="18">
             <startOffsets>
-              <option value="526" />
+              <option value="565" />
             </startOffsets>
             <endOffsets>
-              <option value="539" />
+              <option value="566" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="84" />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
+          <line>90</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="89">
+            <startOffsets>
+              <option value="2869" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2870" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="97" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

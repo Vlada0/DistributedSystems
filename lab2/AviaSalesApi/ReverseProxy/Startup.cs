@@ -1,17 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using ReverseProxy.Caching;
+using ReverseProxy.Extensions;
 using ReverseProxy.Middleware;
+// ReSharper disable All
 
 namespace ReverseProxy
 {
@@ -28,7 +23,9 @@ namespace ReverseProxy
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.Configure<ApiUrls>(Configuration.GetSection("ApiUrls"));
+            services
+                .Configure<ApiUrls>(Configuration.GetSection(nameof(ApiUrls)))
+                .AddRedisCaching(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +35,8 @@ namespace ReverseProxy
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseMiddleware<RedisCachingMiddleware>();
 
             app.UseMiddleware<ProxyMiddleware>();
 

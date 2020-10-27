@@ -263,8 +263,15 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Caching" t="Include">
+          <e p="RedisCacheSettings.cs" t="Include" />
+          <e p="RedisCachingMiddleware.cs" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
           <e p="ValueController.cs" t="Include" />
+        </e>
+        <e p="Extensions" t="Include">
+          <e p="ServiceExtensions.cs" t="Include" />
         </e>
         <e p="Middleware" t="Include">
           <e p="ProxyMiddleware.cs" t="Include" />
@@ -281,6 +288,14 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="ReverseProxy.csproj" t="IncludeRecursive" />
+        <e p="Services" t="Include">
+          <e p="Impl" t="Include">
+            <e p="ResponseCacheService.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IResponseCacheService.cs" t="Include" />
+          </e>
+        </e>
         <e p="Startup.cs" t="Include" />
       </e>
     </e>

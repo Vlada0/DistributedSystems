@@ -18,3 +18,17 @@ D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\Avi
 D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\obj\Debug\netcoreapp3.1\ReverseProxy.dll
 D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\obj\Debug\netcoreapp3.1\ReverseProxy.pdb
 D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\obj\Debug\netcoreapp3.1\ReverseProxy.genruntimeconfig.cache
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\obj\Debug\netcoreapp3.1\ReverseProxy.csproj.CopyComplete
