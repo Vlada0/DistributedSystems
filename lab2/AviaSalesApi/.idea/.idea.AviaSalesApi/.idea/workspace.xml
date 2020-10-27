@@ -27,53 +27,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d04b34-8351-4376-a8bb-9a776200bdad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCacheSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/Extensions/ServiceExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/Services/Impl/ResponseCacheService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/Services/Interfaces/IResponseCacheService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.StackExchangeRedis.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/Pipelines.Sockets.Unofficial.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/StackExchange.Redis.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/System.Diagnostics.PerformanceCounter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Diagnostics.PerformanceCounter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CopyComplete" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/AviaSalesApi/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/AviaSalesApi/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/AviaSalesApi/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/AviaSalesApi/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/ReverseProxy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/ReverseProxy.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/ReverseProxy.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,7 +302,7 @@
       <workItem from="1603655037034" duration="3574000" />
       <workItem from="1603718961400" duration="4007000" />
       <workItem from="1603730302822" duration="12866000" />
-      <workItem from="1603818339175" duration="10197000" />
+      <workItem from="1603818339175" duration="10974000" />
     </task>
     <servers />
   </component>
@@ -376,86 +336,86 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="431" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1603743085528" />
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1603830826414">
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1603831834518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830826414" />
-    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1603830826414">
+    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831834518" />
+    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1603831834518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603830826414" />
-    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1603830826414">
+    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603831834518" />
+    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1603831834518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603830826414" />
-    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1603830826414">
+    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603831834518" />
+    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1603831834518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603830826414" />
-    <state width="1493" height="178" key="GridCell.Tab.1.bottom" timestamp="1603830836696">
+    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603831834518" />
+    <state width="1493" height="178" key="GridCell.Tab.1.bottom" timestamp="1603831846692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830836696" />
-    <state width="1493" height="178" key="GridCell.Tab.1.center" timestamp="1603830836696">
+    <state width="1493" height="178" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831846692" />
+    <state width="1493" height="178" key="GridCell.Tab.1.center" timestamp="1603831846692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603830836696" />
-    <state width="1493" height="178" key="GridCell.Tab.1.left" timestamp="1603830836696">
+    <state width="1493" height="178" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603831846692" />
+    <state width="1493" height="178" key="GridCell.Tab.1.left" timestamp="1603831846692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603830836696" />
-    <state width="1493" height="178" key="GridCell.Tab.1.right" timestamp="1603830836696">
+    <state width="1493" height="178" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603831846692" />
+    <state width="1493" height="178" key="GridCell.Tab.1.right" timestamp="1603831846692">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603830836696" />
-    <state width="1493" height="178" key="GridCell.Tab.2.bottom" timestamp="1603830826194">
+    <state width="1493" height="178" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603831846692" />
+    <state width="1493" height="178" key="GridCell.Tab.2.bottom" timestamp="1603831834272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
-    <state width="1493" height="178" key="GridCell.Tab.2.center" timestamp="1603830826194">
+    <state width="1493" height="178" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831834272" />
+    <state width="1493" height="178" key="GridCell.Tab.2.center" timestamp="1603831834272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
-    <state width="1493" height="178" key="GridCell.Tab.2.left" timestamp="1603830826194">
+    <state width="1493" height="178" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603831834272" />
+    <state width="1493" height="178" key="GridCell.Tab.2.left" timestamp="1603831834272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
-    <state width="1493" height="178" key="GridCell.Tab.2.right" timestamp="1603830826194">
+    <state width="1493" height="178" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603831834272" />
+    <state width="1493" height="178" key="GridCell.Tab.2.right" timestamp="1603831834272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
-    <state width="1493" height="178" key="GridCell.Tab.3.bottom" timestamp="1603830826195">
+    <state width="1493" height="178" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603831834272" />
+    <state width="1493" height="178" key="GridCell.Tab.3.bottom" timestamp="1603831834273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
-    <state width="1493" height="178" key="GridCell.Tab.3.center" timestamp="1603830826195">
+    <state width="1493" height="178" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
+    <state width="1493" height="178" key="GridCell.Tab.3.center" timestamp="1603831834273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
-    <state width="1493" height="178" key="GridCell.Tab.3.left" timestamp="1603830826194">
+    <state width="1493" height="178" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
+    <state width="1493" height="178" key="GridCell.Tab.3.left" timestamp="1603831834273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603830826194" />
-    <state width="1493" height="178" key="GridCell.Tab.3.right" timestamp="1603830826195">
+    <state width="1493" height="178" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
+    <state width="1493" height="178" key="GridCell.Tab.3.right" timestamp="1603831834273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
-    <state width="1493" height="178" key="GridCell.Tab.4.bottom" timestamp="1603830826195">
+    <state width="1493" height="178" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
+    <state width="1493" height="178" key="GridCell.Tab.4.bottom" timestamp="1603831834273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
-    <state width="1493" height="178" key="GridCell.Tab.4.center" timestamp="1603830826195">
+    <state width="1493" height="178" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
+    <state width="1493" height="178" key="GridCell.Tab.4.center" timestamp="1603831834273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
-    <state width="1493" height="178" key="GridCell.Tab.4.left" timestamp="1603830826195">
+    <state width="1493" height="178" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
+    <state width="1493" height="178" key="GridCell.Tab.4.left" timestamp="1603831834273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
-    <state width="1493" height="178" key="GridCell.Tab.4.right" timestamp="1603830826195">
+    <state width="1493" height="178" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
+    <state width="1493" height="178" key="GridCell.Tab.4.right" timestamp="1603831834273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603830826195" />
+    <state width="1493" height="178" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1603732140122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -809,13 +769,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
-          <line>80</line>
+          <line>82</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="76">
             <startOffsets>
-              <option value="2608" />
+              <option value="2708" />
             </startOffsets>
             <endOffsets>
-              <option value="2609" />
+              <option value="2709" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="93" />
@@ -848,13 +808,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
-          <line>90</line>
+          <line>92</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="89">
             <startOffsets>
-              <option value="2869" />
+              <option value="2969" />
             </startOffsets>
             <endOffsets>
-              <option value="2870" />
+              <option value="2970" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="97" />

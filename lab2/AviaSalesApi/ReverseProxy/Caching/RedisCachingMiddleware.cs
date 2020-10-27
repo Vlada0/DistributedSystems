@@ -70,9 +70,10 @@ namespace ReverseProxy.Caching
                         memStream.Position = 0;
                         await memStream.CopyToAsync(responseBody);
 
-                        int.TryParse(ctx.Request.Headers?["TimeToLive"].ToArray().First(), out var ttl);
-
-                        await cacheService.CacheResponseAsync(cacheKey, responseString, TimeSpan.FromSeconds((int?) ttl ?? _timeToLiveSec));
+                        if (((int) ctx.Response.StatusCode) / 100 == 2)
+                        {
+                            await cacheService.CacheResponseAsync(cacheKey, responseString, TimeSpan.FromSeconds( _timeToLiveSec));
+                        }
                     }
                 }
             }
