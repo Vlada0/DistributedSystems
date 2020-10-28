@@ -273,6 +273,9 @@
         <e p="Extensions" t="Include">
           <e p="ServiceExtensions.cs" t="Include" />
         </e>
+        <e p="LoadBalancing" t="Include">
+          <e p="LoadBalancer.cs" t="Include" />
+        </e>
         <e p="Middleware" t="Include">
           <e p="ProxyMiddleware.cs" t="Include" />
         </e>

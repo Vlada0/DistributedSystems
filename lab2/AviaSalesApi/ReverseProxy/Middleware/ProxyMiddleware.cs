@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
+using ReverseProxy.LoadBalancing;
 
 namespace ReverseProxy.Middleware
 {
@@ -13,11 +14,13 @@ namespace ReverseProxy.Middleware
     {
         private readonly RequestDelegate _next;
         private readonly HttpClient _httpClient;
+        private readonly LoadBalancer _loadBalancer;
         private readonly string[] _hosts;
 
-        public ProxyMiddleware(RequestDelegate next, IOptions<ApiUrls> hosts)
+        public ProxyMiddleware(RequestDelegate next, IOptions<ApiUrls> hosts, LoadBalancer loadBalancer)
         {
             _next = next;
+            _loadBalancer = loadBalancer;
             _httpClient = new HttpClient();
             _hosts = hosts.Value.Hosts.Split(',');
         }
@@ -66,7 +69,8 @@ namespace ReverseProxy.Middleware
 
         private Uri GetRequestUri(HttpRequest request)
         {
-            var uriString = $"{_hosts[0]}{request.Path}{request.QueryString}";
+            var host = _loadBalancer.GetLastInvoked();
+            var uriString = $"{host}{request.Path}{request.QueryString}";
             return new Uri(uriString);
         }
 

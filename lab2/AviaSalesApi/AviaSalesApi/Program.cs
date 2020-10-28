@@ -34,6 +34,7 @@ namespace AviaSalesApi
                 Console.WriteLine(e);
             }
 
+            Console.WriteLine("Running api on http://localhost:5000");
             await host.RunAsync();
         }
 

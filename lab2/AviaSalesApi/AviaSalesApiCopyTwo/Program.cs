@@ -13,7 +13,9 @@ namespace AviaSalesApiCopyTwo
     {
         public static async Task Main(string[] args)
         {
-            await CreateHostBuilder(args).Build().RunAsync();
+            var host = CreateHostBuilder(args).Build();
+            Console.WriteLine("Running api2 on http://localhost:5004");
+            await host.RunAsync();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

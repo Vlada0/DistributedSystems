@@ -27,11 +27,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d04b34-8351-4376-a8bb-9a776200bdad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ReverseProxy/LoadBalancing/LoadBalancer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/AviaSalesApi/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/AviaSalesApi/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/bin/Debug/netcoreapp3.1/AviaSalesApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/obj/Debug/netcoreapp3.1/AviaSalesApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/AviaSalesApiCopyOne.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/bin/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/ApiUrls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/ApiUrls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
     </list>
@@ -58,11 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Startup.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Controllers/TicketsController.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Controllers/WarrantsController.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApi/Program.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Program.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/TicketQueryParameters.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/MongoCollectionAttribute.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" />
@@ -96,19 +119,24 @@
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/appsettings.Development.json" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Startup.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" />
-        <option value="$PROJECT_DIR$/ReverseProxy/ApiUrls.cs" />
-        <option value="$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Caching/IReponseCacheService.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Caching/ReponseCacheService.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Caching/ResponseCacheService.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Caching/IResponseCacheService.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Caching/RedisCacheSettings.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Extensions/ServiceExtensions.cs" />
-        <option value="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" />
-        <option value="$PROJECT_DIR$/ReverseProxy/Startup.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Services/Interfaces/IResponseCacheService.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Services/Impl/ResponseCacheService.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/appsettings.Development.json" />
+        <option value="$PROJECT_DIR$/ReverseProxy/ApiUrls.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Startup.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/Program.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Program.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Program.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Program.cs" />
+        <option value="$PROJECT_DIR$/ReverseProxy/LoadBalancing/LoadBalancer.cs" />
       </list>
     </option>
   </component>
@@ -132,10 +160,12 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.ReverseProxy">
+  <component name="RunManager" selected="Compound.MultipleApis">
     <configuration name="MultipleApis" type="CompoundRunConfigurationType">
+      <toRun name="ReverseProxy" type="LaunchSettings" />
+      <toRun name="AviaSalesApiCopyTwo" type="LaunchSettings" />
       <toRun name="AviaSalesApi" type="LaunchSettings" />
-      <toRun name="AviaSalesApiCpy1" type="LaunchSettings" />
+      <toRun name="AviaSalesApiCopyOne" type="LaunchSettings" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType">
@@ -302,7 +332,9 @@
       <workItem from="1603655037034" duration="3574000" />
       <workItem from="1603718961400" duration="4007000" />
       <workItem from="1603730302822" duration="12866000" />
-      <workItem from="1603818339175" duration="10974000" />
+      <workItem from="1603818339175" duration="11429000" />
+      <workItem from="1603895210601" duration="1696000" />
+      <workItem from="1603909337255" duration="4438000" />
     </task>
     <servers />
   </component>
@@ -328,94 +360,94 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="38" width="1089" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603731943081">
+    <state x="223" y="14" width="1089" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603912537294">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="38" width="1089" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603731943080" />
+    <state x="223" y="14" width="1089" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603912537294" />
     <state width="431" height="464" key="DebuggerActiveHint" timestamp="1603743085528">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="431" height="464" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1603743085528" />
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1603831834518">
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom" timestamp="1603914187382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831834518" />
-    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1603831834518">
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603914187382" />
+    <state width="1493" height="269" key="GridCell.Tab.0.center" timestamp="1603914187381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603831834518" />
-    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1603831834518">
+    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603914187381" />
+    <state width="1493" height="269" key="GridCell.Tab.0.left" timestamp="1603914187381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603831834518" />
-    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1603831834518">
+    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603914187381" />
+    <state width="1493" height="269" key="GridCell.Tab.0.right" timestamp="1603914187381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603831834518" />
-    <state width="1493" height="178" key="GridCell.Tab.1.bottom" timestamp="1603831846692">
+    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603914187381" />
+    <state width="1493" height="118" key="GridCell.Tab.1.bottom" timestamp="1603832406328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831846692" />
-    <state width="1493" height="178" key="GridCell.Tab.1.center" timestamp="1603831846692">
+    <state width="1493" height="118" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603832406328" />
+    <state width="1493" height="118" key="GridCell.Tab.1.center" timestamp="1603832406328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603831846692" />
-    <state width="1493" height="178" key="GridCell.Tab.1.left" timestamp="1603831846692">
+    <state width="1493" height="118" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603832406328" />
+    <state width="1493" height="118" key="GridCell.Tab.1.left" timestamp="1603832406328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603831846692" />
-    <state width="1493" height="178" key="GridCell.Tab.1.right" timestamp="1603831846692">
+    <state width="1493" height="118" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603832406328" />
+    <state width="1493" height="118" key="GridCell.Tab.1.right" timestamp="1603832406328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603831846692" />
-    <state width="1493" height="178" key="GridCell.Tab.2.bottom" timestamp="1603831834272">
+    <state width="1493" height="118" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603832406328" />
+    <state width="1493" height="118" key="GridCell.Tab.2.bottom" timestamp="1603832406328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831834272" />
-    <state width="1493" height="178" key="GridCell.Tab.2.center" timestamp="1603831834272">
+    <state width="1493" height="118" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603832406328" />
+    <state width="1493" height="118" key="GridCell.Tab.2.center" timestamp="1603832406328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603831834272" />
-    <state width="1493" height="178" key="GridCell.Tab.2.left" timestamp="1603831834272">
+    <state width="1493" height="118" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603832406328" />
+    <state width="1493" height="118" key="GridCell.Tab.2.left" timestamp="1603832406328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603831834272" />
-    <state width="1493" height="178" key="GridCell.Tab.2.right" timestamp="1603831834272">
+    <state width="1493" height="118" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603832406328" />
+    <state width="1493" height="118" key="GridCell.Tab.2.right" timestamp="1603832406328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603831834272" />
-    <state width="1493" height="178" key="GridCell.Tab.3.bottom" timestamp="1603831834273">
+    <state width="1493" height="118" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603832406328" />
+    <state width="1493" height="118" key="GridCell.Tab.3.bottom" timestamp="1603832406329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
-    <state width="1493" height="178" key="GridCell.Tab.3.center" timestamp="1603831834273">
+    <state width="1493" height="118" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603832406329" />
+    <state width="1493" height="118" key="GridCell.Tab.3.center" timestamp="1603832406329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
-    <state width="1493" height="178" key="GridCell.Tab.3.left" timestamp="1603831834273">
+    <state width="1493" height="118" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1603832406329" />
+    <state width="1493" height="118" key="GridCell.Tab.3.left" timestamp="1603832406329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
-    <state width="1493" height="178" key="GridCell.Tab.3.right" timestamp="1603831834273">
+    <state width="1493" height="118" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1603832406329" />
+    <state width="1493" height="118" key="GridCell.Tab.3.right" timestamp="1603832406329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
-    <state width="1493" height="178" key="GridCell.Tab.4.bottom" timestamp="1603831834273">
+    <state width="1493" height="118" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1603832406329" />
+    <state width="1493" height="118" key="GridCell.Tab.4.bottom" timestamp="1603832406329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
-    <state width="1493" height="178" key="GridCell.Tab.4.center" timestamp="1603831834273">
+    <state width="1493" height="118" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603832406329" />
+    <state width="1493" height="118" key="GridCell.Tab.4.center" timestamp="1603832406329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
-    <state width="1493" height="178" key="GridCell.Tab.4.left" timestamp="1603831834273">
+    <state width="1493" height="118" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1603832406329" />
+    <state width="1493" height="118" key="GridCell.Tab.4.left" timestamp="1603832406329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
-    <state width="1493" height="178" key="GridCell.Tab.4.right" timestamp="1603831834273">
+    <state width="1493" height="118" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1603832406329" />
+    <state width="1493" height="118" key="GridCell.Tab.4.right" timestamp="1603832406329">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603831834273" />
+    <state width="1493" height="118" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1603832406329" />
     <state x="361" y="144" key="Rider.ProjectTemplateDialog.Size" timestamp="1603732140122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -729,19 +761,6 @@
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/AviaSalesApi/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs</url>
-          <line>23</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Infrastructure\Middleware\ExceptionHandlingMiddleware.cs" initialLine="22">
-            <startOffsets>
-              <option value="661" />
-            </startOffsets>
-            <endOffsets>
-              <option value="701" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
           <line>25</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="24">
@@ -769,13 +788,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
-          <line>82</line>
+          <line>80</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="76">
             <startOffsets>
-              <option value="2708" />
+              <option value="2589" />
             </startOffsets>
             <endOffsets>
-              <option value="2709" />
+              <option value="2590" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="93" />
@@ -807,17 +826,69 @@
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs</url>
-          <line>92</line>
-          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Caching\RedisCachingMiddleware.cs" initialLine="89">
+          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
+          <line>46</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="46">
             <startOffsets>
-              <option value="2969" />
+              <option value="1616" />
             </startOffsets>
             <endOffsets>
-              <option value="2970" />
+              <option value="1617" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ReverseProxy/Middleware/ProxyMiddleware.cs</url>
+          <line>71</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\ReverseProxy\Middleware\ProxyMiddleware.cs" initialLine="71">
+            <startOffsets>
+              <option value="2540" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2582" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AviaSalesApi/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs</url>
+          <line>46</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Infrastructure\Middleware\ExceptionHandlingMiddleware.cs" initialLine="46">
+            <startOffsets>
+              <option value="1411" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1434" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AviaSalesApiCopyOne/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs</url>
+          <line>23</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApiCopyOne\Infrastructure\Middleware\ExceptionHandlingMiddleware.cs" initialLine="23">
+            <startOffsets>
+              <option value="641" />
+            </startOffsets>
+            <endOffsets>
+              <option value="642" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs</url>
+          <line>24</line>
+          <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApiCopyTwo\Infrastructure\Middleware\ExceptionHandlingMiddleware.cs" initialLine="24">
+            <startOffsets>
+              <option value="659" />
+            </startOffsets>
+            <endOffsets>
+              <option value="682" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

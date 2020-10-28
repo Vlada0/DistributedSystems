@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ReverseProxy.Caching;
 using ReverseProxy.Extensions;
+using ReverseProxy.LoadBalancing;
 using ReverseProxy.Middleware;
 // ReSharper disable All
 
@@ -25,7 +26,8 @@ namespace ReverseProxy
             services.AddControllers();
             services
                 .Configure<ApiUrls>(Configuration.GetSection(nameof(ApiUrls)))
-                .AddRedisCaching(Configuration);
+                .AddRedisCaching(Configuration)
+                .AddSingleton<LoadBalancer>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
