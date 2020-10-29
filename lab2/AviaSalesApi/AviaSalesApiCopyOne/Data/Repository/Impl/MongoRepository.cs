@@ -20,25 +20,8 @@ namespace AviaSalesApiCopyOne.Data.Repository.Impl
 
         public MongoRepository(IMongoDbConnectionSettings settings)
         {
-            /*var mongoSettings = new MongoClientSettings
-            {
-                Servers = new[]
-                {
-                    new MongoServerAddress("localhost", 27027),
-                    new MongoServerAddress("localhost", 27028),
-                    new MongoServerAddress("localhost", 27029)
-                },
-                ConnectionMode = ConnectionMode.Automatic,
-                ReplicaSetName = "rs3",
-                WriteConcern = new WriteConcern(WriteConcern.WValue.Parse("3"),wTimeout:TimeSpan.Parse("10"))
-            };*/
             var db = new MongoClient(settings.ReadonlyConnectionString).GetDatabase(settings.Database);
-            
-            /*var command = new BsonDocumentCommand<BsonDocument>(new BsonDocument() {{"replSetGetStatus", 1}});
-            var res = db.RunCommand<BsonDocument>(command);
-            var cl = new MongoClient(settings.ReadonlyConnectionString);*/
             _collection = db.GetCollection<T>(GetCollectionName(typeof(T)));
-            
         }
 
         public IQueryable<T> AsQueryable() => _collection.AsQueryable();
@@ -105,8 +88,15 @@ namespace AviaSalesApiCopyOne.Data.Repository.Impl
             {
                 throw new BadRequestException($"Document {typeof(T).ToString().Split('.').Last()} was not provided.");
             }
-
+            
             var filter = Builders<T>.Filter.Eq(d => d.Id, document.Id);
+            
+            var doc = await _collection.FindAsync(filter).Result.FirstOrDefaultAsync();
+            if (doc == null)
+            {
+                throw EntityNotFoundException.OfType<T>(document.Id);
+            }
+            
             await _collection.ReplaceOneAsync(filter, document);
         }
 

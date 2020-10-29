@@ -18,7 +18,7 @@ namespace ReverseProxy.Caching
         public RedisCachingMiddleware(RequestDelegate next)
         {
             _next = next;
-            _timeToLiveSec = 240;
+            _timeToLiveSec = 60;
         }
 
         public async Task Invoke(HttpContext ctx)
@@ -26,6 +26,7 @@ namespace ReverseProxy.Caching
             if (!HttpMethods.IsGet(ctx.Request.Method))
             {
                 await _next.Invoke(ctx);
+                return;
             }
 
             var cacheSetting = ctx.RequestServices.GetRequiredService<RedisCacheSettings>();
