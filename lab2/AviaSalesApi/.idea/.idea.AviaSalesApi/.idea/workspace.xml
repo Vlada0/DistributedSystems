@@ -27,15 +27,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66d04b34-8351-4376-a8bb-9a776200bdad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AviaSalesApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyOne/obj/Debug/netcoreapp3.1/AviaSalesApiCopyOne.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/obj/Debug/netcoreapp3.1/AviaSalesApiCopyTwo.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/bin/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ReverseProxy/obj/Debug/netcoreapp3.1/ReverseProxy.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/MongoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/MongoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Repository/Impl/MongoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Repository/Impl/MongoRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +55,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/TicketQueryParameters.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/MongoCollectionAttribute.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Exceptions/BadRequestException.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Exceptions/EntityNotFoundException.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Config/IMongoDbConnectionSettings.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Infrastructure/Config/SeedDataConfig.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Repository/Interfaces/IMongoRepository.cs" />
-        <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Repository/Impl/MongoRepository.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Entities/BaseEntity.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Entities/Warrant.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Data/Entities/BaseEntity.cs" />
@@ -113,6 +103,9 @@
         <option value="$PROJECT_DIR$/ReverseProxy/LoadBalancing/LoadBalancer.cs" />
         <option value="$PROJECT_DIR$/ReverseProxy/Caching/RedisCachingMiddleware.cs" />
         <option value="$PROJECT_DIR$/AviaSalesApi/Infrastructure/Middleware/ExceptionHandlingMiddleware.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApiCopyOne/Data/Repository/Impl/MongoRepository.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApiCopyTwo/Data/Repository/Impl/MongoRepository.cs" />
+        <option value="$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/MongoRepository.cs" />
       </list>
     </option>
   </component>
@@ -311,7 +304,7 @@
       <workItem from="1603818339175" duration="11429000" />
       <workItem from="1603895210601" duration="1696000" />
       <workItem from="1603909337255" duration="5249000" />
-      <workItem from="1603995862517" duration="5210000" />
+      <workItem from="1603995862517" duration="5518000" />
     </task>
     <servers />
   </component>
@@ -611,15 +604,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/MongoRepository.cs</url>
-          <line>70</line>
+          <line>54</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Data\Repository\Impl\MongoRepository.cs" initialLine="44">
             <startOffsets>
-              <option value="2835" />
-              <option value="2875" />
+              <option value="2016" />
+              <option value="2056" />
             </startOffsets>
             <endOffsets>
-              <option value="2885" />
-              <option value="2879" />
+              <option value="2066" />
+              <option value="2060" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="61" />
@@ -678,13 +671,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/AviaSalesApi/Data/Repository/Impl/MongoRepository.cs</url>
-          <line>36</line>
+          <line>24</line>
           <properties documentPath="D:\Универ\4 курс\1 семестр\PAD\LABS\DistributedSystems\lab2\AviaSalesApi\AviaSalesApi\Data\Repository\Impl\MongoRepository.cs" initialLine="36">
             <startOffsets>
-              <option value="1324" />
+              <option value="766" />
             </startOffsets>
             <endOffsets>
-              <option value="1415" />
+              <option value="857" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="71" />
