@@ -515,7 +515,7 @@ Status Codes
 #### Request
 - GET /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
 - PUT /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
-- DELETE GET /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
+- DELETE /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
 #### Response
 
 ```yaml
