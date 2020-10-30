@@ -179,18 +179,6 @@ Get filtered tickets:
 - 200OK
 - 404NotFound
 
-### Get a non-existing Ticket
-#### Request
-> GET /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12499
-#### Response
-
-```yaml
-{
-    "StatusCode": 404,
-    "Error": "Entity of type Ticket with id: ec25779a-c742-4a4e-be03-cf8aeec12499 not found"
-}
-```
-
 ### Create a new Ticket
 #### Request
 > POST /api/tickets
@@ -508,3 +496,17 @@ Status Codes
 ##### Status Codes
 - 204NoContent
 - 404NotFound
+
+### Get, Update or Delete a non-existing resource
+#### Request
+- GET /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
+- PUT /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
+- DELETE GET /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
+#### Response
+
+```yaml
+{
+    "StatusCode": 404,
+    "Error": "Entity of type {resource} with id: ec25779a-c742-4a4e-be03-cf8aeec12499 not found"
+}
+```
