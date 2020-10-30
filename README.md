@@ -48,8 +48,8 @@
 - An API as a Data Warehouse
 - Distributed Mongo database with three replica sets
 - Reverse Proxy middleware
-- Load balancing on the Proxy's level
-- Redis caching on the Proxy's level
+- Load balancing on the Proxy level
+- Redis caching on the Proxy level
 - Swagger Open API Spec
 
 ### The whole solution contains 4 projects
@@ -65,7 +65,7 @@ Get all tickets:
 > GET /api/tickets
 Get filtered tickets:
 > GET /api/tickets?countryFrom=string&cityFrom=string&countryTo=string&cityTo=string&takeOffDay=date
-#### NOTE: Query parameters are handled dynamicaly. It's not required adding all of them at once.
+#### NOTE: Query parameters are handled dynamically. It's not required adding all of them at once.
 ##### Request Headers:
 > Accept: application/json, application/xml
 #### Response
