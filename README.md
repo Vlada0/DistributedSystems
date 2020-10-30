@@ -50,7 +50,13 @@
 - Reverse Proxy middleware
 - Load balancing on the Proxy's level
 - Redis caching on the Proxy's level
-- Swagger Open API Documentation
+- Swagger Open API Spec
+
+> The whole solution contains 4 projects
+1. AviaSalesApi
+2. AviaSalesApiCopyOne
+3. AviaSalesApiCopyTwo
+4. ReverseProxy
 
 ## Tickets
 ### Get (filtered) list of Tickets
