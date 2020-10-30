@@ -38,7 +38,7 @@
 > Response message from the response body will be empty if a Status code is equals to Fail
 
 
-## LAB 2 - A sample Web Api that manipulates with avia Tickets and Warranties
+## LAB 2 - A sample Web Api that manipulates with avia Tickets and Warrants
 ### Used technologies
 - .Net Core 3 + C#
 - MongoDb as the main data storage
@@ -52,7 +52,7 @@ Get all tickets:
 Get filtered tickets:
 > GET /api/tickets?countryFrom=string&cityFrom=string&countryTo=string&cityTo=string&takeOffDay=date
 #### NOTE: Query parameters are handled dynamicaly. It's not required adding all of them at once.
-#### Request Headers:
+##### Request Headers:
 > Accept: application/json, application/xml
 #### Response
 > content-type: application/json
@@ -123,11 +123,11 @@ Get filtered tickets:
 ### Get Ticket by Id
 #### Request
 > /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
-#### Request Headers
+##### Request Headers
 > Accept: application/json, application/xml
 
 #### Response
-> Accept: application/json
+> content-type: application/json
 ```yaml
   {
   "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -151,7 +151,7 @@ Get filtered tickets:
   "price": 0
 }
 ```
-> Accept: application/xml
+> content-type: application/xml
 ```xml
   <?xml version="1.0" encoding="UTF-8"?>
 <TicketModel>
@@ -194,7 +194,7 @@ Get filtered tickets:
 ### Create a new Ticket
 #### Request
 > POST /api/tickets
-#### Headers
+##### Headers
 - content-type: application/json, application/xml
 - accept: application/json, application/xml
 #### Request body
@@ -300,7 +300,7 @@ Status Codes
 ### Change a Ticket's state
 #### Request
 > PUT /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
-#### Request Headers
+##### Request Headers
 > content-type: application/json, application/xml
 #### Request body
 ```yaml
@@ -340,4 +340,68 @@ Status Codes
 - 204NoContent
 - 404NotFound
 
-## Warranties
+## Warrants
+### Get Warrants by a passenger's iban
+#### Request
+> GET /api/warrants?iban=string
+##### Request Headers
+- accept: application/json, application/xml
+#### Response
+> content-type: application/json
+```yaml
+[
+  {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "passengerIban": "string",
+    "passportId": "string",
+    "ticketId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "ticketBackId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "isPaid": true
+  }
+]
+```
+> content-type: application/xml
+```xml
+<ArrayOfWarrantModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/AviaSalesApiCopyTwo.Models.Warrants">
+	<WarrantModel>
+		<id>3fa85f64-5717-4562-b3fc-2c963f66afa6</id>
+		<passengerIban>string</passengerIban>
+		<passportId>string</passportId>
+		<ticketId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketId>
+		<ticketBackId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketBackId>
+		<isPaid>true</isPaid>
+	</WarrantModel>
+</ArrayOfWarrantModel>
+```
+##### Status Codes
+> 200OK
+
+### Get a Warrant by Id
+#### Request
+> GET /api/warrants/ec25779a-c742-4a4e-be03-cf8aeec12490
+##### Request Headers
+- accept: application/json, application/xml
+#### Response
+> content-type: application/json
+```yaml
+{
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "passengerIban": "string",
+    "passportId": "string",
+    "ticketId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "ticketBackId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "isPaid": true
+  }
+```
+> content-type: application/xml
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+	<WarrantModel>
+		<id>3fa85f64-5717-4562-b3fc-2c963f66afa6</id>
+		<passengerIban>string</passengerIban>
+		<passportId>string</passportId>
+		<ticketId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketId>
+		<ticketBackId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketBackId>
+		<isPaid>true</isPaid>
+	</WarrantModel>
+```
