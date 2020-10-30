@@ -87,64 +87,29 @@ Request Headers:
   <ArrayOfTicketModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/AviaSalesApiCopyTwo.Models.Tickets">
     <TicketModel>
         <ArriveOn>2020-12-19T20:30:00.511Z</ArriveOn>
-        <CityFrom>Chisinau</CityFrom>
-        <CityTo>Sydney</CityTo>
-        <Company>Turkish Airlines, Malaysia Airlines</Company>
-        <CountryFrom>Moldova</CountryFrom>
-        <CountryTo>Australia</CountryTo>
+        <CityFrom>string</CityFrom>
+        <CityTo>string</CityTo>
+        <Company>string</Company>
+        <CountryFrom>string</CountryFrom>
+        <CountryTo>string</CountryTo>
         <Id>428c0d20-ee65-4546-8864-68aec6b5e50e</Id>
-        <Price>900</Price>
+        <Price>0</Price>
         <TakeOffDate>2020-12-17T21:40:00.511Z</TakeOffDate>
         <TakeOffDay>2020-12-17T00:00:00.511Z</TakeOffDay>
         <TransitPlaces>
             <TransitPlace>
-                <_x003C_Airport_x003E_k__BackingField>Istanbul New Airport</_x003C_Airport_x003E_k__BackingField>
+                <_x003C_Airport_x003E_k__BackingField>string</_x003C_Airport_x003E_k__BackingField>
                 <_x003C_ArriveDate_x003E_k__BackingField>2020-12-17T16:50:00.511Z</_x003C_ArriveDate_x003E_k__BackingField>
-                <_x003C_City_x003E_k__BackingField>Istanbul</_x003C_City_x003E_k__BackingField>
-                <_x003C_Country_x003E_k__BackingField>Turkey</_x003C_Country_x003E_k__BackingField>
+                <_x003C_City_x003E_k__BackingField>string</_x003C_City_x003E_k__BackingField>
+                <_x003C_Country_x003E_k__BackingField>string</_x003C_Country_x003E_k__BackingField>
                 <_x003C_TakeOff_x003E_k__BackingField>2020-12-17T18:15:00.511Z</_x003C_TakeOff_x003E_k__BackingField>
             </TransitPlace>
             <TransitPlace>
-                <_x003C_Airport_x003E_k__BackingField>Kuala-Lumpur</_x003C_Airport_x003E_k__BackingField>
+                <_x003C_Airport_x003E_k__BackingField>string</_x003C_Airport_x003E_k__BackingField>
                 <_x003C_ArriveDate_x003E_k__BackingField>2020-12-17T22:30:00.511Z</_x003C_ArriveDate_x003E_k__BackingField>
-                <_x003C_City_x003E_k__BackingField>Kuala-Lumpur</_x003C_City_x003E_k__BackingField>
-                <_x003C_Country_x003E_k__BackingField>Malaysia</_x003C_Country_x003E_k__BackingField>
+                <_x003C_City_x003E_k__BackingField>string</_x003C_City_x003E_k__BackingField>
+                <_x003C_Country_x003E_k__BackingField>string</_x003C_Country_x003E_k__BackingField>
                 <_x003C_TakeOff_x003E_k__BackingField>2020-12-18T14:25:00.511Z</_x003C_TakeOff_x003E_k__BackingField>
-            </TransitPlace>
-        </TransitPlaces>
-    </TicketModel>
-    <TicketModel>
-        <ArriveOn>2020-12-19T07:10:00.511Z</ArriveOn>
-        <CityFrom>Chisinau</CityFrom>
-        <CityTo>Sydney</CityTo>
-        <Company>Turkish Airlines, Wizz Air, Thai Airways</Company>
-        <CountryFrom>Moldova</CountryFrom>
-        <CountryTo>Australia</CountryTo>
-        <Id>138b81d1-6392-4617-97c1-cf648480b2d1</Id>
-        <Price>1000</Price>
-        <TakeOffDate>2020-12-17T14:30:00.511Z</TakeOffDate>
-        <TakeOffDay>2020-12-17T00:00:00.511Z</TakeOffDay>
-        <TransitPlaces>
-            <TransitPlace>
-                <_x003C_Airport_x003E_k__BackingField>Marco Polo</_x003C_Airport_x003E_k__BackingField>
-                <_x003C_ArriveDate_x003E_k__BackingField>2020-12-17T15:50:00.511Z</_x003C_ArriveDate_x003E_k__BackingField>
-                <_x003C_City_x003E_k__BackingField>Venice</_x003C_City_x003E_k__BackingField>
-                <_x003C_Country_x003E_k__BackingField>Italy</_x003C_Country_x003E_k__BackingField>
-                <_x003C_TakeOff_x003E_k__BackingField>2020-12-17T18:50:00.511Z</_x003C_TakeOff_x003E_k__BackingField>
-            </TransitPlace>
-            <TransitPlace>
-                <_x003C_Airport_x003E_k__BackingField>Istanbul New Airport</_x003C_Airport_x003E_k__BackingField>
-                <_x003C_ArriveDate_x003E_k__BackingField>2020-12-17T21:20:00.511Z</_x003C_ArriveDate_x003E_k__BackingField>
-                <_x003C_City_x003E_k__BackingField>Istanbul</_x003C_City_x003E_k__BackingField>
-                <_x003C_Country_x003E_k__BackingField>Turkey</_x003C_Country_x003E_k__BackingField>
-                <_x003C_TakeOff_x003E_k__BackingField>2020-12-17T23:50:00.511Z</_x003C_TakeOff_x003E_k__BackingField>
-            </TransitPlace>
-            <TransitPlace>
-                <_x003C_Airport_x003E_k__BackingField>Suvarnabhumi</_x003C_Airport_x003E_k__BackingField>
-                <_x003C_ArriveDate_x003E_k__BackingField>2020-12-18T15:55:00.511Z</_x003C_ArriveDate_x003E_k__BackingField>
-                <_x003C_City_x003E_k__BackingField>Bangkok</_x003C_City_x003E_k__BackingField>
-                <_x003C_Country_x003E_k__BackingField>Thailand</_x003C_Country_x003E_k__BackingField>
-                <_x003C_TakeOff_x003E_k__BackingField>2020-12-18T18:50:00.511Z</_x003C_TakeOff_x003E_k__BackingField>
             </TransitPlace>
         </TransitPlaces>
     </TicketModel>
@@ -360,6 +325,15 @@ Request body
   "price": 0
 }
 ```
+
+#### Response
+Status Codes
+- 204NoContent
+- 404NotFound
+
+### Delete a Ticket
+#### Request
+> DELETE /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
 
 #### Response
 Status Codes
