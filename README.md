@@ -38,13 +38,13 @@
 > Response message from the response body will be empty if a Status code is equals to Fail
 
 
-## LAB 2 - A sample Web Api that manipulates with avia tickets and warranties
+## LAB 2 - A sample Web Api that manipulates with avia Tickets and Warranties
 ### Used technologies
 - .Net Core 3 + C#
 - MongoDb as the main data storage
 - Redis that is used for caching
 
-### Get (filtered) list of tickets
+### Get (filtered) list of Tickets
 #### Request
 > Get all tickets: GET /api/tickets
 > Get filtered tickets: GET /api/tickets?countryFrom=Russia&cityFrom=Moscow&countryTo=Ucraine&cityTo=Lviv&takeOffDay=1488-12-17T00:00:00.511Z
@@ -152,7 +152,7 @@
 - Status Code 200OK
 - Status Code 404NotFound
 
-### Get a ticket by Id
+### Get a Ticket by Id
 #### Request
 > /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
 > Request Headers: Accept: application/json, application/xml
@@ -210,13 +210,117 @@
 - Status Code 200OK
 - Status Code 404NotFound
 
-### Get a non-existing ticket
+### Get a non-existing Ticket
 #### Request
 > GET /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12499
 #### Response
+
 ```yaml
-	{
+{
     "StatusCode": 404,
     "Error": "Entity of type Ticket with id: ec25779a-c742-4a4e-be03-cf8aeec12499 not found"
 }
+```
+
+### Create a new Ticket
+#### Request
+> POST /api/tickets
+> Headers: content-type: application/json, application/xml; accept: application/json, application/xml
+> Request body
+> content-type: application/json
+```yaml
+	{
+  "countryFrom": "string",
+  "cityFrom": "string",
+  "countryTo": "string",
+  "cityTo": "string",
+  "takeOffDay": "2020-10-30T19:40:02.872Z",
+  "takeOffDate": "2020-10-30T19:40:02.873Z",
+  "arriveOn": "2020-10-30T19:40:02.873Z",
+  "transitPlaces": [
+    {
+      "country": "string",
+      "city": "string",
+      "airport": "string",
+      "arriveDate": "2020-10-30T19:40:02.873Z",
+      "takeOff": "2020-10-30T19:40:02.873Z"
+    }
+  ],
+  "company": "string",
+  "price": 0
+}
+```
+>content-type: application/xml
+```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+<TicketCreateUpdateModel>
+	<countryFrom>string</countryFrom>
+	<cityFrom>string</cityFrom>
+	<countryTo>string</countryTo>
+	<cityTo>string</cityTo>
+	<takeOffDay>2020-10-30T19:41:32.770Z</takeOffDay>
+	<takeOffDate>2020-10-30T19:41:32.770Z</takeOffDate>
+	<arriveOn>2020-10-30T19:41:32.770Z</arriveOn>
+	<transitPlaces>
+		<country>string</country>
+		<city>string</city>
+		<airport>string</airport>
+		<arriveDate>2020-10-30T19:41:32.771Z</arriveDate>
+		<takeOff>2020-10-30T19:41:32.771Z</takeOff>
+	</transitPlaces>
+	<company>string</company>
+	<price>0</price>
+</TicketCreateUpdateModel>
+```
+
+#### Reponse
+> Status Code 201Created
+> Response body
+> accept: application/json
+```yaml
+	{
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "countryFrom": "string",
+  "cityFrom": "string",
+  "countryTo": "string",
+  "cityTo": "string",
+  "takeOffDay": "2020-10-30T19:41:32.801Z",
+  "takeOffDate": "2020-10-30T19:41:32.801Z",
+  "arriveOn": "2020-10-30T19:41:32.801Z",
+  "transitPlaces": [
+    {
+      "country": "string",
+      "city": "string",
+      "airport": "string",
+      "arriveDate": "2020-10-30T19:41:32.801Z",
+      "takeOff": "2020-10-30T19:41:32.801Z"
+    }
+  ],
+  "company": "string",
+  "price": 0
+}
+```
+
+> accept: application/xml
+```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+<TicketModel>
+	<id>3fa85f64-5717-4562-b3fc-2c963f66afa6</id>
+	<countryFrom>string</countryFrom>
+	<cityFrom>string</cityFrom>
+	<countryTo>string</countryTo>
+	<cityTo>string</cityTo>
+	<takeOffDay>2020-10-30T19:44:17.945Z</takeOffDay>
+	<takeOffDate>2020-10-30T19:44:17.945Z</takeOffDate>
+	<arriveOn>2020-10-30T19:44:17.945Z</arriveOn>
+	<transitPlaces>
+		<country>string</country>
+		<city>string</city>
+		<airport>string</airport>
+		<arriveDate>2020-10-30T19:44:17.946Z</arriveDate>
+		<takeOff>2020-10-30T19:44:17.946Z</takeOff>
+	</transitPlaces>
+	<company>string</company>
+	<price>0</price>
+</TicketModel>
 ```
