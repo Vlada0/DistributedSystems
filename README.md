@@ -346,6 +346,7 @@ Status Codes
 > GET /api/warrants?iban=string
 ##### Request Headers
 - accept: application/json, application/xml
+
 #### Response
 > content-type: application/json
 ```yaml
@@ -381,6 +382,7 @@ Status Codes
 > GET /api/warrants/ec25779a-c742-4a4e-be03-cf8aeec12490
 ##### Request Headers
 - accept: application/json, application/xml
+
 #### Response
 > content-type: application/json
 ```yaml
@@ -395,7 +397,7 @@ Status Codes
 ```
 > content-type: application/xml
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
+	<?xml version="1.0" encoding="UTF-8"?>
 	<WarrantModel>
 		<id>3fa85f64-5717-4562-b3fc-2c963f66afa6</id>
 		<passengerIban>string</passengerIban>
@@ -405,3 +407,104 @@ Status Codes
 		<isPaid>true</isPaid>
 	</WarrantModel>
 ```
+##### Status Codes
+- 200OK
+- 404NotFound
+
+### Create a new Warrant
+#### Request
+> POST /api/warrants
+##### Request Headers
+- accept: application/json, application/xml
+- content-type: application/json, application/xml
+##### Request body
+> content-type: application/json
+```yaml
+{
+    "passengerIban": "string",
+    "passportId": "string",
+    "ticketId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "ticketBackId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "isPaid": true
+ }	
+```
+> content-type: application/xml
+```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<WarrantModel>
+		<passengerIban>string</passengerIban>
+		<passportId>string</passportId>
+		<ticketId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketId>
+		<ticketBackId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketBackId>
+		<isPaid>true</isPaid>
+	</WarrantModel>
+```
+
+#### Response
+> content-type: application/json
+```yaml
+{
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "passengerIban": "string",
+    "passportId": "string",
+    "ticketId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "ticketBackId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "isPaid": true
+  }
+```
+> content-type: application/xml
+```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<WarrantModel>
+		<id>3fa85f64-5717-4562-b3fc-2c963f66afa6</id>
+		<passengerIban>string</passengerIban>
+		<passportId>string</passportId>
+		<ticketId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketId>
+		<ticketBackId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketBackId>
+		<isPaid>true</isPaid>
+	</WarrantModel>
+```
+##### Status Codes
+> 201Created
+
+### Change a Warrant's state
+#### Request
+> PUT /api/warrants/ec25779a-c742-4a4e-be03-cf8aeec12490
+##### Request Headers
+> content-type: application/json, application/xml
+##### Request Body
+> content-type: application/json
+```yaml
+{
+    "passengerIban": "string",
+    "passportId": "string",
+    "ticketId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "ticketBackId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "isPaid": true
+ }	
+```
+> content-type: application/xml
+```xml
+	<?xml version="1.0" encoding="UTF-8"?>
+	<WarrantModel>
+		<passengerIban>string</passengerIban>
+		<passportId>string</passportId>
+		<ticketId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketId>
+		<ticketBackId>3fa85f64-5717-4562-b3fc-2c963f66afa6</ticketBackId>
+		<isPaid>true</isPaid>
+	</WarrantModel>
+```
+
+#### Response
+##### Status Codes
+- 204NoContent
+- 404NotFound
+
+### Delete Warrant
+#### Request
+> DELETE /api/warrants/3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+#### Response
+##### Status Codes
+- 204NoContent
+- 404NotFound
