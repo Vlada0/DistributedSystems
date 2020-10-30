@@ -225,11 +225,11 @@
 ### Create a new Ticket
 #### Request
 > POST /api/tickets
-> Headers: content-type: application/json, application/xml; accept: application/json, application/xml
-> Request body
-> content-type: application/json
+Headers: content-type: application/json, application/xml; accept: application/json, application/xml
+Request body
+content-type: application/json
 ```yaml
-	{
+{
   "countryFrom": "string",
   "cityFrom": "string",
   "countryTo": "string",
@@ -278,7 +278,7 @@
 > Response body
 > accept: application/json
 ```yaml
-	{
+{
   "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
   "countryFrom": "string",
   "cityFrom": "string",
