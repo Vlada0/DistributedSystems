@@ -49,11 +49,10 @@
 Get all tickets: 
 > GET /api/tickets
 Get filtered tickets:
-> GET /api/tickets?countryFrom=Russia&cityFrom=Moscow&countryTo=Ucraine&cityTo=Lviv&takeOffDay=1488-12-17T00:00:00.511Z
-**NOTE: Query parameters are handled dynamicaly. It's not required adding all of them at once.**
-Request Headers:
+> GET /api/tickets?countryFrom=string&cityFrom=string&countryTo=string&cityTo=string&takeOffDay=date
+#### NOTE: Query parameters are handled dynamicaly. It's not required adding all of them at once.
+#### Request Headers:
 > Accept: application/json, application/xml
-
 #### Response
 > Accept: application/json
 ```yaml
@@ -123,7 +122,7 @@ Request Headers:
 ### Get Ticket by Id
 #### Request
 > /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
-Request Headers:
+#### Request Headers
 > Accept: application/json, application/xml
 
 #### Response
@@ -175,7 +174,7 @@ Request Headers:
 </TicketModel>
 ```
 
-Status Codes
+#### Status Codes
 - 200OK
 - 404NotFound
 
@@ -194,10 +193,10 @@ Status Codes
 ### Create a new Ticket
 #### Request
 > POST /api/tickets
-Headers:
+#### Headers
 > content-type: application/json, application/xml
 > accept: application/json, application/xml
-Request body
+#### Request body
 > content-type: application/json
 ```yaml
 {
@@ -300,7 +299,7 @@ Status Codes
 ### Change a Ticket's state
 #### Request
 > PUT /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
-Request Headers
+#### Request Headers
 > content-type: application/json, application/xml
 Request body
 ```yaml
