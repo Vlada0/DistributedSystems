@@ -46,10 +46,13 @@
 
 ### Get (filtered) list of Tickets
 #### Request
-> Get all tickets: GET /api/tickets
-> Get filtered tickets: GET /api/tickets?countryFrom=Russia&cityFrom=Moscow&countryTo=Ucraine&cityTo=Lviv&takeOffDay=1488-12-17T00:00:00.511Z
-> **NOTE: Query parameters are handled dynamicaly. It's not required adding all of them at once.**
-> Request Headers: Accept: application/json, application/xml
+Get all tickets: 
+> GET /api/tickets
+Get filtered tickets:
+> GET /api/tickets?countryFrom=Russia&cityFrom=Moscow&countryTo=Ucraine&cityTo=Lviv&takeOffDay=1488-12-17T00:00:00.511Z
+**NOTE: Query parameters are handled dynamicaly. It's not required adding all of them at once.**
+Request Headers:
+> Accept: application/json, application/xml
 
 #### Response
 > Accept: application/json
@@ -152,10 +155,11 @@
 - Status Code 200OK
 - Status Code 404NotFound
 
-### Get a Ticket by Id
+### Get Ticket by Id
 #### Request
 > /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
-> Request Headers: Accept: application/json, application/xml
+Request Headers:
+> Accept: application/json, application/xml
 
 #### Response
 > Accept: application/json
@@ -206,9 +210,9 @@
 </TicketModel>
 ```
 
-#### Status Codes
-- Status Code 200OK
-- Status Code 404NotFound
+Status Codes
+- 200OK
+- 404NotFound
 
 ### Get a non-existing Ticket
 #### Request
@@ -225,9 +229,11 @@
 ### Create a new Ticket
 #### Request
 > POST /api/tickets
-Headers: content-type: application/json, application/xml; accept: application/json, application/xml
+Headers:
+> content-type: application/json, application/xml
+> accept: application/json, application/xml
 Request body
-content-type: application/json
+> content-type: application/json
 ```yaml
 {
   "countryFrom": "string",
@@ -274,7 +280,8 @@ content-type: application/json
 ```
 
 #### Reponse
-> Status Code 201Created
+Status Codes
+> 201Created
 > Response body
 > accept: application/json
 ```yaml
@@ -324,3 +331,37 @@ content-type: application/json
 	<price>0</price>
 </TicketModel>
 ```
+
+### Change a Ticket's state
+#### Request
+> PUT /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
+Request Headers
+> content-type: application/json, application/xml
+Request body
+```yaml
+{
+  "countryFrom": "string",
+  "cityFrom": "string",
+  "countryTo": "string",
+  "cityTo": "string",
+  "takeOffDay": "2020-10-30T19:54:33.531Z",
+  "takeOffDate": "2020-10-30T19:54:33.532Z",
+  "arriveOn": "2020-10-30T19:54:33.532Z",
+  "transitPlaces": [
+    {
+      "country": "string",
+      "city": "string",
+      "airport": "string",
+      "arriveDate": "2020-10-30T19:54:33.532Z",
+      "takeOff": "2020-10-30T19:54:33.532Z"
+    }
+  ],
+  "company": "string",
+  "price": 0
+}
+```
+
+#### Response
+Status Codes
+- 204NoContent
+- 404NotFound
