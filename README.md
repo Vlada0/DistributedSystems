@@ -52,7 +52,7 @@
 - Redis caching on the Proxy's level
 - Swagger Open API Spec
 
-> The whole solution contains 4 projects
+### The whole solution contains 4 projects
 1. AviaSalesApi
 2. AviaSalesApiCopyOne
 3. AviaSalesApiCopyTwo
