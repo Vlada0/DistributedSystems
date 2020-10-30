@@ -44,6 +44,7 @@
 - MongoDb as the main data storage
 - Redis that is used for caching
 
+## Tickets
 ### Get (filtered) list of Tickets
 #### Request
 Get all tickets: 
@@ -54,7 +55,7 @@ Get filtered tickets:
 #### Request Headers:
 > Accept: application/json, application/xml
 #### Response
-> Accept: application/json
+> content-type: application/json
 ```yaml
   [
   {
@@ -81,7 +82,7 @@ Get filtered tickets:
   ]
 ```
 
-> Accept: application/xml
+> content-type: application/xml
 ```xml
   <ArrayOfTicketModel xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/AviaSalesApiCopyTwo.Models.Tickets">
     <TicketModel>
@@ -194,8 +195,8 @@ Get filtered tickets:
 #### Request
 > POST /api/tickets
 #### Headers
-> content-type: application/json, application/xml
-> accept: application/json, application/xml
+- content-type: application/json, application/xml
+- accept: application/json, application/xml
 #### Request body
 > content-type: application/json
 ```yaml
@@ -246,8 +247,8 @@ Get filtered tickets:
 #### Reponse
 Status Codes
 > 201Created
-> Response body
-> accept: application/json
+#### Response body
+> content-type: application/json
 ```yaml
 {
   "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -272,7 +273,7 @@ Status Codes
 }
 ```
 
-> accept: application/xml
+> content-type: application/xml
 ```xml
 	<?xml version="1.0" encoding="UTF-8"?>
 <TicketModel>
@@ -301,7 +302,7 @@ Status Codes
 > PUT /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12490
 #### Request Headers
 > content-type: application/json, application/xml
-Request body
+#### Request body
 ```yaml
 {
   "countryFrom": "string",
@@ -338,3 +339,5 @@ Status Codes
 Status Codes
 - 204NoContent
 - 404NotFound
+
+## Warranties
