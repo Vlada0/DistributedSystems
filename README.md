@@ -44,6 +44,14 @@
 - MongoDb as the main data storage
 - Redis that is used for caching
 
+### Implemented
+- An API as a Data Warehouse
+- Distributed Mongo database with three replica sets
+- Reverse Proxy middleware
+- Load balancing on the Proxy's level
+- Redis caching on the Proxy's level
+- Swagger Open API Documentation
+
 ## Tickets
 ### Get (filtered) list of Tickets
 #### Request
@@ -497,7 +505,7 @@ Status Codes
 - 204NoContent
 - 404NotFound
 
-### Get, Update or Delete a non-existing resource
+## Get, Update or Delete a non-existing resource
 #### Request
 - GET /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
 - PUT /api/{resource}/ec25779a-c742-4a4e-be03-cf8aeec12499
