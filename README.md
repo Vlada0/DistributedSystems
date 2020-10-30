@@ -210,3 +210,13 @@
 - Status Code 200OK
 - Status Code 404NotFound
 
+### Get a non-existing ticket
+#### Request
+> GET /api/tickets/ec25779a-c742-4a4e-be03-cf8aeec12499
+#### Response
+```yaml
+	{
+    "StatusCode": 404,
+    "Error": "Entity of type Ticket with id: ec25779a-c742-4a4e-be03-cf8aeec12499 not found"
+}
+```
